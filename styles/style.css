@@ -701,11 +701,12 @@ nav {
 
 .skillsSection {
     background: linear-gradient(to bottom, var(--color-background2), var(--color-background));
-    padding: 80px 180px;
+    padding: 80px 0px 80px 200px ;
     color: #ffffff;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 120px;
 }
 
@@ -740,17 +741,30 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 480px;
+    max-width: 550px;
+}
+
+.greenStripeSkillHeadingContainer {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .skillsHeading {
-    font-size: 70px;
+    font-size: 90px;
     font-weight: 700;
+}
+
+.skillsGreenStripe {
+    width: 350px;
+    height: 3px;
+    background-color: var(--color-secondaryVer2);
 }
 
 .skillsContent > p {
     font-size: 16px;
     line-height: 1.6;
+    width: 400px;
 }
 
 .skillsLookingFor {
@@ -761,7 +775,7 @@ nav {
 }
 
 .skillsLookingFor > p:first-child {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
 }
 
@@ -771,7 +785,7 @@ nav {
 }
 
 .skillsHighlight {
-    color: var(--color-primary1);
+    color: var(--color-primary2);
 }
 
 .skillsCtaBtn {
