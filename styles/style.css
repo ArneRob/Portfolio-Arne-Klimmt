@@ -388,6 +388,7 @@ nav {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 40px;
     margin-top: 80px;
     padding-left: 60px;
@@ -396,9 +397,9 @@ nav {
 .testimonialQuoteMark {
     position: absolute;
     top: -10px;
-    left: 0;
-    width: 70px;
-    z-index: 0;
+    left: 0px;
+    width: 90px;
+    z-index: 4;
 }
 
 .testimonialCard {
@@ -406,15 +407,17 @@ nav {
     border-radius: 16px;
     padding: 40px 48px;
     flex: 1;
-    max-width: 700px;
+    max-width: 850px;
     position: relative;
     z-index: 1;
 }
 
 .testimonialText {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 32px;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
 }
 
 .testimonialAuthorLine {
@@ -425,14 +428,15 @@ nav {
 
 .testimonialLine {
     display: block;
-    height: 1px;
-    width: 140px;
+    height: 2px;
+    width: 404px;
     background-color: var(--color-secondaryVer2);
     flex-shrink: 0;
+    border-radius: 20px;
 }
 
 .testimonialAuthor {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .testimonialAvatarWrapper {
@@ -442,26 +446,19 @@ nav {
 }
 
 .testimonialAvatarImg {
-    width: 160px;
-    height: 160px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
-    border: 3px solid var(--color-primary1);
     object-fit: cover;
     display: block;
 }
 
 .testimonialAvatarAccent {
-    width: 60px;
+    position: absolute;
+    right: -100px;
+    width: 100px;
     height: 3px;
     background-color: var(--color-primary1);
-}
-
-.testimonialNav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 40px;
 }
 
 .testimonialArrow {
