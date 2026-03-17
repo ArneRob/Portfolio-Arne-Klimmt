@@ -1,0 +1,24 @@
+:root {
+    --color-background2: #1a2539;
+    --color-background: #141c2f;
+    --color-primary1: #70e71c;
+    --color-primary2: #9747ff;
+    --color-secondaryVer2: #1cdae6;
+}
+
+@font-face {
+    font-family: "poppins-regular";
+    src:
+        url("assets/fonts/poppins/Poppins-Regular.woff") format("woff")
+}
+
+
+@font-face {
+    font-family: "poppins-bold";
+    src:
+        url("assets/fonts/poppins/Poppins-Bold.woff") format("woff")
+}
+
+html, body {
+    overflow-x: hidden;
+}

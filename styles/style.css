@@ -1,0 +1,786 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ----------------------------header/navbar------------------------- */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 8px;
+    background-color: var(--color-background);
+}
+
+.nameLogo {
+    width: 100px;
+    height: 65px;
+    margin-left: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 92px;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.navMenu {
+    display: flex;
+    gap: 29px;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 23px;
+}
+
+.navMenu li {
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.languageToggle {
+    display: flex;
+    color: white;
+    gap: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    align-items: center;
+}
+
+.languageToggle div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary1);
+    padding: 16px 8px;
+    border-radius: 16px;
+    width: 38px;
+    height: 32px;
+}
+
+/* ----------------------------heroSection------------------------- */
+
+.heroSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--color-background);
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.ownNameHeader {
+    display: flex;
+    flex-direction: row;
+    color: #FFFFFF;
+    gap: 35px;
+    padding: 16px 8px;
+}
+
+.ownNameHeader .iam {
+    transform: rotate(270deg);
+    font-size: 90px;
+    display: flex;
+    text-align: start;
+    align-items: flex-end;
+    padding: 16px 8px;
+}
+
+.nameAndJob {
+    padding: 16px 8px;
+}
+
+.ownNameHeader div p:nth-child(1) {
+    font-size: 128px;
+    font-weight: bold;
+}
+
+.ownNameHeader div p:nth-child(2) {
+    color: var(--color-primary2);
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.referenceIconsScrollDownContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+}
+
+.letsTalkButtonDiv {
+    background-color: var(--color-primary1);
+    color: #FFFFFF;
+    padding: 8px 16px;
+    font-size: 23px;
+    font-weight: 400;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.letsTalkButtonDiv p {
+    padding: 8px 16px;
+}
+
+.refernceIconDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 42px;
+}
+
+.refernceIconDiv img {
+    width: 30px;
+    height: 30px;
+}
+
+.lineOne {
+    background-color: var(--color-primary1);
+    height: 4px;
+    width: 200px;
+}
+
+.scrollDownContainer {
+    color: #FFFFFF;
+    transform: rotate(90deg);
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    bottom: 55px;
+}
+
+.scrollDownContainer p {
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    margin: 16px 8px;
+}
+
+.scrollDownContainer img {
+    display: flex;
+    justify-content: center;
+    transform: rotate(270deg);
+    margin: 16px 8px;
+    width: 16px;
+    height: 16px;
+}
+
+.purpleShadowHeroSection {
+    position: absolute;
+    left: -300px;
+    top: 180px;
+    filter: blur(40px);
+}
+
+.greenShadowHeroSection {
+    position: absolute;
+    right: -450px;
+    top: 120px;
+    transform: rotate(10deg);
+    filter: blur(30px);
+}
+
+/* ----------------------------aboutSection------------------------- */
+
+.aboutSection {
+    background-color: var(--color-background);
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 100px 0 0 180px;
+    min-height: 1100px;
+    overflow: hidden;
+}
+
+.aboutContent {
+    position: relative;
+    z-index: 3;
+    max-width: 520px;
+    padding-bottom: 240px;
+}
+
+.aboutHeading {
+    font-size: 92px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.aboutTextBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.aboutTextBlock p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.aboutFeatures {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.aboutFeature {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.aboutFeatureIcon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutFeatureIcon img {
+    width: 30px;
+    height: 30px;
+}
+
+.aboutFeature > p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Character rechts */
+.aboutCharacterWrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 1;
+}
+
+.aboutGlow {
+    position: absolute;
+    bottom: 120px;
+    right: -60px;
+    z-index: 0;
+    width: 580px;
+}
+
+.aboutCharacter {
+    position: relative;
+    z-index: 2;
+    max-height: 700px;
+    width: auto;
+    margin-bottom: 280px;
+}
+
+/* Wave — trennt About von Skills */
+.aboutWave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* ----------------------------portfolioSection------------------------- */
+
+.portfolioSection {
+    background-color: var(--color-background);
+    color: #ffffff;
+    position: relative;
+    padding: 100px 180px;
+    overflow: hidden;
+}
+
+.portfolioGlowGreen {
+    position: absolute;
+    left: -80px;
+    bottom: 80px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.portfolioGlowBlue {
+    position: absolute;
+    right: -80px;
+    top: 80px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.portfolioHeader {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+    max-width: 500px;
+}
+
+.portfolioHeading {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.portfolioHeading::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-primary2);
+    flex-shrink: 0;
+}
+
+.portfolioHeader > p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-left: 80px;
+}
+
+.portfolioGrid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.portfolioCard {
+    background-color: var(--color-background2);
+    border-radius: 16px;
+    padding: 40px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.portfolioCard img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Testimonial */
+
+.testimonialWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+    padding-left: 60px;
+}
+
+.testimonialQuoteMark {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 70px;
+    z-index: 0;
+}
+
+.testimonialCard {
+    border: 2px solid var(--color-primary2);
+    border-radius: 16px;
+    padding: 40px 48px;
+    flex: 1;
+    max-width: 700px;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonialText {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.testimonialAuthorLine {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.testimonialLine {
+    display: block;
+    height: 1px;
+    width: 140px;
+    background-color: var(--color-secondaryVer2);
+    flex-shrink: 0;
+}
+
+.testimonialAuthor {
+    font-size: 14px;
+}
+
+.testimonialAvatarWrapper {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.testimonialAvatarImg {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid var(--color-primary1);
+    object-fit: cover;
+    display: block;
+}
+
+.testimonialAvatarAccent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-primary1);
+}
+
+.testimonialNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.testimonialArrow {
+    color: var(--color-secondaryVer2);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.testimonialDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondaryVer2);
+    opacity: 0.4;
+    display: block;
+}
+
+.testimonialDotActive {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-secondaryVer2);
+    opacity: 1;
+    display: block;
+}
+
+/* ----------------------------contactSection------------------------- */
+
+.contactSection {
+    background-color: var(--color-background);
+    color: #ffffff;
+    position: relative;
+    padding: 100px 180px;
+    overflow: hidden;
+}
+
+.contactGlow {
+    position: absolute;
+    right: -100px;
+    top: -60px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.contactHeadingRow {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+.contactHeadingRow::after {
+    content: '';
+    flex: 1;
+    height: 3px;
+    background-color: var(--color-primary1);
+}
+
+.contactHeading {
+    font-size: 80px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.contactContent {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.contactLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contactLeftAccent {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-secondaryVer2);
+}
+
+.contactLeftTitle {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.contactLeft p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contactForm {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contactInput {
+    background-color: var(--color-background2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 16px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+.contactInput::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.contactInput:focus {
+    border-color: var(--color-primary2);
+}
+
+.contactTextarea {
+    background-color: var(--color-background2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 16px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    height: 160px;
+    resize: vertical;
+}
+
+.contactTextarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.contactTextarea:focus {
+    border-color: var(--color-primary2);
+}
+
+.contactCheckboxRow {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.contactCheckbox {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--color-primary1);
+    border-radius: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.contactCheckbox:checked {
+    background-color: var(--color-primary1);
+}
+
+.contactPrivacyLink {
+    color: var(--color-secondaryVer2);
+    cursor: pointer;
+}
+
+.contactSubmitBtn {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 16px 32px;
+    font-size: 18px;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.2s;
+}
+
+.contactSubmitBtn:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ----------------------------footer------------------------- */
+
+.footer {
+    background-color: var(--color-background2);
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 180px;
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footerLogo {
+    width: 100px;
+    height: auto;
+}
+
+.footerLegal {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.footerCopyright {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footerIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+
+.footerIcons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* ----------------------------skillsSection------------------------- */
+
+.skillsSection {
+    background: linear-gradient(to bottom, var(--color-background2), var(--color-background));
+    padding: 80px 180px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+}
+
+.iconsSkillSection {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    flex-shrink: 0;
+}
+
+.iconsDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.skillIconTextDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.skillIcon {
+    width: 60px;
+    height: 60px;
+}
+
+.skillsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 480px;
+}
+
+.skillsHeading {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.skillsContent > p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.skillsLookingFor {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.skillsLookingFor > p:first-child {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.skillsLookingFor > p:last-of-type {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.skillsHighlight {
+    color: var(--color-primary1);
+}
+
+.skillsCtaBtn {
+    background-color: var(--color-primary1);
+    color: #ffffff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    width: fit-content;
+}
