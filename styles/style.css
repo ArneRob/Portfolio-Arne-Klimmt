@@ -364,20 +364,28 @@ nav {
 }
 
 .portfolioCard {
+    position: relative;
     background-color: var(--color-background);
     border-radius: 16px;
-    padding: 40px 48px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     border: 2px solid var(--color-primary1);
+    width: 600px;
 }
 
 .portfolioCard img {
     width: 100%;
     height: auto;
-    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.laptopShadow {
+    z-index: 0 !important;
+    position: absolute !important;
+    bottom: 0;
 }
 
 /* Testimonial */
