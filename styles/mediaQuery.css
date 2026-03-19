@@ -131,6 +131,58 @@
     .skillsCtaBtn {
         font-size: 20px;
     }
+
+    /* ---portfolioSection--- */
+
+    .portfolioSection {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .portfolioHeading {
+        font-size: 105px;
+    }
+
+    .portfolioHeader {
+        max-width: 600px;
+    }
+
+    .portfolioHeader > p {
+        font-size: 18px;
+    }
+
+    .testimonialCard {
+        max-width: 1000px;
+    }
+
+    .testimonialText {
+        font-size: 22px;
+    }
+
+    .testimonialLine {
+        width: 480px;
+    }
+
+    .testimonialAuthor {
+        font-size: 20px;
+    }
+
+    .testimonialAvatarImg {
+        width: 320px;
+        height: 320px;
+    }
+
+    .testimonialQuoteMark {
+        width: 110px;
+    }
+
+    .portfolioGlowGreen {
+        width: 500px;
+    }
+
+    .portfolioGlowBlue {
+        width: 500px;
+    }
 }
 
 /* ----------------------------min-width: 2560px------------------------- */
@@ -285,5 +337,57 @@
 
     .skillsCtaBtn {
         font-size: 24px;
+    }
+
+    /* ---portfolioSection--- */
+
+    .portfolioSection {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+
+    .portfolioHeading {
+        font-size: 120px;
+    }
+
+    .portfolioHeader {
+        max-width: 700px;
+    }
+
+    .portfolioHeader > p {
+        font-size: 20px;
+    }
+
+    .testimonialCard {
+        max-width: 1200px;
+    }
+
+    .testimonialText {
+        font-size: 26px;
+    }
+
+    .testimonialLine {
+        width: 580px;
+    }
+
+    .testimonialAuthor {
+        font-size: 24px;
+    }
+
+    .testimonialAvatarImg {
+        width: 380px;
+        height: 380px;
+    }
+
+    .testimonialQuoteMark {
+        width: 130px;
+    }
+
+    .portfolioGlowGreen {
+        width: 650px;
+    }
+
+    .portfolioGlowBlue {
+        width: 650px;
     }
 }
