@@ -561,8 +561,8 @@ nav {
 
 .contactLeftAccent {
     position: absolute;
-    left: -100px;
-    width: 65px;
+    left: -22%;
+    width: 20%;
     height: 3px;
     background-color: var(--color-secondaryVer2);
 }
@@ -583,6 +583,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    max-width: 800px;
 }
 
 .contactInput {

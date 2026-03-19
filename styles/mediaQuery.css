@@ -183,6 +183,48 @@
     .portfolioGlowBlue {
         width: 500px;
     }
+
+    /* ---contactSection--- */
+
+    .contactHeading {
+        font-size: 105px;
+    }
+
+    .contactHeadingRow::after {
+        width: 600px;
+    }
+
+    .contactContent {
+        padding: 0 140px;
+    }
+
+    .contactLeftTitle {
+        font-size: 28px;
+    }
+
+    .contactLeft p {
+        font-size: 18px;
+    }
+
+    .contactInput {
+        font-size: 18px;
+    }
+
+    .contactTextarea {
+        font-size: 18px;
+    }
+
+    .contactCheckboxRow {
+        font-size: 16px;
+    }
+
+    .contactSubmitBtn {
+        font-size: 20px;
+    }
+
+    .contactGlow {
+        width: 600px;
+    }
 }
 
 /* ----------------------------min-width: 2560px------------------------- */
@@ -259,10 +301,6 @@
         padding-left: 280px;
     }
 
-    .aboutHeading {
-        font-size: 120px;
-    }
-
     .aboutContent {
         max-width: 700px;
     }
@@ -291,10 +329,6 @@
 
     .skillsSection {
         padding-left: 280px;
-    }
-
-    .skillsHeading {
-        font-size: 120px;
     }
 
     .skillsGreenStripe {
@@ -346,10 +380,6 @@
         padding-right: 180px;
     }
 
-    .portfolioHeading {
-        font-size: 120px;
-    }
-
     .portfolioHeader {
         max-width: 700px;
     }
@@ -389,5 +419,43 @@
 
     .portfolioGlowBlue {
         width: 650px;
+    }
+
+    /* ---contactSection--- */
+
+    .contactHeadingRow::after {
+        width: 750px;
+    }
+
+    .contactContent {
+        padding: 0 200px;
+    }
+
+    .contactLeftTitle {
+        font-size: 32px;
+    }
+
+    .contactLeft p {
+        font-size: 20px;
+    }
+
+    .contactInput {
+        font-size: 20px;
+    }
+
+    .contactTextarea {
+        font-size: 20px;
+    }
+
+    .contactCheckboxRow {
+        font-size: 18px;
+    }
+
+    .contactSubmitBtn {
+        font-size: 24px;
+    }
+
+    .contactGlow {
+        width: 800px;
     }
 }
