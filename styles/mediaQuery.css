@@ -1,0 +1,68 @@
+/* ----------------------------responsive 3440x1440------------------------- */
+
+@media (min-width: 2560px) {
+
+    /* header */
+
+    .nameLogo {
+        width: 140px;
+        margin-left: 120px;
+    }
+
+    nav {
+        margin-right: 120px;
+        gap: 120px;
+    }
+
+    .navMenu {
+        font-size: 30px;
+        gap: 40px;
+    }
+
+    .languageToggle {
+        font-size: 24px;
+    }
+
+    /* heroSection */
+
+    .ownNameHeader {
+        gap: 50px;
+    }
+
+    .ownNameHeader .iam {
+        font-size: 115px;
+    }
+
+    .ownNameHeader div p:nth-child(1) {
+        font-size: 170px;
+    }
+
+    .ownNameHeader div p:nth-child(2) {
+        font-size: 85px;
+    }
+
+    .letsTalkButtonDiv {
+        font-size: 30px;
+    }
+
+    .lineOne {
+        width: 300px;
+    }
+
+    .refernceIconDiv img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .scrollDownContainer p {
+        font-size: 30px;
+    }
+
+    .purpleShadowHeroSection {
+        width: 900px;
+    }
+
+    .greenShadowHeroSection {
+        width: 950px;
+    }
+}
