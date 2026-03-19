@@ -1,8 +1,51 @@
-/* ----------------------------responsive 3440x1440------------------------- */
+/* ============================================================
+   MEDIA QUERIES — kleinste Breakpoints oben, größte unten
+   ============================================================ */
+
+/* ----------------------------min-width: 1900px------------------------- */
+
+@media (min-width: 1900px) {
+
+    /* ---aboutSection--- */
+
+    .aboutSection {
+        padding-left: 220px;
+    }
+
+    .aboutHeading {
+        font-size: 105px;
+    }
+
+    .aboutContent {
+        max-width: 600px;
+    }
+
+    .aboutTextBlock p {
+        font-size: 18px;
+    }
+
+    .aboutFeature > p {
+        font-size: 18px;
+    }
+
+    .aboutFeatureIcon img {
+        width: 32px;
+    }
+
+    .aboutGlow {
+        width: 680px;
+    }
+
+    .aboutCharacter {
+        max-height: 820px;
+    }
+}
+
+/* ----------------------------min-width: 2560px------------------------- */
 
 @media (min-width: 2560px) {
 
-    /* header */
+    /* ---header--- */
 
     .nameLogo {
         width: 140px;
@@ -23,7 +66,7 @@
         font-size: 24px;
     }
 
-    /* heroSection */
+    /* ---heroSection--- */
 
     .ownNameHeader {
         gap: 50px;
@@ -64,5 +107,39 @@
 
     .greenShadowHeroSection {
         width: 950px;
+    }
+
+    /* ---aboutSection--- */
+
+    .aboutSection {
+        padding-left: 280px;
+    }
+
+    .aboutHeading {
+        font-size: 120px;
+    }
+
+    .aboutContent {
+        max-width: 700px;
+    }
+
+    .aboutTextBlock p {
+        font-size: 20px;
+    }
+
+    .aboutFeature > p {
+        font-size: 20px;
+    }
+
+    .aboutFeatureIcon img {
+        width: 36px;
+    }
+
+    .aboutGlow {
+        width: 800px;
+    }
+
+    .aboutCharacter {
+        max-height: 950px;
     }
 }
