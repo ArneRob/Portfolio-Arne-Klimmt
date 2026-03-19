@@ -2,6 +2,46 @@
    MEDIA QUERIES — kleinste Breakpoints oben, größte unten
    ============================================================ */
 
+/* ----------------------------min-width: 1600px------------------------- */
+
+@media (min-width: 1600px) {
+
+    /* ---skillsSection--- */
+
+    .skillsSection {
+        padding-left: 210px;
+    }
+
+    .skillsHeading {
+        font-size: 95px;
+    }
+
+    .skillsGreenStripe {
+        width: 370px;
+    }
+
+    .skillIcon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .iconsDiv {
+        gap: 85px;
+    }
+
+    .iconsSkillSection {
+        gap: 65px;
+    }
+
+    .skillsContent {
+        max-width: 580px;
+    }
+
+    .skillsContent > p {
+        width: 430px;
+    }
+}
+
 /* ----------------------------min-width: 1900px------------------------- */
 
 @media (min-width: 1900px) {
@@ -38,6 +78,58 @@
 
     .aboutCharacter {
         max-height: 820px;
+    }
+
+    /* ---skillsSection--- */
+
+    .skillsSection {
+        padding-left: 230px;
+    }
+
+    .skillsHeading {
+        font-size: 105px;
+    }
+
+    .skillsGreenStripe {
+        width: 400px;
+    }
+
+    .skillIcon {
+        width: 72px;
+        height: 72px;
+    }
+
+    .iconsDiv {
+        gap: 95px;
+    }
+
+    .iconsSkillSection {
+        gap: 72px;
+    }
+
+    .skillsContent {
+        max-width: 620px;
+    }
+
+    .skillsContent > p {
+        font-size: 18px;
+        width: 480px;
+    }
+
+    .skillsLookingFor > p:first-child {
+        font-size: 38px;
+    }
+
+    .skillsLookingFor > p:last-of-type {
+        font-size: 18px;
+    }
+
+    .skillIconTextDiv {
+        font-size: 16px;
+    }
+
+    .skillsCtaBtn {
+        font-size: 20px;
     }
 }
 
@@ -141,5 +233,57 @@
 
     .aboutCharacter {
         max-height: 950px;
+    }
+
+    /* ---skillsSection--- */
+
+    .skillsSection {
+        padding-left: 280px;
+    }
+
+    .skillsHeading {
+        font-size: 120px;
+    }
+
+    .skillsGreenStripe {
+        width: 480px;
+    }
+
+    .skillIcon {
+        width: 85px;
+        height: 85px;
+    }
+
+    .iconsDiv {
+        gap: 115px;
+    }
+
+    .iconsSkillSection {
+        gap: 85px;
+    }
+
+    .skillsContent {
+        max-width: 720px;
+    }
+
+    .skillsContent > p {
+        font-size: 20px;
+        width: 560px;
+    }
+
+    .skillsLookingFor > p:first-child {
+        font-size: 44px;
+    }
+
+    .skillsLookingFor > p:last-of-type {
+        font-size: 20px;
+    }
+
+    .skillIconTextDiv {
+        font-size: 18px;
+    }
+
+    .skillsCtaBtn {
+        font-size: 24px;
     }
 }
