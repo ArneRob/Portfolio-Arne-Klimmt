@@ -20,7 +20,8 @@
         url("assets/fonts/poppins/Poppins-Bold.woff") format("woff")
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -30,4 +31,14 @@ h2 {
 
 p {
     font-size: 16px;
+}
+
+section {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+header {
+    padding-left: 150px;
+    padding-right: 150px;
 }

@@ -15,11 +15,28 @@
         font-size: 18px;
     }
 
-    /* ---skillsSection--- */
-
-    .skillsSection {
-        padding-left: 210px;
+    section {
+        padding-left: 150px;
+        padding-right: 150px;
     }
+
+    header {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    /* ---aboutSection--- */
+
+    .aboutCharacter {
+        width: 700px;
+    }
+
+    .aboutGlow {
+        width: 900px;
+        top: 150px;
+    }
+
+    /* ---skillsSection--- */
 
     .skillsGreenStripe {
         width: 370px;
@@ -58,10 +75,6 @@
 
     /* ---aboutSection--- */
 
-    .aboutSection {
-        padding-left: 220px;
-    }
-
     .aboutContent {
         max-width: 600px;
     }
@@ -71,18 +84,15 @@
     }
 
     .aboutGlow {
-        width: 620px;
+        width: 900px;
+        top: 140px;
     }
 
     .aboutCharacter {
-        max-height: 820px;
+        width: 770px;
     }
 
     /* ---skillsSection--- */
-
-    .skillsSection {
-        padding-left: 230px;
-    }
 
     .skillsGreenStripe {
         width: 550px;
@@ -118,11 +128,6 @@
     }
 
     /* ---portfolioSection--- */
-
-    .portfolioSection {
-        padding-left: 120px;
-        padding-right: 120px;
-    }
 
     .portfolioHeader {
         max-width: 600px;
@@ -163,10 +168,6 @@
 
     /* ---contactSection--- */
 
-    .contactHeadingRow::after {
-        width: 600px;
-    }
-
     .contactContent {
         padding: 0 140px;
     }
@@ -196,17 +197,23 @@
     }
 }
 
+@media (min-width: 2100px) {
+    .aboutCharacterWrapper {
+        right: 60px;
+    }
+}
+
 /* ----------------------------min-width: 2560px------------------------- */
 
 @media (min-width: 2560px) {
     /* general  */
 
     h2 {
-        font-size: 130px;
+        font-size: 145px;
     }
 
     p {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     /* ---header--- */
@@ -275,12 +282,8 @@
 
     /* ---aboutSection--- */
 
-    .aboutSection {
-        padding-left: 280px;
-    }
-
     .aboutContent {
-        max-width: 700px;
+        max-width: 800px;
     }
 
     .aboutFeatureIcon img {
@@ -288,22 +291,19 @@
     }
 
     .aboutGlow {
-        width: 640px;
+        width: 1200px;
+        top: 200px;
     }
 
     .aboutCharacter {
-        max-height: 950px;
+        width: 1000px;
+    }
+
+    .aboutCharacterWrapper {
+        right: 60px;
     }
 
     /* ---skillsSection--- */
-
-    .skillsSection {
-        padding-left: 280px;
-    }
-
-    .skillsGreenStripe {
-        width: 480px;
-    }
 
     .skillIcon {
         width: 120px;
@@ -335,11 +335,6 @@
     }
 
     /* ---portfolioSection--- */
-
-    .portfolioSection {
-        padding-left: 180px;
-        padding-right: 180px;
-    }
 
     .portfolioHeader {
         max-width: 700px;
@@ -379,10 +374,6 @@
     }
 
     /* ---contactSection--- */
-
-    .contactHeadingRow::after {
-        width: 750px;
-    }
 
     .contactContent {
         padding: 0 200px;

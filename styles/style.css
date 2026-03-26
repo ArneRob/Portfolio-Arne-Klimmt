@@ -76,6 +76,8 @@ nav {
     position: relative;
     z-index: 3;
     overflow: hidden;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .ownNameHeader {
@@ -206,7 +208,8 @@ nav {
     position: relative;
     display: flex;
     align-items: flex-start;
-    padding: 100px 0 100px 180px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     overflow: hidden;
 }
 
@@ -276,13 +279,13 @@ nav {
 .aboutGlow {
     position: absolute;
     z-index: 0;
-    width: 580px;
+    width: 700px;
+    top: 180px;
 }
 
 .aboutCharacter {
     position: relative;
     z-index: 2;
-    max-height: 700px;
 }
 
 /* Wave — trennt About von Skills */
@@ -301,7 +304,8 @@ nav {
     background-color: var(--color-background);
     color: #ffffff;
     position: relative;
-    padding: 150px 80px 20px 80px;
+    padding-top: 150px;
+    padding-bottom: 20px;
     overflow: hidden;
 }
 
@@ -343,8 +347,8 @@ nav {
     height: 4px;
     background-color: var(--color-primary2);
     flex-shrink: 0;
-    left: -26%;
-    width: 21%;
+    left: -45%;
+    width: 40%;
 }
 
 .portfolioHeader>p {
@@ -355,10 +359,15 @@ nav {
 .portfolioGrid {
     position: relative;
     z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 32px;
-    place-items: center;
+    justify-content: space-between;
+}
+
+.portfolioGrid div {
+    flex-direction: column;
+    display: flex;
+    gap: 32px;
 }
 
 .portfolioCard {
@@ -370,7 +379,7 @@ nav {
     justify-content: center;
     overflow: hidden;
     border: 1px solid var(--color-primary1);
-    width: 600px;
+    width: 100%;
 }
 
 .portfolioCard img {
@@ -459,8 +468,8 @@ nav {
 
 .testimonialAvatarAccent {
     position: absolute;
-    right: -100px;
-    width: 100px;
+    right: -30%;
+    width: 30%;
     height: 3px;
     background-color: var(--color-primary1);
 }
@@ -495,7 +504,8 @@ nav {
     background-color: var(--color-background);
     color: #ffffff;
     position: relative;
-    padding: 150px 0px 50px 0px;
+    padding-top: 150px;
+    padding-bottom: 50px;
     overflow: hidden;
 }
 
@@ -512,14 +522,16 @@ nav {
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 24px;
     margin-bottom: 40px;
 }
 
 .contactHeadingRow::after {
+    position: absolute;
     content: '';
-    width: 500px;
+    width: 100%;
+    right: -70%;
     height: 3px;
     background-color: var(--color-primary1);
 }
@@ -555,8 +567,8 @@ nav {
 
 .contactLeftAccent {
     position: absolute;
-    left: -22%;
-    width: 20%;
+    left: -80%;
+    width: 70%;
     height: 3px;
     background-color: var(--color-secondaryVer2);
 }
@@ -740,7 +752,9 @@ nav {
     background:
         linear-gradient(to bottom, transparent, var(--color-background)),
         linear-gradient(to right, #1c2744, #1c2539);
-    padding: 80px 0px 0px 200px;
+    padding-top: 80px;
+    padding-bottom: 0px;
+    padding-right: 0px !important;
     color: #ffffff;
     display: flex;
     flex-direction: row;
