@@ -73,6 +73,16 @@
         font-size: 20px;
     }
 
+    section {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    header {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
     /* ---aboutSection--- */
 
     .aboutContent {
@@ -198,6 +208,20 @@
 }
 
 @media (min-width: 2100px) {
+    section {
+        padding-left: 280px;
+        padding-right: 280px;
+    }
+
+    header {
+        padding-left: 280px;
+        padding-right: 280px;
+    }
+
+    .lineOne {
+        width: 250px;
+    }
+
     .aboutCharacterWrapper {
         right: 60px;
     }
@@ -401,5 +425,26 @@
 
     .contactGlow {
         width: 800px;
+    }
+}
+
+
+@media (min-width: 2800px) {
+    section {
+        padding-left: 320px;
+        padding-right: 320px;
+    }
+
+    header {
+        padding-left: 320px;
+        padding-right: 320px;
+    }
+
+    .lineOne {
+        width: 280px;
+    }
+
+    .aboutCharacterWrapper {
+        right: 80px;
     }
 }

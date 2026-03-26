@@ -368,6 +368,7 @@ nav {
     flex-direction: column;
     display: flex;
     gap: 32px;
+    width: 100%;
 }
 
 .portfolioCard {
