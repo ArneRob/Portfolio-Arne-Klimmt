@@ -24,7 +24,7 @@ header {
 }
 
 nav {
-    display: flex;
+    display: none;
     gap: 92px;
     flex-direction: row;
     margin-right: 50px;
@@ -117,7 +117,7 @@ nav {
 }
 
 .referenceIconsScrollDownContainer {
-    display: flex;
+    display: none;
     justify-content: space-between;
     width: 100%;
     position: absolute;
@@ -464,7 +464,8 @@ nav {
     height: 270px;
     border-radius: 50%;
     object-fit: cover;
-    display: block;
+    position: relative;
+    z-index: 1;
 }
 
 .testimonialAvatarAccent {
