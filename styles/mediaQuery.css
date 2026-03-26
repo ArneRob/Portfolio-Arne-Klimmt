@@ -5,6 +5,15 @@
 /* ----------------------------min-width: 1600px------------------------- */
 
 @media (min-width: 1600px) {
+    /* general  */
+
+    h2 {
+        font-size: 95px;
+    }
+
+    p {
+        font-size: 18px;
+    }
 
     /* ---skillsSection--- */
 
@@ -12,17 +21,13 @@
         padding-left: 210px;
     }
 
-    .skillsHeading {
-        font-size: 95px;
-    }
-
     .skillsGreenStripe {
         width: 370px;
     }
 
     .skillIcon {
-        width: 65px;
-        height: 65px;
+        width: 80px;
+        height: 80px;
     }
 
     .iconsDiv {
@@ -33,7 +38,7 @@
         gap: 65px;
     }
 
-    .skillsContent > p {
+    .skillsContent>p {
         width: 430px;
     }
 }
@@ -41,6 +46,15 @@
 /* ----------------------------min-width: 1900px------------------------- */
 
 @media (min-width: 1900px) {
+    /* general  */
+
+    h2 {
+        font-size: 120px;
+    }
+
+    p {
+        font-size: 20px;
+    }
 
     /* ---aboutSection--- */
 
@@ -48,20 +62,8 @@
         padding-left: 220px;
     }
 
-    .aboutHeading {
-        font-size: 105px;
-    }
-
     .aboutContent {
         max-width: 600px;
-    }
-
-    .aboutTextBlock p {
-        font-size: 18px;
-    }
-
-    .aboutFeature > p {
-        font-size: 18px;
     }
 
     .aboutFeatureIcon img {
@@ -82,17 +84,13 @@
         padding-left: 230px;
     }
 
-    .skillsHeading {
-        font-size: 105px;
-    }
-
     .skillsGreenStripe {
-        width: 400px;
+        width: 550px;
     }
 
     .skillIcon {
-        width: 72px;
-        height: 72px;
+        width: 100px;
+        height: 100px;
     }
 
     .iconsDiv {
@@ -103,17 +101,12 @@
         gap: 72px;
     }
 
-    .skillsContent > p {
-        font-size: 18px;
-        width: 480px;
+    .skillsContent>p {
+        width: 500px;
     }
 
-    .skillsLookingFor > p:first-child {
-        font-size: 38px;
-    }
-
-    .skillsLookingFor > p:last-of-type {
-        font-size: 18px;
+    .skillsLookingFor>p:first-child {
+        font-size: 40px !important;
     }
 
     .skillIconTextDiv {
@@ -121,7 +114,7 @@
     }
 
     .skillsCtaBtn {
-        font-size: 20px;
+        font-size: 26px;
     }
 
     /* ---portfolioSection--- */
@@ -131,16 +124,8 @@
         padding-right: 120px;
     }
 
-    .portfolioHeading {
-        font-size: 105px;
-    }
-
     .portfolioHeader {
         max-width: 600px;
-    }
-
-    .portfolioHeader > p {
-        font-size: 18px;
     }
 
     .testimonialCard {
@@ -178,10 +163,6 @@
 
     /* ---contactSection--- */
 
-    .contactHeading {
-        font-size: 105px;
-    }
-
     .contactHeadingRow::after {
         width: 600px;
     }
@@ -192,10 +173,6 @@
 
     .contactLeftTitle {
         font-size: 28px;
-    }
-
-    .contactLeft p {
-        font-size: 18px;
     }
 
     .contactInput {
@@ -222,6 +199,15 @@
 /* ----------------------------min-width: 2560px------------------------- */
 
 @media (min-width: 2560px) {
+    /* general  */
+
+    h2 {
+        font-size: 130px;
+    }
+
+    p {
+        font-size: 25px;
+    }
 
     /* ---header--- */
 
@@ -276,7 +262,7 @@
     }
 
     .scrollDownContainer p {
-        font-size: 30px;
+        font-size: 30px !important;
     }
 
     .purpleShadowHeroSection {
@@ -295,14 +281,6 @@
 
     .aboutContent {
         max-width: 700px;
-    }
-
-    .aboutTextBlock p {
-        font-size: 20px;
-    }
-
-    .aboutFeature > p {
-        font-size: 20px;
     }
 
     .aboutFeatureIcon img {
@@ -328,8 +306,8 @@
     }
 
     .skillIcon {
-        width: 85px;
-        height: 85px;
+        width: 120px;
+        height: 120px;
     }
 
     .iconsDiv {
@@ -340,17 +318,12 @@
         gap: 85px;
     }
 
-    .skillsContent > p {
-        font-size: 20px;
+    .skillsContent>p {
         width: 560px;
     }
 
-    .skillsLookingFor > p:first-child {
+    .skillsLookingFor>p:first-child {
         font-size: 44px;
-    }
-
-    .skillsLookingFor > p:last-of-type {
-        font-size: 20px;
     }
 
     .skillIconTextDiv {
@@ -370,10 +343,6 @@
 
     .portfolioHeader {
         max-width: 700px;
-    }
-
-    .portfolioHeader > p {
-        font-size: 20px;
     }
 
     .testimonialCard {
@@ -421,10 +390,6 @@
 
     .contactLeftTitle {
         font-size: 32px;
-    }
-
-    .contactLeft p {
-        font-size: 20px;
     }
 
     .contactInput {

@@ -104,7 +104,7 @@ nav {
 }
 
 .ownNameHeader div p:nth-child(1) {
-    font-size: 128px;
+    font-size: 128px !important;
     font-weight: bold;
 }
 
@@ -169,7 +169,7 @@ nav {
 .scrollDownContainer p {
     display: flex;
     justify-content: center;
-    font-size: 23px;
+    font-size: 23px !important;
     margin: 16px 8px;
 }
 
@@ -217,7 +217,6 @@ nav {
 }
 
 .aboutHeading {
-    font-size: 92px;
     font-weight: 700;
     margin-bottom: 32px;
 }
@@ -230,7 +229,6 @@ nav {
 }
 
 .aboutTextBlock p {
-    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -259,7 +257,6 @@ nav {
 }
 
 .aboutFeature>p {
-    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -332,7 +329,6 @@ nav {
 }
 
 .portfolioHeading {
-    font-size: 90px;
     font-weight: 700;
     margin-bottom: 24px;
     display: flex;
@@ -352,7 +348,6 @@ nav {
 }
 
 .portfolioHeader>p {
-    font-size: 16px;
     line-height: 1.6;
     padding-left: 80px;
 }
@@ -530,7 +525,6 @@ nav {
 }
 
 .contactHeading {
-    font-size: 90px;
     font-weight: 700;
     white-space: nowrap;
 }
@@ -574,7 +568,6 @@ nav {
 }
 
 .contactLeft p {
-    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -799,11 +792,6 @@ nav {
     gap: 32px;
 }
 
-.skillsHeading {
-    font-size: 90px;
-    font-weight: 700;
-}
-
 .skillsGreenStripe {
     width: 350px;
     height: 3px;
@@ -811,7 +799,6 @@ nav {
 }
 
 .skillsContent>p {
-    font-size: 16px;
     line-height: 1.6;
     width: 400px;
 }
@@ -829,7 +816,6 @@ nav {
 }
 
 .skillsLookingFor>p:last-of-type {
-    font-size: 16px;
     line-height: 1.6;
 }
 
