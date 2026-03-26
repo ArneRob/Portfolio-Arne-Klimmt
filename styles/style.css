@@ -342,13 +342,13 @@ nav {
 
 .portfolioHeading::before {
     position: absolute;
-    left: -80px;
     content: '';
     display: block;
-    width: 60px;
     height: 4px;
     background-color: var(--color-primary2);
     flex-shrink: 0;
+    left: -26%;
+    width: 21%;
 }
 
 .portfolioHeader>p {
