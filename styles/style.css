@@ -18,6 +18,10 @@ header {
     background-color: var(--color-background);
 }
 
+.burgerNavbar img{
+    width: 30px;
+}
+
 .nameLogo {
     width: 100px;
     margin-left: 50px;
