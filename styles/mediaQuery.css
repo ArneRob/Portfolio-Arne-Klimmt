@@ -1,142 +1,182 @@
-@media (min-width: 0px) {
+@media (max-width: 1100px) {
     section {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
     header {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
-
-    /* ---header/nav--- */
 
     .nameLogo {
         margin-left: 10px;
-        width: 80px;
+    }
+
+    .burgerNavbar {
+        display: flex;
     }
 
     /* ---heroSection--- */
     .ownNameHeader {
-        gap: 0;
+        gap: 35px;
     }
 
     .ownNameHeader div p:nth-child(1) {
-        font-size: 30px;
+        font-size: 80px;
     }
 
     .ownNameHeader div p:nth-child(2) {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .ownNameHeader .iam {
-        font-size: 20px;
-        top: 8px;
+        font-size: 45px;
     }
 
     .greenShadowHeroSection {
         z-index: -1;
         filter: blur(0px);
-        width: 324px;
+        width: 624px;
         left: 70%;
-        top: 280px;
+        top: 28%;
     }
 
     .purpleShadowHeroSection {
         z-index: -1;
         filter: blur(0px);
-        width: 272px;
+        width: 572px;
         left: -20%;
-        top: 147px;
+        top: 20%;
     }
 }
 
-@media (min-width: 370px) {
-
-    /* ---heroSection--- */
-
-    .ownNameHeader div p:nth-child(1) {
-        font-size: 35px;
-    }
-
-    .ownNameHeader div p:nth-child(2) {
-        font-size: 30px;
-    }
-
-    .ownNameHeader .iam {
-        font-size: 25px;
-        top: 8px;
-    }
-}
-
-@media (min-width: 0px) {
-    section {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
+@media (max-width: 850px) {
     header {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    /* ---header/nav--- */
-
-    .nameLogo {
-        margin-left: 10px;
-        width: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     /* ---heroSection--- */
     .ownNameHeader {
-        gap: 0;
+        gap: 20px;
     }
 
     .ownNameHeader div p:nth-child(1) {
-        font-size: 30px;
+        font-size: 60px;
     }
 
     .ownNameHeader div p:nth-child(2) {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .ownNameHeader .iam {
-        font-size: 20px;
-        top: 8px;
-    }
-
-    .greenShadowHeroSection {
-        z-index: -1;
-        filter: blur(0px);
-        width: 324px;
-        left: 70%;
-        top: 280px;
+        font-size: 40px;
+        padding: 0px;
     }
 
     .purpleShadowHeroSection {
-        z-index: -1;
-        filter: blur(0px);
-        width: 272px;
-        left: -20%;
-        top: 147px;
+        left: -30%;
     }
 }
 
-@media (min-width: 370px) {
+@media (max-width: 700px) {
 
     /* ---heroSection--- */
 
     .ownNameHeader div p:nth-child(1) {
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .ownNameHeader div p:nth-child(2) {
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    .ownNameHeader .iam {
+        font-size: 35px;
+        padding: 0px;
+    }
+
+    .purpleShadowHeroSection {
+        width: 400px;
+    }
+
+    .greenShadowHeroSection {
+        width: 400px;
+        top: 32%;
+    }
+
+    .lineOne {
+        width: 150px;
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* ---heroSection--- */
+    .ownNameHeader {
+        padding: 0 8px 0 0;
+    }
+
+    .ownNameHeader div p:nth-child(1) {
+        font-size: 40px;
+    }
+
+    .ownNameHeader div p:nth-child(2) {
+        font-size: 15px;
     }
 
     .ownNameHeader .iam {
         font-size: 25px;
-        top: 8px;
+        padding: 0px;
+    }
+
+    .purpleShadowHeroSection {
+        width: 400px;
+        left: -44%;
+    }
+
+    .greenShadowHeroSection {
+        width: 400px;
+        top: 32%;
+    }
+
+    .lineOne {
+        width: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    /* ---heroSection--- */
+
+    .ownNameHeader div p:nth-child(1) {
+        font-size: 32px;
+    }
+
+    .ownNameHeader div p:nth-child(2) {
+        font-size: 12px;
+    }
+
+    .ownNameHeader .iam {
+        font-size: 20px;
+        padding: 0px;
+    }
+
+    .purpleShadowHeroSection {
+        width: 350px;
+    }
+
+    .greenShadowHeroSection {
+        width: 350px;
+    }
+
+    .lineOne {
+        width: 70px;
     }
 }
 
