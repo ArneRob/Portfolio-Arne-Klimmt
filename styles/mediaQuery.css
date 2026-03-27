@@ -1,12 +1,32 @@
+@media (max-width: 1200px) {
+    h2 {
+        font-size: 80px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    /* ---aboutSection--- */
+    .aboutCharacter {
+        width: 500px;
+    }
+
+}
+
 @media (max-width: 1100px) {
+    h2 {
+        font-size: 70px;
+    }
+
     section {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     header {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .nameLogo {
@@ -49,6 +69,176 @@
         left: -20%;
         top: 20%;
     }
+
+    /* ---aboutSection--- */
+    .aboutContent {
+        width: 450px;
+    }
+
+    .aboutCharacter {
+        width: 450px;
+    }
+
+    .aboutGlow {
+        width: 550px;
+    }
+
+    /* ---portfolioSection--- */
+
+    .testimonialText {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .testimonialCard {
+        padding: 30px 30px;
+    }
+
+    .testimonialAvatarImg {
+        width: 230px;
+    }
+
+    .testimonialLine {
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 950px) {
+    h2 {
+        font-size: 80px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* ---aboutSection--- */
+
+    .aboutSection {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .aboutCharacterWrapper {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .aboutContent {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .aboutHeading {
+        width: 100%;
+    }
+
+    .aboutFeatures {
+        width: 550px;
+    }
+
+    .aboutTextBlock {
+        width: 100%;
+    }
+
+    .aboutCharacter {
+        width: 550px;
+    }
+
+    .aboutGlow {
+        width: 750px;
+        top: 115px;
+    }
+
+    .aboutWave {
+        bottom: -14%;
+    }
+
+    /* ---skillsSection--- */
+
+    .skillsSection {
+        flex-direction: column-reverse;
+    }
+
+    .skillsContent {
+        width: 100%;
+    }
+
+    .skillsLookingFor {
+        display: none;
+    }
+
+    .skillsLookingForMobileVers {
+        display: flex;
+    }
+
+    .skillIcon {
+        width: 90px;
+        height: 90px;
+    }
+
+    .skillsGreenStripe {
+        position: absolute;
+        right: -5%;
+        width: 70%;
+    }
+
+    /* ---portfolioSection--- */
+
+    .portfolioHeader {
+        margin-bottom: 30px;
+    }
+
+    .portfolioGrid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolioGrid div {
+        align-items: center;
+    }
+
+    .testimonialWrapper {
+        flex-direction: column-reverse;
+        padding-left: 0;
+    }
+
+    .testimonialAvatarAccent {
+        right: -10%;
+        width: 50%;
+    }
+
+    .testimonialQuoteMark {
+        display: none;
+    }
+
+    .testimonialAuthorLine {
+        flex-wrap: wrap;
+    }
+
+    /* ---contactSection--- */
+
+    .contactContent>div:nth-child(1) {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .contactForm {
+        position: relative;
+    }
+
+    .contactHeadingRow::after {
+        right: -75%;
+    }
+
+    .contactLeftAccent {
+        left: -72%;
+    }
+
 }
 
 @media (max-width: 850px) {
@@ -442,10 +632,6 @@
 
     /* ---contactSection--- */
 
-    .contactContent {
-        padding: 0 140px;
-    }
-
     .contactLeftTitle {
         font-size: 28px;
     }
@@ -662,10 +848,6 @@
     }
 
     /* ---contactSection--- */
-
-    .contactContent {
-        padding: 0 200px;
-    }
 
     .contactLeftTitle {
         font-size: 32px;

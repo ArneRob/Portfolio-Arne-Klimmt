@@ -359,7 +359,6 @@ nav {
 
 .portfolioHeader>p {
     line-height: 1.6;
-    padding-left: 80px;
 }
 
 .portfolioGrid {
@@ -374,7 +373,7 @@ nav {
     flex-direction: column;
     display: flex;
     gap: 32px;
-    width: 100%;
+    width: 90%;
 }
 
 .portfolioCard {
@@ -467,7 +466,6 @@ nav {
 
 .testimonialAvatarImg {
     width: 270px;
-    height: 270px;
     border-radius: 50%;
     object-fit: cover;
     position: relative;
@@ -553,11 +551,16 @@ nav {
     position: relative;
     z-index: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 80px;
-    align-items: flex-start;
-    padding: 0 100px;
+    align-items: center
 }
+
+.contactContent > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+} 
 
 .contactLeft {
     flex: 1;
@@ -688,6 +691,7 @@ nav {
     display: flex;
     justify-content: end;
     margin-top: 20px;
+    width: 100%;
 }
 
 .arrowUp {
@@ -830,6 +834,22 @@ nav {
     flex-direction: column;
     gap: 16px;
     margin-top: 8px;
+}
+
+.skillsLookingForMobileVers {
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    gap: 15px;
+}
+
+.skillsLookingForMobileVers>p:first-child {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.skillsLookingForMobileVers>p:last-of-type {
+    line-height: 1.6;
 }
 
 .skillsLookingFor>p:first-child {
