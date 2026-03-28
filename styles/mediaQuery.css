@@ -373,9 +373,15 @@
     .skillsSection {
         padding-top: 40px;
     }
+
+    /* --------footer --------- */
+
+    .footer {
+        padding: 45px 25px;
+    }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 560px) {
     header {
         padding-left: 40px;
         padding-right: 40px;
@@ -412,9 +418,63 @@
     .lineOne {
         width: 100px;
     }
+
+    /* --------aboutSection-------- */
+
+    .aboutFeatures {
+        width: 400px;
+    }
+
+    .aboutWave {
+        bottom: -3%;
+    }
+
+    /* --------skillsSection-------- */
+
+    .iconsDiv {
+        gap: 60px;
+    }
+
+    /* --------contactSection-------- */
+
+    .testimonialCard {
+        padding: 25px 25px;
+    }
+
+    .testimonialLine {
+        width: 70%;
+    }
+
+    .contactHeadingRow::after {
+        right: -78%;
+    }
+
+    /* ---------footer ----------- */
+
+    .footer {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .d_noneMedia {
+        display: none;
+    }
+
+    .d_Flex_Media {
+        display: flex;
+    }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 470px) {
+
+    h2 {
+        font-size: 45px;
+    }
+
+    section {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 
     /* ---heroSection--- */
 
@@ -441,6 +501,60 @@
 
     .lineOne {
         width: 70px;
+    }
+
+    /* --------aboutSection-------- */
+
+    .aboutFeatures {
+        width: 330px;
+    }
+
+    .aboutWave {
+        bottom: -2%;
+    }
+
+    /* --------skillsSection-------- */
+
+    .skillsContent>p {
+        width: 330px;
+    }
+
+    .iconsDiv {
+        gap: 50px;
+    }
+
+    .skillIcon {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* --------contactSection-------- */
+
+    .contactHeadingRow::after {
+        right: -85%;
+    }
+}
+
+@media (max-width: 360px) {
+
+    /* --------aboutSection-------- */
+
+    .aboutCharacter {
+        width: 370px;
+    }
+
+    .aboutWave {
+        bottom: 2%;
+    }
+
+    .aboutFeatures {
+        width: 300px;
+    }
+
+    /* --------aboutSection-------- */
+
+    .skillsContent>p {
+        width: 300px;
     }
 }
 
