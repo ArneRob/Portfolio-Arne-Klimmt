@@ -20,8 +20,10 @@
         url("assets/fonts/poppins/Poppins-Bold.woff") format("woff")
 }
 
+
 html, body {
-    overflow-x: hidden;
+    overflow-x: clip;
+    background-color: var(--color-background);
 }
 
 h2 {
