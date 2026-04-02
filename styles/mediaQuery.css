@@ -8,6 +8,10 @@
     }
 
     /* ---aboutSection--- */
+    .aboutContent {
+        max-width: 500px;
+    }
+
     .aboutCharacter {
         width: 500px;
     }
@@ -171,7 +175,7 @@
     }
 
     .aboutWave {
-        bottom: -15%;
+        bottom: -14%;
     }
 
     /* ---skillsSection--- */
@@ -332,7 +336,7 @@
     }
 
     .aboutWave {
-        bottom: -5%;
+        bottom: -11%;
     }
 
     /* ---portfolioSection--- */
@@ -420,7 +424,7 @@
     }
 
     .aboutWave {
-        bottom: -3%;
+        bottom: -10%;
     }
 
     /* --------skillsSection-------- */
@@ -504,7 +508,7 @@
     }
 
     .aboutWave {
-        bottom: -2%;
+        bottom: -7%;
     }
 
     /* --------skillsSection-------- */
@@ -538,7 +542,7 @@
     }
 
     .aboutWave {
-        bottom: 2%;
+        bottom: -2%;
     }
 
     .aboutFeatures {
