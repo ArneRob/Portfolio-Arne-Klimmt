@@ -12,15 +12,24 @@
 /* ----------------------------header/navbar------------------------- */
 header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     padding: 30px 8px;
     background-color: var(--color-background);
 }
+
+.headerLimiter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+}
+
 .burgerNavbar {
     display: none;
 }
-.burgerNavbar img{
+
+.burgerNavbar img {
     width: 30px;
 }
 
@@ -217,6 +226,13 @@ nav {
     padding-top: 100px;
     padding-bottom: 100px;
     overflow: hidden;
+    justify-content: center;
+}
+
+.aboutSectionLimiter {
+    max-width: 1440px;
+    width: 100%;
+    position: relative;
 }
 
 .aboutContent {
@@ -292,6 +308,7 @@ nav {
 .aboutCharacter {
     position: relative;
     z-index: 2;
+    top: 15%;
 }
 
 /* Wave — trennt About von Skills */
@@ -309,10 +326,18 @@ nav {
 .portfolioSection {
     background-color: var(--color-background);
     color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.portfolioSectionLimiter {
     position: relative;
     padding-top: 150px;
     padding-bottom: 20px;
-    overflow: hidden;
+    width: 100%;
+    max-width: 1440px;
 }
 
 .portfolioGlowGreen {
@@ -372,8 +397,9 @@ nav {
 .portfolioGrid div {
     flex-direction: column;
     display: flex;
-    gap: 32px;
+    gap: 5%;
     width: 90%;
+    align-items: center;
 }
 
 .portfolioCard {
@@ -513,6 +539,13 @@ nav {
     padding-top: 150px;
     padding-bottom: 50px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.contactSectionLimiter {
+    max-width: 1440px;
+    width: 100%;
 }
 
 .contactGlow {
@@ -556,11 +589,11 @@ nav {
     align-items: center
 }
 
-.contactContent > div {
+.contactContent>div {
     display: flex;
     flex-direction: row;
     gap: 10px;
-} 
+}
 
 .contactLeft {
     flex: 1;
@@ -714,11 +747,18 @@ nav {
     background-color: var(--color-background2);
     color: #ffffff;
     display: flex;
+    justify-content: center;
+    padding: 70px 180px;
+    border-top: 3px solid var(--color-primary1);
+}
+
+.footerLimiter {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 180px;
-    border-top: 3px solid var(--color-primary1);
+    width: 100%;
+    max-width: 1440px;
 }
 
 .footerLeft {
@@ -766,13 +806,19 @@ nav {
         linear-gradient(to right, #1c2744, #1c2539);
     padding-top: 80px;
     padding-bottom: 0px;
-    padding-right: 0px !important;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.skillsSectionLimiter {
+    max-width: 1440px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 120px;
+    gap: 15%;
 }
 
 .iconsSkillSection {
@@ -816,10 +862,13 @@ nav {
     display: flex;
     align-items: center;
     gap: 32px;
+    position: relative;
 }
 
 .skillsGreenStripe {
-    width: 350px;
+    position: absolute;
+    right: -240%;
+    width: 270%;
     height: 3px;
     background-color: var(--color-secondaryVer2);
 }

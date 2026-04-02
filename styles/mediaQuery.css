@@ -130,7 +130,8 @@
 
     /* ---aboutSection--- */
 
-    .aboutSection {
+    .aboutSectionLimiter {
+        display: flex;
         flex-direction: column-reverse;
         align-items: center;
         padding-top: 10px;
@@ -170,7 +171,7 @@
     }
 
     .aboutWave {
-        bottom: -10%;
+        bottom: -15%;
     }
 
     /* ---skillsSection--- */
@@ -197,13 +198,6 @@
     .skillIcon {
         width: 90px;
         height: 90px;
-    }
-
-
-    .skillsGreenStripe {
-        position: relative;
-        right: 0;
-        width: 100%;
     }
 
     /* ---portfolioSection--- */
@@ -680,10 +674,6 @@
 
     /* ---skillsSection--- */
 
-    .skillsGreenStripe {
-        width: 370px;
-    }
-
     .skillIcon {
         width: 80px;
         height: 80px;
@@ -716,8 +706,8 @@
     }
 
     section {
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     header {
@@ -745,10 +735,6 @@
     }
 
     /* ---skillsSection--- */
-
-    .skillsGreenStripe {
-        width: 550px;
-    }
 
     .skillIcon {
         width: 100px;
@@ -785,8 +771,18 @@
         max-width: 600px;
     }
 
+    .portfolioHeading::before {
+        left: -106%;
+        width: 100%;
+    }
+
     .testimonialCard {
         max-width: 1000px;
+    }
+
+    .testimonialAvatarAccent {
+        right: -99%;
+        width: 100%;
     }
 
     .testimonialText {
@@ -843,242 +839,9 @@
     .contactGlow {
         width: 600px;
     }
-}
 
-@media (min-width: 2100px) {
-    section {
-        padding-left: 280px;
-        padding-right: 280px;
-    }
-
-    header {
-        padding-left: 280px;
-        padding-right: 280px;
-    }
-
-    .lineOne {
-        width: 250px;
-    }
-
-    .aboutCharacterWrapper {
-        right: 60px;
-    }
-}
-
-/* ----------------------------min-width: 2560px------------------------- */
-
-@media (min-width: 2560px) {
-    /* general  */
-
-    h2 {
-        font-size: 145px;
-    }
-
-    p {
-        font-size: 28px;
-    }
-
-    /* ---header--- */
-
-    .nameLogo {
-        width: 140px;
-        margin-left: 120px;
-    }
-
-    nav {
-        margin-right: 120px;
-        gap: 120px;
-    }
-
-    .navMenu {
-        font-size: 30px;
-        gap: 40px;
-    }
-
-    .languageToggle {
-        font-size: 24px;
-    }
-
-    /* ---heroSection--- */
-
-    .ownNameHeader {
-        gap: 50px;
-    }
-
-    .ownNameHeader .iam {
-        font-size: 115px;
-    }
-
-    .ownNameHeader div p:nth-child(1) {
-        font-size: 170px;
-    }
-
-    .ownNameHeader div p:nth-child(2) {
-        font-size: 85px;
-    }
-
-    .letsTalkButtonDiv {
-        font-size: 30px;
-    }
-
-    .lineOne {
-        width: 300px;
-    }
-
-    .refernceIconDiv img {
-        width: 40px;
-        height: 40px;
-    }
-
-    .scrollDownContainer p {
-        font-size: 30px !important;
-    }
-
-    .purpleShadowHeroSection {
-        width: 900px;
-    }
-
-    .greenShadowHeroSection {
-        width: 950px;
-    }
-
-    /* ---aboutSection--- */
-
-    .aboutContent {
-        max-width: 800px;
-    }
-
-    .aboutFeatureIcon img {
-        width: 36px;
-    }
-
-    .aboutGlow {
-        width: 1200px;
-        top: 200px;
-    }
-
-    .aboutCharacter {
-        width: 1000px;
-    }
-
-    .aboutCharacterWrapper {
-        right: 60px;
-    }
-
-    /* ---skillsSection--- */
-
-    .skillIcon {
-        width: 120px;
-        height: 120px;
-    }
-
-    .iconsDiv {
-        gap: 115px;
-    }
-
-    .iconsSkillSection {
-        gap: 85px;
-    }
-
-    .skillsContent>p {
-        width: 560px;
-    }
-
-    .skillsLookingFor>p:first-child {
-        font-size: 44px;
-    }
-
-    .skillIconTextDiv {
-        font-size: 18px;
-    }
-
-    .skillsCtaBtn {
-        font-size: 24px;
-    }
-
-    /* ---portfolioSection--- */
-
-    .portfolioHeader {
-        max-width: 700px;
-    }
-
-    .testimonialCard {
-        max-width: 1200px;
-    }
-
-    .testimonialText {
-        font-size: 26px;
-    }
-
-    .testimonialLine {
-        width: 580px;
-    }
-
-    .testimonialAuthor {
-        font-size: 24px;
-    }
-
-    .testimonialAvatarImg {
-        width: 380px;
-        height: 380px;
-    }
-
-    .testimonialQuoteMark {
-        width: 130px;
-    }
-
-    .portfolioGlowGreen {
-        width: 650px;
-    }
-
-    .portfolioGlowBlue {
-        width: 650px;
-    }
-
-    /* ---contactSection--- */
-
-    .contactLeftTitle {
-        font-size: 32px;
-    }
-
-    .contactInput {
-        font-size: 20px;
-    }
-
-    .contactTextarea {
-        font-size: 20px;
-    }
-
-    .contactCheckboxRow {
-        font-size: 18px;
-    }
-
-    .contactSubmitBtn {
-        font-size: 24px;
-    }
-
-    .contactGlow {
-        width: 800px;
-    }
-}
-
-
-@media (min-width: 2800px) {
-    section {
-        padding-left: 320px;
-        padding-right: 320px;
-    }
-
-    header {
-        padding-left: 320px;
-        padding-right: 320px;
-    }
-
-    .lineOne {
-        width: 280px;
-    }
-
-    .aboutCharacterWrapper {
-        right: 80px;
+    .contactLeftAccent {
+        left: -158%;
+        width: 150%;
     }
 }
