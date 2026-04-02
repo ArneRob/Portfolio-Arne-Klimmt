@@ -181,10 +181,17 @@
     /* ---skillsSection--- */
 
     .skillsSection {
-        flex-direction: column-reverse;
-        gap: 50px;
         background-color: #141e30;
         background: #141e30;
+    }
+
+    .skillsSectionLimiter {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .skillsGreenStripe {
+        right: -208%;
     }
 
     .skillsContent {
@@ -220,6 +227,7 @@
 
     .portfolioGrid div {
         align-items: center;
+        gap: 30px;
     }
 
     .testimonialWrapper {
@@ -449,7 +457,7 @@
 
     /* ---------footer ----------- */
 
-    .footer {
+    .footerLimiter{
         flex-direction: column;
         gap: 25px;
     }
@@ -554,6 +562,12 @@
     .skillsContent>p {
         width: 300px;
     }
+
+      /* --------skillsSection-------- */    
+
+      .skillsGreenStripe {
+        right: -213%;
+      }
 }
 
 @media (min-width: 1100px) {
