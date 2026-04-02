@@ -12,9 +12,16 @@
 /* ----------------------------header/navbar------------------------- */
 header {
     display: flex;
+    position: relative;
     justify-content: center;
     padding: 30px 8px;
     background-color: var(--color-background);
+}
+
+.arkDesignLogo {
+    position: absolute;
+    top: 10%;
+    width: 180px;
 }
 
 .headerLimiter {

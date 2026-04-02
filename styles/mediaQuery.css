@@ -44,6 +44,10 @@
         padding-right: 60px;
     }
 
+    .arkDesignLogo {
+        width: 140px;
+    }
+
     .footer {
         padding: 60px 50px;
     }
@@ -304,6 +308,10 @@
         font-size: 70px;
     }
 
+    .arkDesignLogo {
+        width: 110px;
+    }
+
     section {
         padding-left: 40px;
         padding-right: 40px;
@@ -457,7 +465,7 @@
 
     /* ---------footer ----------- */
 
-    .footerLimiter{
+    .footerLimiter {
         flex-direction: column;
         gap: 25px;
     }
@@ -475,6 +483,10 @@
 
     h2 {
         font-size: 45px;
+    }
+
+    .arkDesignLogo {
+        width: 80px;
     }
 
     section {
@@ -563,11 +575,11 @@
         width: 300px;
     }
 
-      /* --------skillsSection-------- */    
+    /* --------skillsSection-------- */
 
-      .skillsGreenStripe {
+    .skillsGreenStripe {
         right: -213%;
-      }
+    }
 }
 
 @media (min-width: 1100px) {
