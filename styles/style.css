@@ -78,6 +78,16 @@ nav {
     cursor: pointer;
 }
 
+.languageToggle img {
+    width: 37px;
+    height: 32px;
+}
+
+.languageToggle img:hover {
+    background-color: var(--color-primary2);
+    border-radius: 10px;
+}
+
 .languageToggle div {
     display: flex;
     justify-content: center;

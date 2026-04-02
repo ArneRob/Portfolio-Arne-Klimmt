@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/mediaQuery.css">
     <link rel="icon" type="image/x-icon" href="assets/img/ark_logo_favicon.svg">
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./scripts/main.js" defer></script>
 </head>
 
 <body>
     <header>
         <div class="headerLimiter">
-            <img id="nameLogo" class="nameLogo" src="./assets/img/firstSection/personalNameNav.png" alt="">
+            <img id="nameLogo" class="nameLogo" src="./assets/img/header/personalNameNav.png" alt="">
             <nav>
                 <ul class="navMenu" id="navMenu">
                     <a href="#aboutSection">
@@ -28,9 +29,10 @@
                         <li>Portfolio</li>
                     </a>
                 </ul>
+                <div id="google_translate_element"></div>
                 <div class="languageToggle" id="languageToggle">
-                    <img src="assets/img/firstSection/language single componentDE_Inactive.png" alt="">
-                    <img src="./assets/img/firstSection/language single componentEN_Active.png" alt="">
+                    <img id="germanToggle" src="./assets/img/header/language single componentDE_Inactive.png" alt="">
+                    <img id="englishToggle" src="./assets/img/header/language single componentEN_Active.png" alt="">
                 </div>
             </nav>
             <div class="burgerNavbar">
@@ -75,7 +77,7 @@
     <section class="aboutSection" id="aboutSection">
         <div class="aboutSectionLimiter">
             <div class="aboutContent">
-                <h2 class="aboutHeading">About Me</h2>
+                <h2 class="aboutHeading" id="aboutMeHeading">About Me</h2>
                 <div class="aboutTextBlock">
                     <p>Hey there, I'm Simon! Write some information about yourself that is IT related. Why are you
                         passionate about coding? What is your source of inspiration for improving your programming
@@ -196,17 +198,17 @@
                         <img class="laptopShadow" src="./assets/img/portfolioSection/laptopShadow.png" alt="">
                     </div>
                     <div class="portfolioCard">
-                        <img src="./assets/img/portfolioSection/DABubble.png" alt="DABubble">
+                        <img src="./assets/img/portfolioSection/Pokemon.png" alt="DABubble">
                         <img class="laptopShadow" src="./assets/img/portfolioSection/laptopShadow.png" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="portfolioCard">
-                        <img src="./assets/img/portfolioSection/Pollo loco 2.png" alt="El Pollo Loco 2">
+                        <img src="./assets/img/portfolioSection/Join.png" alt="El Pollo Loco 2">
                         <img class="laptopShadow" src="./assets/img/portfolioSection/laptopShadow.png" alt="">
                     </div>
                     <div class="portfolioCard">
-                        <img src="./assets/img/portfolioSection/Pollo loco 3.png" alt="El Pollo Loco 3">
+                        <img src="./assets/img/portfolioSection/Pollo loco 1.png" alt="El Pollo Loco 1">
                         <img class="laptopShadow" src="./assets/img/portfolioSection/laptopShadow.png" alt="">
                     </div>
                 </div>
@@ -278,14 +280,16 @@
     <footer class="footer">
         <div class="footerLimiter">
             <div class="footerLeft">
-                <img class="footerLogo" src="./assets/img/firstSection/personalNameNav.png" alt="Logo">
+                <img class="footerLogo" src="./assets/img/header/personalNameNav.png" alt="Logo">
                 <span class="footerLegal d_noneMedia">Legal Notice</span>
             </div>
             <p class="footerCopyright">© Arne Robert Klimmt 2026</p>
             <div class="footerIcons">
-                <a target="_blank" href="https://github.com/ArneRob"><img  src="./assets/img/firstSection/gitIcon.png" alt="GitHub"></a>
-                <a target="_blank" href="#"><img  src="./assets/img/firstSection/mailIcon.png" alt="Mail"></a>
-                <a target="_blank" href="https://de.linkedin.com/"><img  src="./assets/img/firstSection/linkedInIcon.png" alt="LinkedIn"></a>
+                <a target="_blank" href="https://github.com/ArneRob"><img src="./assets/img/firstSection/gitIcon.png"
+                        alt="GitHub"></a>
+                <a target="_blank" href="#"><img src="./assets/img/firstSection/mailIcon.png" alt="Mail"></a>
+                <a target="_blank" href="https://de.linkedin.com/"><img src="./assets/img/firstSection/linkedInIcon.png"
+                        alt="LinkedIn"></a>
             </div>
             <span class="footerLegal d_Flex_Media">Legal Notice</span>
         </div>
