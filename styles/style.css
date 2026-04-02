@@ -65,6 +65,7 @@ nav {
     text-decoration: none;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }
 
 .languageToggle {
@@ -74,6 +75,7 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     align-items: center;
+    cursor: pointer;
 }
 
 .languageToggle div {
@@ -94,7 +96,7 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    height: 95vh;
     background-color: var(--color-background);
     position: relative;
     z-index: 3;
@@ -155,6 +157,7 @@ nav {
     font-weight: 400;
     border-radius: 10px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .letsTalkButtonDiv p {
@@ -171,6 +174,7 @@ nav {
 .refernceIconDiv img {
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .lineOne {

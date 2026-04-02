@@ -24,6 +24,7 @@
 html, body {
     overflow-x: clip;
     background-color: var(--color-background);
+    scroll-behavior: smooth;
 }
 
 h2 {
@@ -46,4 +47,9 @@ header {
 
 .d_Flex_Media {
     display: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
 }
