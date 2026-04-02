@@ -798,7 +798,6 @@ nav {
 
 .footerLegal {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
 }
 
@@ -945,4 +944,34 @@ nav {
     font-size: 18px;
     cursor: pointer;
     width: fit-content;
+}
+
+.impressumSection {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 323px);
+}
+
+.impressumtext {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    height: 100%;
+    max-width: 400px;
+    gap: 20px;
+}
+
+.impressumtext h3 {
+    margin-bottom: 10px;
+}
+
+.impressumtext h4 {
+    color: #ffffffc7;
+    margin-bottom: 5px;
+}
+
+.impressumtext p {
+    color: #ffffff82;
+    max-width: 200px;
 }
