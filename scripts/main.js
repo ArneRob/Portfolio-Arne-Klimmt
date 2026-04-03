@@ -17,7 +17,6 @@ function toggleToEnglish() {
     let englishButton = document.getElementById('englishToggle')
     englishButton.src = "./assets/img/header/language single componentEN_Active.png"
     germanButton.src = "./assets/img/header/language single componentDE_Inactive.png"
-    googleTranslateElementInit()
 }
 
 function mousedownEnglishButton() {
