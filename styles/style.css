@@ -68,6 +68,10 @@ nav {
     cursor: pointer;
 }
 
+.navMenu li:hover {
+    color: var(--color-primary1);
+}
+
 .navMenu li::after {
     width: 0px;
     transition: 0.5s;
@@ -80,7 +84,6 @@ nav {
 }
 
 .navMenu li:hover::after {
-
     width: 55px;
 }
 
@@ -776,13 +779,15 @@ nav {
     display: flex;
     justify-content: flex-end;
     z-index: 1;
-    border: solid 2px #ffff;
-    padding: 8px;
-    border-radius: 20px;
+    width: 39px;
+    height: 39px;
+    background: url('../assets/img/contactSection/arrowCircleWhite.png');
+    background-size: contain;
 }
 
-.arrowUp img {
-    width: 16px;
+.arrowUp:hover {
+    background: url('../assets/img/contactSection/arrowCircleGreen.png');
+    background-size: contain;
 }
 
 /* ----------------------------footer------------------------- */
@@ -809,6 +814,23 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    position: relative;
+    padding: 1px;
+}
+
+.footerLeft a::after {
+    width: 0;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: var(--color-primary1);
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.footer a:hover::after {
+    width: 55px;
 }
 
 .footerLogo {

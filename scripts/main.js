@@ -3,6 +3,7 @@ function startListener() {
     document.getElementById('germanToggle').addEventListener('mousedown', mousedownGermanButton)
     document.getElementById('englishToggle').addEventListener('click', toggleToEnglish)
     document.getElementById('germanToggle').addEventListener('click', toggleToGerman)
+    document.querySelector('.contactForm').addEventListener('submit', (e) => e.preventDefault())
 }
 
 function toggleToGerman() {
