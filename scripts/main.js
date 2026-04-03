@@ -34,16 +34,26 @@ function mousedownGermanButton() {
 }
 
 function openBurgerNavbar(event) {
-    let navbar = document.getElementById('nav')
     let burgerNavbar = document.getElementById('burgerNavbar')
+    let html = document.getElementById('html')
+    addEventlistenerToChildrenOfElement('navMenu', 'li')
     if (event.currentTarget.classList[1] == 'open') {
-        burgerNavbar.classList.toggle('open')
-        navbar.style = "left: 1100px"
+        closeMobileNavbar()
     } else {
-        burgerNavbar.classList.toggle('open')
+        burgerNavbar.classList.add('open')
         checkWindowInnerWidth()
+        html.style = "overflow: hidden"
     }
 
+}
+
+function closeMobileNavbar() {
+    let navbar = document.getElementById('nav')
+    let burgerNavbar = document.getElementById('burgerNavbar')
+    let html = document.getElementById('html')
+    burgerNavbar.classList.remove('open')
+    navbar.style = "left: 1100px"
+    html.style = "overflow: scroll"
 }
 
 function checkWindowInnerWidth() {
@@ -57,6 +67,13 @@ function checkWindowInnerWidth() {
         }
     }
     window.addEventListener('resize', checkWindowInnerWidth)
+}
+
+function addEventlistenerToChildrenOfElement(id, children) {
+    let element = document.getElementById(id)
+    element.querySelectorAll(children).forEach(child => {
+        child.addEventListener('click', closeMobileNavbar);
+    });
 }
 
 startListener()
