@@ -53,6 +53,10 @@ nav {
     margin-right: 50px;
 }
 
+.languageDivider {
+    display: none;
+}
+
 .navMenu {
     display: flex;
     gap: 29px;
