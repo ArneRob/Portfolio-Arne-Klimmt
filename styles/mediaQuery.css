@@ -64,6 +64,7 @@
 
     .burgerNavbar {
         display: flex;
+        cursor: pointer;
     }
 
     .headerLimiter {

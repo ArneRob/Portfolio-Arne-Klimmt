@@ -1033,3 +1033,12 @@ nav {
     color: #ffffff82;
     max-width: 200px;
 }
+
+.arrowBackToPortfolio {
+    width: 39px;
+    transform: rotate(-90deg);
+}
+
+.arrowBackToPortfolio:hover {
+    filter: grayscale(1);
+}
