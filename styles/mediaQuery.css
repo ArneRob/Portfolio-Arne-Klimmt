@@ -1,6 +1,6 @@
 @media (orientation: portrait) {
     .heroSection {
-        height: 80vh;
+        height: 90vh;
     }
 }
 
@@ -77,8 +77,8 @@
         z-index: 4;
         margin: 0;
         width: 100vw;
-        height: 100vh;
-        top: 90px;
+        height: 90vh;
+        top: 58px;
         left: 1100px;
         justify-content: center;
         align-items: center;
@@ -102,10 +102,17 @@
 
     .navMenu {
         font-size: 33px;
+        display: flex;
+        align-items: flex-start;
+        gap: 29px;
     }
 
     nav ul {
         flex-direction: column;
+    }
+
+    .contactNavlink {
+        display: flex;
     }
 
     /* ---heroSection--- */
@@ -344,6 +351,8 @@
     .ownNameHeader .iam {
         font-size: 40px;
         padding: 0px;
+        padding-bottom: 8px;
+        top: 6px;
     }
 
     .purpleShadowHeroSection {
@@ -377,7 +386,7 @@
 
     .ownNameHeader .iam {
         font-size: 35px;
-        padding: 0px;
+        top: 4px;
     }
 
     .purpleShadowHeroSection {

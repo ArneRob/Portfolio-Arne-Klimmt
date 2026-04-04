@@ -50,6 +50,10 @@ header {
     display: none;
 }
 
+.d_none {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: #ffff;

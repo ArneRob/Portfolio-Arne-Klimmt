@@ -65,6 +65,10 @@ nav {
     font-size: 23px;
 }
 
+.contactNavlink {
+    display: none;
+}
+
 .navMenu li {
     text-decoration: none;
     list-style: none;
