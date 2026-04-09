@@ -239,13 +239,16 @@
                         <p>Need a Frontend developer? <strong>Contact me!</strong></p>
                     </div>
                     <form class="contactForm" id="contactForm">
-                        <input type="text" class="contactInput borderPrimary2" placeholder="Your name">
-                        <input type="email" class="contactInput borderPrimary2" placeholder="Your email">
-                        <textarea class="contactTextarea borderPrimary2" placeholder="Your message"></textarea>
+                        <input id="formNameInput" type="text" class="contactInput borderPrimary2" placeholder="Your name">
+                        <div id="errorformNameInput"></div>
+                        <input id="formEmailInput" type="email" class="contactInput borderPrimary2" placeholder="Your email">
+                        <div id="errorformEmailInput"></div>
+                        <textarea id="formTextInput" class="contactTextarea borderPrimary2" placeholder="Your message"></textarea>
+                        <div id="errorformTextInput"></div>
                         <div class="contactCheckboxRow">
-                            <input type="checkbox" id="privacyCheck" class="contactCheckbox">
-                            <label for="privacyCheck">I've read the <span class="contactPrivacyLink">privacy
-                                    policy</span>
+                            <div id="privacyCheck" class="contactCheckbox"></div>
+                            <label id="formPrivacyPolicyCheckLabel">I've read the <a href="./privacyPolicy.html"><span class="contactPrivacyLink">privacy
+                                    policy</span></a>
                                 and
                                 agree to the processing of my data as outlined.</label>
                         </div>
