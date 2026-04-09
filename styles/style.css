@@ -47,7 +47,7 @@ header {
 }
 
 nav {
-    display: none;
+    display: flex;
     gap: 92px;
     flex-direction: row;
     margin-right: 50px;
@@ -364,6 +364,7 @@ nav {
     position: relative;
     z-index: 2;
     top: 15%;
+    width: 700px;
 }
 
 /* Wave — trennt About von Skills */
