@@ -166,25 +166,6 @@
         width: 550px;
     }
 
-    /* ---portfolioSection--- */
-
-    .testimonialText {
-        margin-bottom: 30px;
-        font-size: 16px;
-    }
-
-    .testimonialCard {
-        padding: 30px 30px;
-    }
-
-    .testimonialAvatarImg {
-        width: 230px;
-    }
-
-    .testimonialLine {
-        width: 350px;
-    }
-
 }
 
 @media (max-width: 950px) {
@@ -292,24 +273,6 @@
     .portfolioGrid div {
         align-items: center;
         gap: 30px;
-    }
-
-    .testimonialWrapper {
-        flex-direction: column-reverse;
-        padding-left: 0;
-    }
-
-    .testimonialAvatarAccent {
-        right: -10%;
-        width: 50%;
-    }
-
-    .testimonialQuoteMark {
-        display: none;
-    }
-
-    .testimonialAuthorLine {
-        flex-wrap: wrap;
     }
 
     /* ---contactSection--- */
@@ -512,14 +475,6 @@
     }
 
     /* --------contactSection-------- */
-
-    .testimonialCard {
-        padding: 25px 25px;
-    }
-
-    .testimonialLine {
-        width: 70%;
-    }
 
     .contactHeadingRow::after {
         right: -78%;
@@ -870,36 +825,6 @@
         .portfolioHeading::before {
             left: -106%;
             width: 100%;
-        }
-
-        .testimonialCard {
-            max-width: 1000px;
-        }
-
-        .testimonialAvatarAccent {
-            right: -99%;
-            width: 100%;
-        }
-
-        .testimonialText {
-            font-size: 22px;
-        }
-
-        .testimonialLine {
-            width: 480px;
-        }
-
-        .testimonialAuthor {
-            font-size: 20px;
-        }
-
-        .testimonialAvatarImg {
-            width: 320px;
-            height: 320px;
-        }
-
-        .testimonialQuoteMark {
-            width: 110px;
         }
 
         .portfolioGlowGreen {
