@@ -1,9 +1,9 @@
 function startContactFormListener() {
     document.querySelector('.contactForm').addEventListener('submit', (e) => e.preventDefault())
-    document.getElementById('privacyCheck').addEventListener('click', togglePrivacyCheckbox)
-    document.getElementById('formNameInput').addEventListener('blur', checkWhichInput)
-    document.getElementById('formEmailInput').addEventListener('blur', checkWhichInput)
-    document.getElementById('formTextInput').addEventListener('blur', checkWhichInput)
+    document.getElementById('privacyCheck').addEventListener('click', validateInput)
+    document.getElementById('formNameInput').addEventListener('blur', validateInput)
+    document.getElementById('formEmailInput').addEventListener('blur', validateInput)
+    document.getElementById('formTextInput').addEventListener('blur', validateInput)
 }
 function sendMail() {
     let jsonFormInput = getFormData()
@@ -42,45 +42,66 @@ function togglePrivacyCheckbox() {
     document.getElementById('privacyCheck').classList.toggle('checked')
 }
 
-function checkWhichInput(event) {
-    element = document.getElementById(`${event.currentTarget.id}`)
-    elementId = event.currentTarget.id
-    if (elementId == "formNameInput") {
-        validateInput(element, elementId)
-    } else if (elementId == "formEmailInput") {
-        validateInput(element, elementId)
-
-    } else if (elementId == "formTextInput") {
-        validateInput(element, elementId)
-    }
-    event.currentTarget.id
-}
-
-function validateInput(element, elementId) {
+function validateInput(event) {
+    let element = document.getElementById(`${event.currentTarget.id}`)
+    let elementId = event.currentTarget.id
     if (elementId == "formEmailInput") {
-        if (element.value) {
-            validate(element.value)
-        } else {
-            addInputErrorText(elementId)
-        }
+        processEmailError(element, elementId)
+    } else if (elementId == "privacyCheck") {
+        processCheckBoxError(event, element, elementId)
     } else if (element.value) {
         removeInputErrorText(elementId)
-        console.log('ok')
     } else {
-        addInputErrorText(elementId)
+        addInputErrorText(elementId, element)
     }
 }
+
+function processCheckBoxError(event, element, elementId) {
+    togglePrivacyCheckbox()
+    if (event.currentTarget.classList[2] == "checked") {
+        removeInputErrorText(elementId)
+        return true
+    } else {
+        addInputErrorText(elementId, element)
+    }
+}
+
+function processEmailError(element, elementId) {
+    if (element.value) {
+        if (validateEmail(element.value)) {
+            removeInputErrorText(elementId)
+        } else {
+            addInputErrorText(elementId, element)
+        }
+    } else {
+        addInputErrorText(elementId, element)
+    }
+}
+
 function removeInputErrorText(elementId) {
-    errorDivId = `error${elementId}`
-    errorElement = document.getElementById(`${errorDivId}`)
+    let errorDivId = `error${elementId}`
+    let errorElement = document.getElementById(`${errorDivId}`)
     errorElement.style = ""
     errorElement.innerHTML = ''
 }
-function addInputErrorText(elementId) {
+function addInputErrorText(elementId, element) {
     errorDivId = `error${elementId}`
-    errorElement = document.getElementById(`${errorDivId}`)
+    let errorElement = document.getElementById(`${errorDivId}`)
     errorElement.style = "color:red"
-    errorElement.innerHTML = 'nischt jeschriebn'
+    errorElement.innerHTML = returnErrorText(elementId, element)
+}
+function returnErrorText(elementId, element) {
+    if (elementId == "formNameInput") {
+        return "Bitte Namen eintragen"
+    } else if (elementId == "formEmailInput" && !element.value) {
+        return "Bitte Email eintragen"
+    } else if (elementId == "formEmailInput" && element.value) {
+        return "Bitte valide Email eintragen"
+    } else if (elementId == "formTextInput") {
+        return "Das Textfeld ist leer"
+    } else if (elementId == "privacyCheck") {
+        return "Bitte akzeptiere die Datenschutzerklärung"
+    }
 }
 
 const validateEmail = (email) => {
@@ -91,10 +112,9 @@ const validateEmail = (email) => {
 
 function validate(email) {
     if (validateEmail(email)) {
-        console.log('true')
         return true;
     } else {
-        console.log('false');
+        return false
     }
 }
 
