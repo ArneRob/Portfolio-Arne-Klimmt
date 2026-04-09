@@ -1,0 +1,29 @@
+.privacyPolicySection {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacyPolicySection a {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: fl;
+}
+
+.privacyPolicySection h1, h2,h3,h4 {
+    margin-bottom: 10px;
+}
+
+.privacyPolicySection p{
+ color: #a49e9e;
+ margin-bottom: 5px;
+ max-width: 500px;
+}
+
+.privacyPolicySection li {
+    margin-bottom: 5px;
+}
