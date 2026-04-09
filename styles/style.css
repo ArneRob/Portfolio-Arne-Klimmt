@@ -637,13 +637,13 @@ nav {
 }
 
 .contactCheckbox {
-    appearance: none;
+    flex-shrink: 0;
     width: 25px;
     height: 25px;
-    background-color: transparent;
     cursor: pointer;
     margin-top: 1px;
     background-size: contain;
+    background-repeat: no-repeat;
     background-image: url('../assets/img/contactSection/Property\ 1=Default.png');
 }
 
@@ -654,6 +654,10 @@ nav {
 .contactPrivacyLink {
     color: var(--color-primary2);
     cursor: pointer;
+}
+
+.contactPrivacyLink:hover {
+    text-decoration: underline;
 }
 
 .contactSubmitBtn {
@@ -670,6 +674,10 @@ nav {
 
 .contactSubmitBtn:hover {
     background-color: rgba(255, 255, 255, 0.25);
+}
+
+.contactSubmitBtnPermittedToSend {
+    background-color: var(--color-primary1);
 }
 
 .arrowContainer {

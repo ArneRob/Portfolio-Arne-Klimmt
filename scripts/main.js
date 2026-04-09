@@ -42,6 +42,10 @@ function togglePrivacyCheckbox() {
     document.getElementById('privacyCheck').classList.toggle('checked')
 }
 
+function toggleContactSubmitBtn() {
+    document.getElementById('contactSubmitBtn').classList.toggle('contactSubmitBtnPermittedToSend')
+}
+
 function validateInput(event) {
     let element = document.getElementById(`${event.currentTarget.id}`)
     let elementId = event.currentTarget.id
@@ -58,6 +62,7 @@ function validateInput(event) {
 
 function processCheckBoxError(event, element, elementId) {
     togglePrivacyCheckbox()
+    toggleContactSubmitBtn()
     if (event.currentTarget.classList[2] == "checked") {
         removeInputErrorText(elementId)
         return true
