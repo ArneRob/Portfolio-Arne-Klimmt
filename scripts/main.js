@@ -1,3 +1,4 @@
+/** Registers all event listeners for the contact form */
 function startContactFormListener() {
     document.querySelector('.contactForm').addEventListener('submit', (e) => e.preventDefault())
     document.getElementById('contactSubmitBtn').addEventListener('click', sendMail)
@@ -6,11 +7,18 @@ function startContactFormListener() {
     document.getElementById('formEmailInput').addEventListener('blur', handleValidationEvent)
     document.getElementById('formTextInput').addEventListener('blur', handleValidationEvent)
 }
+
+/** Validates all form fields and sends the form data if valid */
 function sendMail() {
     if (!validateAllFormFields()) return
     let jsonFormInput = getFormData()
     sendFormDataToServer(jsonFormInput)
 }
+
+/**
+ * Reads the form input values and returns them as a JSON object
+ * @returns {{ email: string, name: string, message: string }}
+ */
 function getFormData() {
     let contactForm = document.getElementById('contactForm')
     let json = {
@@ -21,6 +29,10 @@ function getFormData() {
     return json
 }
 
+/**
+ * Sends the form data to the server via POST and clears the form on success
+ * @param {{ email: string, name: string, message: string }} data
+ */
 async function sendFormDataToServer(data) {
     try {
         const response = await fetch('mail.php', {
@@ -30,7 +42,7 @@ async function sendFormDataToServer(data) {
         })
         const result = await response.json()
         if (result.success) {
-            console.log('Mail sent successfully')
+            emptyFormField()
         } else {
             console.error('Mail error:', result.error)
         }
@@ -39,29 +51,56 @@ async function sendFormDataToServer(data) {
     }
 }
 
+/** Toggles the privacy checkbox visual state */
 function togglePrivacyCheckbox() {
     document.getElementById('privacyCheck').classList.toggle('contactCheckboxImgChecked')
     document.getElementById('privacyCheck').classList.toggle('checked')
 }
 
+/** Toggles the submit button active state */
 function toggleContactSubmitBtn() {
     document.getElementById('contactSubmitBtn').classList.toggle('contactSubmitBtnPermittedToSend')
 }
 
-function validateAllFormFields() {
+/** Clears all form input fields */
+function emptyFormField() {
     let idArray = ["formNameInput", "formEmailInput", "formTextInput", "privacyCheck"]
-    return idArray.every(element => {
+    idArray.forEach(element => {
         let domElem = document.getElementById(`${element}`)
-        return validateInput(domElem, element)
+        domElem.value = ""
     })
 }
 
+/**
+ * Validates all form fields and returns whether all are valid
+ * @returns {boolean}
+ */
+function validateAllFormFields() {
+    let idArray = ["formNameInput", "formEmailInput", "formTextInput", "privacyCheck"]
+    let isValid = true
+    for (let element of idArray) {
+        let domElem = document.getElementById(`${element}`)
+        if (!validateInput(domElem, element)) isValid = false
+    }
+    return isValid
+}
+
+/**
+ * Validates a single form field on blur event
+ * @param {FocusEvent} event
+ */
 function handleValidationEvent(event) {
     let element = document.getElementById(`${event.currentTarget.id}`)
     let elementId = event.currentTarget.id
     validateInput(element, elementId)
 }
 
+/**
+ * Validates a form element and shows or removes its error message
+ * @param {HTMLElement} element
+ * @param {string} elementId
+ * @returns {boolean}
+ */
 function validateInput(element, elementId) {
     if (elementId == "formEmailInput") {
         return processEmailError(element, elementId)
@@ -76,11 +115,18 @@ function validateInput(element, elementId) {
     }
 }
 
+/** Toggles privacy checkbox and submit button together */
 function toggleFormButtons() {
     togglePrivacyCheckbox()
     toggleContactSubmitBtn()
 }
 
+/**
+ * Validates the privacy checkbox and shows or removes its error message
+ * @param {HTMLElement} element
+ * @param {string} elementId
+ * @returns {boolean}
+ */
 function processCheckBoxError(element, elementId) {
     if (element.classList[2] == "checked") {
         removeInputErrorText(elementId)
@@ -91,6 +137,12 @@ function processCheckBoxError(element, elementId) {
     }
 }
 
+/**
+ * Validates the email field and shows or removes its error message
+ * @param {HTMLElement} element
+ * @param {string} elementId
+ * @returns {boolean}
+ */
 function processEmailError(element, elementId) {
     if (element.value) {
         if (validateEmail(element.value)) {
@@ -106,18 +158,35 @@ function processEmailError(element, elementId) {
     }
 }
 
+/**
+ * Removes the error message for a form field
+ * @param {string} elementId
+ */
 function removeInputErrorText(elementId) {
     let errorDivId = `error${elementId}`
     let errorElement = document.getElementById(`${errorDivId}`)
     errorElement.style = ""
     errorElement.textContent = ''
 }
+
+/**
+ * Adds an error message below a form field
+ * @param {string} elementId
+ * @param {HTMLElement} element
+ */
 function addInputErrorText(elementId, element) {
     errorDivId = `error${elementId}`
     let errorElement = document.getElementById(`${errorDivId}`)
     errorElement.style = "color:red"
     errorElement.textContent = returnErrorText(elementId, element)
 }
+
+/**
+ * Returns the appropriate error message for a form field
+ * @param {string} elementId
+ * @param {HTMLElement} element
+ * @returns {string}
+ */
 function returnErrorText(elementId, element) {
     if (elementId == "formNameInput") {
         return "Bitte Namen eintragen"
@@ -132,12 +201,22 @@ function returnErrorText(elementId, element) {
     }
 }
 
+/**
+ * Checks if an email address matches a valid format
+ * @param {string} email
+ * @returns {RegExpMatchArray | null}
+ */
 const validateEmail = (email) => {
     return email.match(
         /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
 };
 
+/**
+ * Returns true if the email is valid, false otherwise
+ * @param {string} email
+ * @returns {boolean}
+ */
 function validate(email) {
     if (validateEmail(email)) {
         return true;
