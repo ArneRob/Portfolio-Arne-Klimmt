@@ -1,13 +1,15 @@
 function startContactFormListener() {
     document.querySelector('.contactForm').addEventListener('submit', (e) => e.preventDefault())
-    document.getElementById('privacyCheck').addEventListener('click', validateInput)
-    document.getElementById('formNameInput').addEventListener('blur', validateInput)
-    document.getElementById('formEmailInput').addEventListener('blur', validateInput)
-    document.getElementById('formTextInput').addEventListener('blur', validateInput)
+    document.getElementById('contactSubmitBtn').addEventListener('click', sendMail)
+    document.getElementById('privacyCheck').addEventListener('click', toggleFormButtons)
+    document.getElementById('formNameInput').addEventListener('blur', handleValidationEvent)
+    document.getElementById('formEmailInput').addEventListener('blur', handleValidationEvent)
+    document.getElementById('formTextInput').addEventListener('blur', handleValidationEvent)
 }
-function sendMail() {
-    let jsonFormInput = getFormData()
-    sendFormDataToServer(jsonFormInput)
+function sendMail(event) {
+    // let jsonFormInput = getFormData()
+    validateAllFormFields(event)
+    // sendFormDataToServer(jsonFormInput)
 }
 function getFormData() {
     let contactForm = document.getElementById('contactForm')
@@ -46,13 +48,25 @@ function toggleContactSubmitBtn() {
     document.getElementById('contactSubmitBtn').classList.toggle('contactSubmitBtnPermittedToSend')
 }
 
-function validateInput(event) {
+function validateAllFormFields() {
+    let idArray = ["formNameInput", "formEmailInput", "formTextInput", "privacyCheck"]
+    idArray.forEach(element => {
+        let domElem = document.getElementById(`${element}`)
+        validateInput(domElem, element)
+    });
+}
+
+function handleValidationEvent(event) {
     let element = document.getElementById(`${event.currentTarget.id}`)
     let elementId = event.currentTarget.id
+    validateInput(element, elementId)
+}
+
+function validateInput(element, elementId) {
     if (elementId == "formEmailInput") {
         processEmailError(element, elementId)
     } else if (elementId == "privacyCheck") {
-        processCheckBoxError(event, element, elementId)
+        processCheckBoxError(element, elementId)
     } else if (element.value) {
         removeInputErrorText(elementId)
     } else {
@@ -60,10 +74,13 @@ function validateInput(event) {
     }
 }
 
-function processCheckBoxError(event, element, elementId) {
+function toggleFormButtons() {
     togglePrivacyCheckbox()
     toggleContactSubmitBtn()
-    if (event.currentTarget.classList[2] == "checked") {
+}
+
+function processCheckBoxError(element, elementId) {
+    if (element.classList[2] == "checked") {
         removeInputErrorText(elementId)
         return true
     } else {
