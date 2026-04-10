@@ -11,18 +11,19 @@
 @font-face {
     font-family: "poppins-regular";
     src:
-        url("assets/fonts/poppins/Poppins-Regular.woff") format("woff")
+        url("../assets/fonts/poppins/Poppins-Regular.woff") format("woff")
 }
 
 
 @font-face {
     font-family: "poppins-bold";
     src:
-        url("assets/fonts/poppins/Poppins-Bold.woff") format("woff")
+        url("../assets/fonts/poppins/Poppins-Bold.woff") format("woff")
 }
 
 
-html, body {
+html,
+body {
     overflow-x: clip;
     background-color: var(--color-background);
     scroll-behavior: smooth;
@@ -58,4 +59,12 @@ a {
     text-decoration: none;
     color: #ffff;
     position: relative;
+}
+
+.prevent-select {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
