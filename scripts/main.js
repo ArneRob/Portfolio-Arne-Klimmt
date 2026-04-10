@@ -104,13 +104,13 @@ function removeInputErrorText(elementId) {
     let errorDivId = `error${elementId}`
     let errorElement = document.getElementById(`${errorDivId}`)
     errorElement.style = ""
-    errorElement.innerHTML = ''
+    errorElement.textContent = ''
 }
 function addInputErrorText(elementId, element) {
     errorDivId = `error${elementId}`
     let errorElement = document.getElementById(`${errorDivId}`)
     errorElement.style = "color:red"
-    errorElement.innerHTML = returnErrorText(elementId, element)
+    errorElement.textContent = returnErrorText(elementId, element)
 }
 function returnErrorText(elementId, element) {
     if (elementId == "formNameInput") {
