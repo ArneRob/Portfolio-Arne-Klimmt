@@ -6,9 +6,9 @@ function startContactFormListener() {
     document.getElementById('formEmailInput').addEventListener('blur', handleValidationEvent)
     document.getElementById('formTextInput').addEventListener('blur', handleValidationEvent)
 }
-function sendMail(event) {
+function sendMail() {
+    if (!validateAllFormFields()) return
     let jsonFormInput = getFormData()
-    validateAllFormFields(event)
     sendFormDataToServer(jsonFormInput)
 }
 function getFormData() {
@@ -50,10 +50,10 @@ function toggleContactSubmitBtn() {
 
 function validateAllFormFields() {
     let idArray = ["formNameInput", "formEmailInput", "formTextInput", "privacyCheck"]
-    idArray.forEach(element => {
+    return idArray.every(element => {
         let domElem = document.getElementById(`${element}`)
-        validateInput(domElem, element)
-    });
+        return validateInput(domElem, element)
+    })
 }
 
 function handleValidationEvent(event) {
@@ -64,9 +64,9 @@ function handleValidationEvent(event) {
 
 function validateInput(element, elementId) {
     if (elementId == "formEmailInput") {
-        processEmailError(element, elementId)
+        return processEmailError(element, elementId)
     } else if (elementId == "privacyCheck") {
-        processCheckBoxError(element, elementId)
+        return processCheckBoxError(element, elementId)
     } else if (element.value) {
         removeInputErrorText(elementId)
         return true
