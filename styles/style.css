@@ -959,6 +959,7 @@ nav {
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
+    width: 200px;
 }
 
 .toast.show {

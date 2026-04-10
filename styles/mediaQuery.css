@@ -4,13 +4,33 @@
     }
 }
 
+@media (max-width: 1300px) {
+
+    .ownNameHeader div p:nth-child(1) {
+        font-size: 115px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+}
+
 @media (max-width: 1200px) {
     h2 {
         font-size: 80px;
     }
 
     .ownNameHeader div p:nth-child(1) {
-        font-size: 105px;
+        font-size: 90px;
+    }
+
+    .ownNameHeader div p:nth-child(2) {
+        font-size: 45px;
+    }
+
+    .ownNameHeader .iam {
+        font-size: 55px;
     }
 
     p {
@@ -689,180 +709,181 @@
         }
     }
 }
-    /* ----------------------------min-width: 1600px------------------------- */
 
-    @media (min-width: 1600px) {
-        /* general  */
+/* ----------------------------min-width: 1600px------------------------- */
 
-        h2 {
-            font-size: 95px;
-        }
+@media (min-width: 1600px) {
+    /* general  */
 
-        p {
-            font-size: 18px;
-        }
-
-        section {
-            padding-left: 150px;
-            padding-right: 150px;
-        }
-
-        header {
-            padding-left: 150px;
-            padding-right: 150px;
-        }
-
-        /* ---aboutSection--- */
-
-        .aboutCharacter {
-            width: 700px;
-        }
-
-        .aboutGlow {
-            width: 900px;
-            top: 150px;
-        }
-
-        /* ---skillsSection--- */
-
-        .skillIcon {
-            width: 80px;
-            height: 80px;
-        }
-
-        .iconsDiv {
-            gap: 85px;
-        }
-
-        .iconsSkillSection {
-            gap: 65px;
-        }
-
-        .skillsContent>p {
-            width: 430px;
-        }
+    h2 {
+        font-size: 95px;
     }
 
-    /* ----------------------------min-width: 1900px------------------------- */
-
-    @media (min-width: 1900px) {
-        /* general  */
-
-        h2 {
-            font-size: 120px;
-        }
-
-        p {
-            font-size: 20px;
-        }
-
-        section {
-            padding-left: 0px;
-            padding-right: 0px;
-        }
-
-        header {
-            padding-left: 200px;
-            padding-right: 200px;
-        }
-
-        /* ---aboutSection--- */
-
-        .aboutContent {
-            max-width: 600px;
-        }
-
-        .aboutFeatureIcon img {
-            width: 32px;
-        }
-
-        .aboutGlow {
-            width: 900px;
-            top: 140px;
-        }
-
-        .aboutCharacter {
-            width: 770px;
-        }
-
-        /* ---skillsSection--- */
-
-        .skillIcon {
-            width: 100px;
-            height: 100px;
-        }
-
-        .iconsDiv {
-            gap: 95px;
-        }
-
-        .iconsSkillSection {
-            gap: 72px;
-        }
-
-        .skillsContent>p {
-            width: 500px;
-        }
-
-        .skillsLookingFor>p:first-child {
-            font-size: 40px !important;
-        }
-
-        .skillIconTextDiv {
-            font-size: 16px;
-        }
-
-        .skillsCtaBtn {
-            font-size: 26px;
-        }
-
-        /* ---portfolioSection--- */
-
-        .portfolioHeader {
-            max-width: 600px;
-        }
-
-        .portfolioHeading::before {
-            left: -106%;
-            width: 100%;
-        }
-
-        .portfolioGlowGreen {
-            width: 500px;
-        }
-
-        .portfolioGlowBlue {
-            width: 500px;
-        }
-
-        /* ---contactSection--- */
-
-        .contactLeftTitle {
-            font-size: 28px;
-        }
-
-        .contactInput {
-            font-size: 18px;
-        }
-
-        .contactTextarea {
-            font-size: 18px;
-        }
-
-        .contactCheckboxRow {
-            font-size: 16px;
-        }
-
-        .contactSubmitBtn {
-            font-size: 20px;
-        }
-
-        .contactGlow {
-            width: 600px;
-        }
-
-        .contactLeftAccent {
-            left: -158%;
-            width: 150%;
-        }
+    p {
+        font-size: 18px;
     }
+
+    section {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    header {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    /* ---aboutSection--- */
+
+    .aboutCharacter {
+        width: 700px;
+    }
+
+    .aboutGlow {
+        width: 900px;
+        top: 150px;
+    }
+
+    /* ---skillsSection--- */
+
+    .skillIcon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .iconsDiv {
+        gap: 85px;
+    }
+
+    .iconsSkillSection {
+        gap: 65px;
+    }
+
+    .skillsContent>p {
+        width: 430px;
+    }
+}
+
+/* ----------------------------min-width: 1900px------------------------- */
+
+@media (min-width: 1900px) {
+    /* general  */
+
+    h2 {
+        font-size: 120px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    section {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    header {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    /* ---aboutSection--- */
+
+    .aboutContent {
+        max-width: 600px;
+    }
+
+    .aboutFeatureIcon img {
+        width: 32px;
+    }
+
+    .aboutGlow {
+        width: 900px;
+        top: 140px;
+    }
+
+    .aboutCharacter {
+        width: 770px;
+    }
+
+    /* ---skillsSection--- */
+
+    .skillIcon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .iconsDiv {
+        gap: 95px;
+    }
+
+    .iconsSkillSection {
+        gap: 72px;
+    }
+
+    .skillsContent>p {
+        width: 500px;
+    }
+
+    .skillsLookingFor>p:first-child {
+        font-size: 40px !important;
+    }
+
+    .skillIconTextDiv {
+        font-size: 16px;
+    }
+
+    .skillsCtaBtn {
+        font-size: 26px;
+    }
+
+    /* ---portfolioSection--- */
+
+    .portfolioHeader {
+        max-width: 600px;
+    }
+
+    .portfolioHeading::before {
+        left: -106%;
+        width: 100%;
+    }
+
+    .portfolioGlowGreen {
+        width: 500px;
+    }
+
+    .portfolioGlowBlue {
+        width: 500px;
+    }
+
+    /* ---contactSection--- */
+
+    .contactLeftTitle {
+        font-size: 28px;
+    }
+
+    .contactInput {
+        font-size: 18px;
+    }
+
+    .contactTextarea {
+        font-size: 18px;
+    }
+
+    .contactCheckboxRow {
+        font-size: 16px;
+    }
+
+    .contactSubmitBtn {
+        font-size: 20px;
+    }
+
+    .contactGlow {
+        width: 600px;
+    }
+
+    .contactLeftAccent {
+        left: -158%;
+        width: 150%;
+    }
+}
