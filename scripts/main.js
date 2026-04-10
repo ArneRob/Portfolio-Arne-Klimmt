@@ -69,6 +69,7 @@ function validateInput(element, elementId) {
         processCheckBoxError(element, elementId)
     } else if (element.value) {
         removeInputErrorText(elementId)
+        return true
     } else {
         addInputErrorText(elementId, element)
         return false
@@ -94,6 +95,7 @@ function processEmailError(element, elementId) {
     if (element.value) {
         if (validateEmail(element.value)) {
             removeInputErrorText(elementId)
+            return true
         } else {
             addInputErrorText(elementId, element)
             return false
