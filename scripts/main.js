@@ -7,9 +7,9 @@ function startContactFormListener() {
     document.getElementById('formTextInput').addEventListener('blur', handleValidationEvent)
 }
 function sendMail(event) {
-    // let jsonFormInput = getFormData()
-    validateAllFormFields(event)
-    // sendFormDataToServer(jsonFormInput)
+    let jsonFormInput = getFormData()
+    if (!validateAllFormFields(event)) { return }
+    sendFormDataToServer(jsonFormInput)
 }
 function getFormData() {
     let contactForm = document.getElementById('contactForm')
@@ -71,6 +71,7 @@ function validateInput(element, elementId) {
         removeInputErrorText(elementId)
     } else {
         addInputErrorText(elementId, element)
+        return false
     }
 }
 
@@ -85,6 +86,7 @@ function processCheckBoxError(element, elementId) {
         return true
     } else {
         addInputErrorText(elementId, element)
+        return false
     }
 }
 
@@ -94,9 +96,11 @@ function processEmailError(element, elementId) {
             removeInputErrorText(elementId)
         } else {
             addInputErrorText(elementId, element)
+            return false
         }
     } else {
         addInputErrorText(elementId, element)
+        return false
     }
 }
 
