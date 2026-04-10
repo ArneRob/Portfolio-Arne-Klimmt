@@ -43,11 +43,12 @@ async function sendFormDataToServer(data) {
         const result = await response.json()
         if (result.success) {
             emptyFormField()
+            showToast('Nachricht gesendet', 'success')
         } else {
-            console.error('Mail error:', result.error)
+            showToast('Fehler beim Senden', 'error')
         }
     } catch (error) {
-        console.error(error)
+        showToast('Fehler beim Senden', 'error')
     }
 }
 
@@ -223,6 +224,18 @@ function validate(email) {
     } else {
         return false
     }
+}
+
+/**
+ * Shows a toast notification and hides it after 3 seconds
+ * @param {string} message
+ * @param {'success' | 'error'} type
+ */
+function showToast(message, type) {
+    const toast = document.getElementById('toast')
+    toast.textContent = message
+    toast.className = `toast ${type} show`
+    setTimeout(() => toast.className = 'toast', 3000)
 }
 
 startContactFormListener()
