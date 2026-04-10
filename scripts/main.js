@@ -8,7 +8,7 @@ function startContactFormListener() {
 }
 function sendMail(event) {
     let jsonFormInput = getFormData()
-    if (!validateAllFormFields(event)) { return }
+    validateAllFormFields(event)
     sendFormDataToServer(jsonFormInput)
 }
 function getFormData() {
