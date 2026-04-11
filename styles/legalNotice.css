@@ -18,10 +18,14 @@
     margin-bottom: 10px;
 }
 
+.privacyPolicySection h2 {
+    font-size: 22px;
+    color: #bcbc7a;
+}
+
 .privacyPolicySection p{
  color: #a49e9e;
  margin-bottom: 5px;
- max-width: 500px;
 }
 
 .privacyPolicySection li {

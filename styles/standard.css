@@ -88,3 +88,8 @@ a {
     hyphens: auto;
 
 }
+
+.sizeLimiter {
+    max-width: 1440px;
+    width: 100%;
+}

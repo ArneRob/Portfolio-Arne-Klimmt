@@ -9,5 +9,6 @@
     "simpleCodingTimeTracker.health.modalNotifications": false,
     "simpleCodingTimeTracker.health.eyeRestInterval": 59,
     "simpleCodingTimeTracker.health.stretchInterval": 30,
-    "simpleCodingTimeTracker.health.breakThreshold": 90
+    "simpleCodingTimeTracker.health.breakThreshold": 90,
+    "liveServer.settings.port": 5501
 }
