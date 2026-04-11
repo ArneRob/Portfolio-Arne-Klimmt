@@ -593,6 +593,10 @@
     .impressumSection {
         height: calc(100vh - 230px);
     }
+
+    .privacyPolicySection h1 {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -844,8 +848,8 @@
     }
 
     .portfolioHeading::before {
-        left: -106%;
-        width: 100%;
+        left: -205%;
+        width: 200%;
     }
 
     .portfolioGlowGreen {
