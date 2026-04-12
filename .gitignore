@@ -4,3 +4,4 @@ outsourced.txt
 vendor/
 composer.lock
 mail.php
+.vscode/
