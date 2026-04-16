@@ -94,4 +94,14 @@ function setLanguage() {
     }
 }
 
+function translatePivacyPolicy() {
+    let privacyPolicyText = document.getElementById('privacyPolicyText')
+
+    if (localStorage.getItem('language') == 'DE') {
+        privacyPolicyText.innerHTML = returnPrivacyPolicyTextDE()
+    } else {
+         privacyPolicyText.innerHTML = returnPrivacyPolicyTextEN()
+    }
+}
+
 setLanguage()
