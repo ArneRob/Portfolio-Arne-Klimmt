@@ -9,15 +9,19 @@ function startListener() {
 function toggleToGerman() {
     let germanButton = document.getElementById('germanToggle')
     let englishButton = document.getElementById('englishToggle')
+    localStorage.setItem('language', 'DE')
     englishButton.src = "./assets/img/header/englishInActive.png"
     germanButton.src = "./assets/img/header/germanActive.png"
+    passCurrentLang()
 }
 
 function toggleToEnglish() {
     let germanButton = document.getElementById('germanToggle')
     let englishButton = document.getElementById('englishToggle')
+    localStorage.setItem('language', 'EN')
     englishButton.src = "./assets/img/header/language single componentEN_Active.png"
     germanButton.src = "./assets/img/header/language single componentDE_Inactive.png"
+    passCurrentLang()
 }
 
 function mousedownEnglishButton() {
