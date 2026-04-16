@@ -15,6 +15,22 @@ const translations = {
         "skills.getInTouch": "Get in touch",
         "skills.description": "In addition to my frontend skills, I also set up my own vServer, dealing with all the challenges that come with it, such as security and other aspects. This gave me insight into what a backend developer does. I really liked it and I can imagine doing more of it in the future.",
         "skills.continuallyLearning": "Continually learning",
+        "portfolio.heading": "Portfolio",
+        "portfolio.sub": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "contact.heading": "Contact",
+        "contact.title": "Got a problem to solve?",
+        "contact.description": "I have invested a lot of money in this training, and even more time and effort in the preparation. One year of preparation plus another 1.5 years of training at the Developer Akademie alongside my main job — I push through, stay focused on my goals, and discipline myself to achieve them.",
+        "contact.needDev": "Need a Frontend developer? ",
+        "contact.contactMe": "Contact me!",
+        "contact.placeholderName": "Your name",
+        "contact.placeholderEmail": "Your email",
+        "contact.placeholderMessage": "Your message",
+        "contact.privacyPre": " I've read the ",
+        "contact.privacyLink": "privacy policy",
+        "contact.privacyPost": " and agree to the processing of my data as outlined.",
+        "contact.sendBtn": "Send message :)",
+        "footer.privacy": "Privacy policy",
+        "footer.imprint": "Legal notice",
     },
     DE: {
         "nav.about": "Über mich",
@@ -32,6 +48,22 @@ const translations = {
         "skills.getInTouch": "Kontakt aufnehmen",
         "skills.description": "Neben meinen Frontend-Kenntnissen habe ich auch meinen eigenen vServer eingerichtet und mich mit allen damit verbundenen Herausforderungen wie Sicherheit und anderen Aspekten befasst. Das hat mir einen Einblick gegeben, was ein Backend-Entwickler macht. Es hat mir wirklich gut gefallen und ich kann mir vorstellen, in Zukunft mehr davon zu machen.",
         "skills.continuallyLearning": "Stetig am Lernen",
+        "portfolio.heading": "Portfolio",
+        "portfolio.sub": "Hier findest du eine Auswahl meiner Arbeiten – Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+        "contact.heading": "Kontakt",
+        "contact.title": "Ein Problem zu lösen?",
+        "contact.description": "Ich habe viel Geld in diese Ausbildung investiert, und noch mehr Zeit und Mühe in die Vorbereitung. Ein Jahr Vorbereitung plus weitere 1,5 Jahre Ausbildung an der Developer Akademie und das neben meinem Hauptjob ich bleibe dran, behalte meine Ziele im Blick und diszipliniere mich, um sie zu erreichen.",
+        "contact.needDev": "Einen Frontend-Entwickler gesucht? ",
+        "contact.contactMe": "Kontaktiere mich!",
+        "contact.placeholderName": "Dein Name",
+        "contact.placeholderEmail": "Deine E-Mail",
+        "contact.placeholderMessage": "Deine Nachricht",
+        "contact.privacyPre": " Ich habe die ",
+        "contact.privacyLink": "Datenschutzerklärung",
+        "contact.privacyPost": " gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "contact.sendBtn": "Nachricht senden :)",
+        "footer.privacy": "Datenschutzerklärung",
+        "footer.imprint": "Impressum",
     }
 }
 
@@ -45,6 +77,10 @@ function applyLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.dataset.i18n
         if (translations[lang][key]) el.textContent = translations[lang][key]
+    })
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.dataset.i18nPlaceholder
+        if (translations[lang][key]) el.placeholder = translations[lang][key]
     })
 }
 

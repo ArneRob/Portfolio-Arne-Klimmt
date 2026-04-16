@@ -556,6 +556,10 @@ nav {
     gap: 20px;
 }
 
+.contactMe {
+    font-weight: bold;
+}
+
 .leftAccentAndHeadingDiv {
     position: relative;
     display: flex;
