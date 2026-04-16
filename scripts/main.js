@@ -255,8 +255,4 @@ function showToast(message, type) {
     setTimeout(() => toast.className = 'toast', 3000)
 }
 
-function openEmail() {
-    window.location.href = 'mailto:arne-klimmt@gmx.de?subject=Einladung zum Gespräch';
-}
-
 startContactFormListener()
