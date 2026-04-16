@@ -570,7 +570,7 @@ nav {
 .contactLeftAccent {
     position: absolute;
     left: -80%;
-    width: 70%;
+    width: 75%;
     height: 3px;
     background-color: var(--color-secondaryVer2);
 }

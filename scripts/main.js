@@ -179,7 +179,11 @@ function addInputErrorText(elementId, element) {
     errorDivId = `error${elementId}`
     let errorElement = document.getElementById(`${errorDivId}`)
     errorElement.style = "color:red"
-    errorElement.textContent = returnErrorText(elementId, element)
+    if (localStorage.getItem('language') == "DE") {
+        errorElement.textContent = returnErrorText(elementId, element)
+    } else {
+        errorElement.textContent = returnErrorTextEN(elementId, element)
+    }
 }
 
 /**
@@ -202,6 +206,19 @@ function returnErrorText(elementId, element) {
     }
 }
 
+function returnErrorTextEN(elementId, element) {
+    if (elementId == "formNameInput") {
+        return "Please enter your name"
+    } else if (elementId == "formEmailInput" && !element.value) {
+        return "Please enter your email"
+    } else if (elementId == "formEmailInput" && element.value) {
+        return "Please enter a valid email"
+    } else if (elementId == "formTextInput") {
+        return "The message field is empty"
+    } else if (elementId == "privacyCheck") {
+        return "Please accept the privacy policy"
+    }
+}
 /**
  * Checks if an email address matches a valid format
  * @param {string} email

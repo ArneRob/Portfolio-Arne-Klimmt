@@ -84,4 +84,14 @@ function applyLanguage(lang) {
     })
 }
 
-localStorage.setItem("language", "EN");
+
+
+function setLanguage() {
+    if (localStorage.getItem('language') == "EN") {
+        localStorage.setItem("language", "EN");
+    } else {
+        toggleToGerman()
+    }
+}
+
+setLanguage()
