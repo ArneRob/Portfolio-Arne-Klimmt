@@ -627,90 +627,91 @@
         right: -213%;
     }
 
-    @media (min-width: 1100px) {
-        section {
-            padding-left: 80px;
-            padding-right: 80px;
-        }
+}
 
-        header {
-            padding-left: 80px;
-            padding-right: 80px;
-        }
-
-        /* ---header/nav--- */
-
-        nav {
-            display: flex;
-        }
-
-        .nameLogo {
-            margin-left: 10px;
-        }
-
-        /* ---heroSection--- */
-        .ownNameHeader {
-            gap: 35px;
-        }
-
-        .ownNameHeader div p:nth-child(1) {
-            font-size: 100px;
-        }
-
-        .ownNameHeader div p:nth-child(2) {
-            font-size: 55px;
-        }
-
-        .ownNameHeader .iam {
-            font-size: 65px;
-        }
-
-        .scrollDownContainer {
-            display: flex;
-        }
+@media (min-width: 1100px) {
+    section {
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
-    @media (min-width: 1300px) {
-        section {
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-
-        header {
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-
-        /* ---heroSection--- */
-
-        .ownNameHeader div p:nth-child(1) {
-            font-size: 110px;
-        }
-
-        .ownNameHeader div p:nth-child(2) {
-            font-size: 50px;
-        }
-
-        .ownNameHeader .iam {
-            font-size: 80px;
-        }
-
-        /* ---aboutSection--- */
-
+    header {
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
-    @media (min-width: 1400px) {
-        .ownNameHeader div p:nth-child(1) {
-            font-size: 128px;
-        }
+    /* ---header/nav--- */
 
-        .ownNameHeader div p:nth-child(2) {
-            font-size: 64px;
-        }
+    nav {
+        display: flex;
+    }
 
-        .ownNameHeader .iam {
-            font-size: 90px;
-        }
+    .nameLogo {
+        margin-left: 10px;
+    }
+
+    /* ---heroSection--- */
+    .ownNameHeader {
+        gap: 35px;
+    }
+
+    .ownNameHeader div p:nth-child(1) {
+        font-size: 100px;
+    }
+
+    .ownNameHeader div p:nth-child(2) {
+        font-size: 55px;
+    }
+
+    .ownNameHeader .iam {
+        font-size: 65px;
+    }
+
+    .scrollDownContainer {
+        display: flex;
+    }
+}
+
+@media (min-width: 1300px) {
+    section {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    header {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    /* ---heroSection--- */
+
+    .ownNameHeader div p:nth-child(1) {
+        font-size: 110px;
+    }
+
+    .ownNameHeader div p:nth-child(2) {
+        font-size: 50px;
+    }
+
+    .ownNameHeader .iam {
+        font-size: 80px;
+    }
+
+    /* ---aboutSection--- */
+
+}
+
+@media (min-width: 1400px) {
+    .ownNameHeader div p:nth-child(1) {
+        font-size: 128px;
+    }
+
+    .ownNameHeader div p:nth-child(2) {
+        font-size: 64px;
+    }
+
+    .ownNameHeader .iam {
+        font-size: 90px;
     }
 }
 

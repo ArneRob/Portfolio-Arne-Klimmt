@@ -1,9 +1,15 @@
 const translations = {
     EN: {
+        "nav.about": "About me",
+        "nav.skills": "Skills",
         "hero.letsTalk": "Lets talk!",
+        "hero.scrollDown": "Scroll down!",
     },
     DE: {
+        "nav.about": "Über mich",
+        "nav.skills": "Fähigkeiten",
         "hero.letsTalk": "Lass uns reden!",
+        "hero.scrollDown": "Scroll runter!",
     }
 }
 
