@@ -13,6 +13,7 @@ function toggleToGerman() {
     englishButton.src = "./assets/img/header/englishInActive.png"
     germanButton.src = "./assets/img/header/germanActive.png"
     passCurrentLang()
+    if (document.getElementById('privacyPolicyText')) { translatePivacyPolicy() }
 }
 
 function toggleToEnglish() {
@@ -22,6 +23,7 @@ function toggleToEnglish() {
     englishButton.src = "./assets/img/header/language single componentEN_Active.png"
     germanButton.src = "./assets/img/header/language single componentDE_Inactive.png"
     passCurrentLang()
+    if (document.getElementById('privacyPolicyText')) { translatePivacyPolicy() }
 }
 
 function mousedownEnglishButton() {

@@ -7,14 +7,18 @@
     align-items: center;
 }
 
-.privacyPolicySection a {
-    margin-bottom: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: fl;
+#privacyPolicyText h1 {
+    color: var(--color-primary1);
 }
 
-.privacyPolicySection h1, h2,h3,h4 {
+.privacyPolicySection a {
+    margin-bottom: 10px;
+}
+
+.privacyPolicySection h1,
+h2,
+h3,
+h4 {
     margin-bottom: 10px;
 }
 
@@ -23,9 +27,9 @@
     color: #bcbc7a;
 }
 
-.privacyPolicySection p{
- color: #a49e9e;
- margin-bottom: 5px;
+.privacyPolicySection p {
+    color: #a49e9e;
+    margin-bottom: 5px;
 }
 
 .privacyPolicySection li {

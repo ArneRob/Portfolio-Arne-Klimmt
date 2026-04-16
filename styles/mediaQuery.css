@@ -308,11 +308,11 @@
     }
 
     .contactHeadingRow::after {
-        right: -75%;
+        right: -77%;
     }
 
     .contactLeftAccent {
-        left: -72%;
+        left: -76%;
     }
 
 }
@@ -345,6 +345,11 @@
 
     .purpleShadowHeroSection {
         left: -30%;
+    }
+
+    /* -----skillsSection----- */
+    .skillsGreenStripe {
+        width: 275%;
     }
 }
 
@@ -492,6 +497,10 @@
 
     .iconsDiv {
         gap: 60px;
+    }
+
+    .skillsGreenStripe {
+        width: 272%;
     }
 
     /* --------contactSection-------- */

@@ -10,6 +10,11 @@
     border: 1px solid var(--color-primary2);
 }
 
+.backToMainSideArrow {
+    display: flex;
+    align-items: flex-start;
+}
+
 /* ----------------------------header/navbar------------------------- */
 header {
     display: flex;
@@ -918,6 +923,8 @@ nav {
 .impressumSection {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     height: calc(100vh - 323px);
 }
 
@@ -929,6 +936,11 @@ nav {
     height: 100%;
     max-width: 400px;
     gap: 20px;
+}
+
+.impressumtext h1 {
+    margin-bottom: 20px;
+    color: var(--color-primary1);
 }
 
 .impressumtext h3 {
@@ -947,7 +959,6 @@ nav {
 
 .arrowBackToPortfolio {
     width: 39px;
-    transform: rotate(-90deg);
 }
 
 .arrowBackToPortfolio:hover {
@@ -971,5 +982,12 @@ nav {
     opacity: 1;
 }
 
-.toast.success { color: green; background-color: white;}
-.toast.error { color: red; background-color: white;}
+.toast.success {
+    color: green;
+    background-color: white;
+}
+
+.toast.error {
+    color: red;
+    background-color: white;
+}

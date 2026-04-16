@@ -1,4 +1,4 @@
-function returnPirvacyPolicyTextDE() {
+function returnPrivacyPolicyTextDE() {
     return `
              <h1>Datenschutz&shy;erkl&auml;rung</h1>
             <h2>1. Datenschutz auf einen Blick</h2>
