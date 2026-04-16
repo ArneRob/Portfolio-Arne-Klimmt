@@ -43,7 +43,7 @@ const translations = {
         "about.project": "In meiner aktuellen Position habe ich eine Getreiderlager-Software für mein Unternehmen entwickelt. Obwohl sie noch nicht vollständig fertig ist, stellt sie bereits ein sehr solides und gut gestaltetes Projekt dar. Sie erleichtert die Einlagerung und ermöglicht es, schnell zu sehen, wo sich alles befindet. Anstelle von lästigen Zetteln bietet sie eine einfache und benutzerfreundliche Oberfläche zur schnellen Dateneingabe. Die Demo findest du im Portfolio-Bereich.",
         "about.growth": "Mit jedem Projekt, das ich erstelle, werde ich besser und es macht wirklich Spaß zu sehen, wie weit ich gekommen bin. Ich bin jetzt an einem Punkt, an dem ich das Gefühl habe, alles erschaffen zu können, was ich möchte — ich brauche nur die Zeit. :)",
         "skills.lookingFor": "Auf der Suche nach ",
-        "skills.anotherSkill": "weiteren Fähigkeit?",
+        "skills.anotherSkill": "weiteren Fähigkeiten?",
         "skills.contactSub": "Kontaktiere mich gerne, ich kann deine Idee zum Leben erwecken!",
         "skills.getInTouch": "Kontakt aufnehmen",
         "skills.description": "Neben meinen Frontend-Kenntnissen habe ich auch meinen eigenen vServer eingerichtet und mich mit allen damit verbundenen Herausforderungen wie Sicherheit und anderen Aspekten befasst. Das hat mir einen Einblick gegeben, was ein Backend-Entwickler macht. Es hat mir wirklich gut gefallen und ich kann mir vorstellen, in Zukunft mehr davon zu machen.",
