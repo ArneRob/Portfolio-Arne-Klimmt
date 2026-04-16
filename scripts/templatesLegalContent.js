@@ -339,3 +339,51 @@ function returnPrivacyPolicyTextEN() {
             <p>Source: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
             `
 }
+
+function returnLegalNoticeTextDE() {
+    return `
+                   <div>
+                <h1>Impressum</h1>
+                <h4>Angaben gemäß § 5 TMG</h4>
+                <p>Arne Robert klimmt <br>
+                    Rockendorfer weg 73 <br>
+                    06128 Halle</p>
+            </div>
+
+            <div>
+                <h4>Kontakt</h4>
+                <p>Telefon: +49 151 15158508
+                    E-Mail: arne-klimmt@gmx.de</p>
+            </div>
+            <div>
+                <h4>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h4>
+                <p>Arne Robert klimmt
+                    Rockendorfer weg 73 <br>
+                    06128 Halle</p>
+            </div>
+            `
+}
+
+function returnLegalNoticeTextEN() {
+    return `
+                   <div>
+                <h1>Legal Notice</h1>
+                <h4>Information according to § 5 TMG</h4>
+                <p>Arne Robert Klimmt <br>
+                    Rockendorfer Weg 73 <br>
+                    06128 Halle</p>
+            </div>
+
+            <div>
+                <h4>Contact</h4>
+                <p>Phone: +49 151 15158508
+                    E-Mail: arne-klimmt@gmx.de</p>
+            </div>
+            <div>
+                <h4>Responsible for content according to § 18 Para. 2 MStV</h4>
+                <p>Arne Robert Klimmt
+                    Rockendorfer Weg 73 <br>
+                    06128 Halle</p>
+            </div>
+            `
+}

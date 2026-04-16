@@ -14,6 +14,7 @@ function toggleToGerman() {
     germanButton.src = "./assets/img/header/germanActive.png"
     passCurrentLang()
     if (document.getElementById('privacyPolicyText')) { translatePivacyPolicy() }
+    if (document.getElementById('legalNoticeText')) { translateLegalNotice() }
 }
 
 function toggleToEnglish() {
@@ -24,6 +25,7 @@ function toggleToEnglish() {
     germanButton.src = "./assets/img/header/language single componentDE_Inactive.png"
     passCurrentLang()
     if (document.getElementById('privacyPolicyText')) { translatePivacyPolicy() }
+    if (document.getElementById('legalNoticeText')) { translateLegalNotice() }
 }
 
 function mousedownEnglishButton() {

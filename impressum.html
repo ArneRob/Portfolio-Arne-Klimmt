@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/mediaQuery.css">
     <link rel="icon" type="image/x-icon" href="assets/img/ark_logo_favicon.svg">
+    <script src="./scripts/templatesLegalContent.js" defer></script>
     <script src="./scripts/header.js" defer></script>
     <script src="./scripts/translations.js" defer></script>
     <title>Impressum</title>
 </head>
 
-<body>
+<body onload="translateLegalNotice()">
     <header>
         <div class="headerLimiter">
             <a href="./index.html"><img id="nameLogo" class="nameLogo" src="./assets/img/header/personalNameNav.png"
@@ -45,11 +46,11 @@
         </div>
     </header>
     <section class="impressumSection">
-         <div class="backToMainSideArrow sizeLimiter">
-            <a href="./index.html"><img class="arrowBackToPortfolio"
-                    src="./assets/img/legalContent/backToMainArrow.png" alt=""></a>
+        <div class="backToMainSideArrow sizeLimiter">
+            <a href="./index.html"><img class="arrowBackToPortfolio" src="./assets/img/legalContent/backToMainArrow.png"
+                    alt=""></a>
         </div>
-        <div class="impressumtext">
+        <div id="legalNoticeText" class="impressumtext">
             <div>
                 <h1>Impressum</h1>
                 <h4>Angaben gemäß § 5 TMG</h4>
@@ -75,8 +76,10 @@
         <div class="footerLimiter">
             <div class="footerLeft">
                 <img class="footerLogo" src="./assets/img/header/personalNameNav.png" alt="Logo">
-                <a href="./privacyPolicy.html"><span class="footerLegal d_noneMedia" data-i18n="footer.privacy">Privacy policy</span></a>
-                <a href="./impressum.html"><span class="footerLegal d_noneMedia" data-i18n="footer.imprint">Legal notice</span></a>
+                <a href="./privacyPolicy.html"><span class="footerLegal d_noneMedia" data-i18n="footer.privacy">Privacy
+                        policy</span></a>
+                <a href="./impressum.html"><span class="footerLegal d_noneMedia" data-i18n="footer.imprint">Legal
+                        notice</span></a>
             </div>
             <p class="footerCopyright">© Arne Robert Klimmt 2026</p>
             <div class="footerIcons">
@@ -86,9 +89,10 @@
                 <a target="_blank" href="https://de.linkedin.com/"><img src="./assets/img/firstSection/linkedInIcon.png"
                         alt="LinkedIn"></a>
             </div>
-            <a class="d_Flex_Media" href="./privacyPolicy.html"><span
-                    class="footerLegal" data-i18n="footer.privacy">Privacy policy</span></a>
-            <a class="d_Flex_Media" href="./impressum.html"><span class="footerLegal" data-i18n="footer.imprint">Legal notice</span></a>
+            <a class="d_Flex_Media" href="./privacyPolicy.html"><span class="footerLegal"
+                    data-i18n="footer.privacy">Privacy policy</span></a>
+            <a class="d_Flex_Media" href="./impressum.html"><span class="footerLegal" data-i18n="footer.imprint">Legal
+                    notice</span></a>
         </div>
     </footer>
 </body>

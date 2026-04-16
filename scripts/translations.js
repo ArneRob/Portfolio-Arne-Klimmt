@@ -100,7 +100,17 @@ function translatePivacyPolicy() {
     if (localStorage.getItem('language') == 'DE') {
         privacyPolicyText.innerHTML = returnPrivacyPolicyTextDE()
     } else {
-         privacyPolicyText.innerHTML = returnPrivacyPolicyTextEN()
+        privacyPolicyText.innerHTML = returnPrivacyPolicyTextEN()
+    }
+}
+
+function translateLegalNotice() {
+    let legalNoticeText = document.getElementById('legalNoticeText')
+
+    if (localStorage.getItem('language') == 'DE') {
+        legalNoticeText.innerHTML = returnLegalNoticeTextDE()
+    } else {
+        legalNoticeText.innerHTML = returnLegalNoticeTextEN()
     }
 }
 
