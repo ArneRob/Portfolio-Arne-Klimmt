@@ -847,7 +847,7 @@ nav {
 .skillsGreenStripe {
     position: absolute;
     right: -240%;
-    width: 270%;
+    width: 280%;
     height: 3px;
     background-color: var(--color-secondaryVer2);
 }
