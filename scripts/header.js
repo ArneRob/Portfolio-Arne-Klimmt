@@ -17,7 +17,7 @@ function toggleLanguageButtons(lang) {
     germanButton.classList.toggle('langToggleOn')
     germanButton.classList.toggle('langToggleOff')
     passCurrentLang()
-    if (document.getElementById('privacyPolicyText')) { translatePivacyPolicy() }
+    if (document.getElementById('privacyPolicyText')) { translatePrivacyPolicy() }
     if (document.getElementById('legalNoticeText')) { translateLegalNotice() }
 }
 function toggleLocalStorageLanguage(lang) {
