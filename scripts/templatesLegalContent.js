@@ -342,7 +342,7 @@ function returnPrivacyPolicyTextEN() {
 
 function returnLegalNoticeTextDE() {
     return `
-                   <div>
+                   <div class="legalNoticeHeadingContainer">
                 <h1>Impressum</h1>
                 <h4>Angaben gemäß § 5 TMG</h4>
                 <p>Arne Robert klimmt <br>
@@ -366,7 +366,7 @@ function returnLegalNoticeTextDE() {
 
 function returnLegalNoticeTextEN() {
     return `
-                   <div>
+                   <div class="legalNoticeHeadingContainer">
                 <h1>Legal Notice</h1>
                 <h4>Information according to § 5 TMG</h4>
                 <p>Arne Robert Klimmt <br>
