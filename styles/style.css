@@ -132,16 +132,18 @@
 
 .purpleShadowHeroSection {
     position: absolute;
-    left: -300px;
-    top: 120px;
+    top: 10%;
+    left: -5%;
+    width: 70vh;
     z-index: 0;
     filter: blur(30px);
 }
 
 .greenShadowHeroSection {
     position: absolute;
-    right: -450px;
-    top: 40px;
+    right: -15%;
+    width: 70vh;
+    top: 10%;
     transform: rotate(10deg);
     filter: blur(30px);
     z-index: 0;

@@ -6,12 +6,11 @@
 
 @media (max-width: 1600px) {
     .greenShadowHeroSection {
-        width: 700px;
+        right: -32%;
     }
 
     .purpleShadowHeroSection {
-        width: 500px;
-        left: -230px;
+        left: -25%;
     }
 }
 
@@ -172,17 +171,15 @@
     .greenShadowHeroSection {
         z-index: -1;
         filter: blur(10px);
-        width: 624px;
         left: 70%;
-        top: 28%;
+        top: 25%;
     }
 
     .purpleShadowHeroSection {
         z-index: -1;
         filter: blur(10px);
-        width: 572px;
         left: -20%;
-        top: 20%;
+        top: 5%;
     }
 
     /* ---aboutSection--- */
@@ -299,7 +296,7 @@
 
     /* ---portfolioSection--- */
     .portfolioSection {
-        padding-top: 110px;
+        padding-top: 30px;
     }
 
     .portfolioHeader {
@@ -314,6 +311,13 @@
     .portfolioGrid div {
         align-items: center;
         gap: 30px;
+    }
+
+    .portfolioGlowBlue {
+        right: -10px;
+        top: 70px;
+        z-index: 0;
+        width: 300px;
     }
 
     /* ---contactSection--- */
@@ -334,6 +338,11 @@
 
     .contactLeftAccent {
         left: -76%;
+    }
+
+    .contactGlow {
+        top: 21%;
+        width: 400px;
     }
 
 }
@@ -781,6 +790,14 @@
         padding-right: 150px;
     }
 
+    .greenShadowHeroSection {
+        right: -20%;
+    }
+
+    .purpleShadowHeroSection {
+        left: -15%;
+    }
+
     /* ---aboutSection--- */
 
     .aboutCharacter {
@@ -833,6 +850,14 @@
     header {
         padding-left: 200px;
         padding-right: 200px;
+    }
+
+    .greenShadowHeroSection {
+        right: -15%;
+    }
+
+    .purpleShadowHeroSection {
+        left: -12%;
     }
 
     /* ---aboutSection--- */
