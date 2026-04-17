@@ -87,11 +87,16 @@ function applyLanguage(lang) {
 
 
 function setLanguage() {
-    if (localStorage.getItem('language') == "EN") {
-        localStorage.setItem("language", "EN");
-    } else {
-        toggleToGerman()
+    let germanToggle = document.getElementById('germanToggle')
+    let englishToggle = document.getElementById('englishToggle')
+    if (!localStorage.getItem('language')) {
+        localStorage.setItem('language', 'EN')
+    } else if (localStorage.getItem('language') == "DE" && germanToggle.classList[0] == "langToggleOff") {
+        toggleLanguageButtons()
+    } else if (localStorage.getItem('language') == "EN" && englishToggle.classList[0] == "langToggleOff") {
+        toggleLanguageButtons()
     }
+    // passCurrentLang()
 }
 
 function translatePivacyPolicy() {

@@ -1,43 +1,60 @@
 function startListener() {
     document.getElementById('englishToggle').addEventListener('mousedown', mousedownEnglishButton)
     document.getElementById('germanToggle').addEventListener('mousedown', mousedownGermanButton)
-    document.getElementById('englishToggle').addEventListener('click', toggleToEnglish)
-    document.getElementById('germanToggle').addEventListener('click', toggleToGerman)
+    document.getElementById('englishToggle').addEventListener('mouseup', mouseupEnglishButton)
+    document.getElementById('germanToggle').addEventListener('mouseup', mouseupGermanButton)
+    document.getElementById('englishToggle').addEventListener('click', checkCurrentLang)
+    document.getElementById('germanToggle').addEventListener('click', checkCurrentLang)
     document.getElementById('burgerNavbar').addEventListener('click', openBurgerNavbar)
 }
 
-function toggleToGerman() {
+function toggleLanguageButtons(lang) {
     let germanButton = document.getElementById('germanToggle')
     let englishButton = document.getElementById('englishToggle')
-    localStorage.setItem('language', 'DE')
-    englishButton.src = "./assets/img/header/englishInActive.png"
-    germanButton.src = "./assets/img/header/germanActive.png"
+    toggleLocalStorageLanguage(lang)
+    englishButton.classList.toggle('langToggleOn')
+    englishButton.classList.toggle('langToggleOff')
+    germanButton.classList.toggle('langToggleOn')
+    germanButton.classList.toggle('langToggleOff')
     passCurrentLang()
     if (document.getElementById('privacyPolicyText')) { translatePivacyPolicy() }
     if (document.getElementById('legalNoticeText')) { translateLegalNotice() }
 }
+function toggleLocalStorageLanguage(lang) {
+    if (lang == 'DE' || !localStorage.getItem('language')) {
+        localStorage.setItem('language', 'DE')
+    } else if (lang == 'EN') {
+        localStorage.setItem('language', 'EN')
+    }
+}
 
-function toggleToEnglish() {
-    let germanButton = document.getElementById('germanToggle')
-    let englishButton = document.getElementById('englishToggle')
-    localStorage.setItem('language', 'EN')
-    englishButton.src = "./assets/img/header/language single componentEN_Active.png"
-    germanButton.src = "./assets/img/header/language single componentDE_Inactive.png"
-    passCurrentLang()
-    if (document.getElementById('privacyPolicyText')) { translatePivacyPolicy() }
-    if (document.getElementById('legalNoticeText')) { translateLegalNotice() }
+function checkCurrentLang(event) {
+    if (localStorage.getItem('language') == event.currentTarget.innerText) { return }
+    toggleLanguageButtons(event.currentTarget.innerText)
 }
 
 function mousedownEnglishButton() {
     let englishButton = document.getElementById('englishToggle')
 
-    englishButton.src = "./assets/img/header/Property 1=on press.png"
+    englishButton.classList.add('langToggleClicked')
+}
+
+function mouseupEnglishButton() {
+    let englishButton = document.getElementById('englishToggle')
+
+    englishButton.classList.remove('langToggleClicked')
 }
 
 function mousedownGermanButton() {
     let germanButton = document.getElementById('germanToggle')
 
-    germanButton.src = "./assets/img/header/Property 1=on press.png"
+    germanButton.classList.add('langToggleClicked')
+}
+
+function mouseupGermanButton() {
+    let germanButton = document.getElementById('germanToggle')
+
+    germanButton.classList.remove('langToggleClicked')
 }
 
 function openBurgerNavbar(event) {

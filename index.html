@@ -35,9 +35,13 @@
                     </a>
                 </ul>
                 <div class="languageToggle" id="languageToggle">
-                    <img id="germanToggle" src="./assets/img/header/language single componentDE_Inactive.png" alt="">
+                    <div id="germanToggle" class="langToggleOff">
+                        DE
+                    </div>
                     <p class="languageDivider">/</p>
-                    <img id="englishToggle" src="./assets/img/header/language single componentEN_Active.png" alt="">
+                    <div id="englishToggle" class="langToggleOn">
+                        EN
+                    </div>
                 </div>
             </nav>
             <div class="burgerNavbar" id="burgerNavbar">
@@ -47,7 +51,6 @@
     </header>
 
     <section id="heroSection" class="heroSection">
-        <img class="arkDesignLogo" src="./assets/img/firstSection/ark_logo_final.svg" alt="">
         <img class="purpleShadowHeroSection" src="./assets/img/firstSection/30. Purple shadow about me.png" alt="">
         <img class="greenShadowHeroSection" src="./assets/img/firstSection/52. Blue shadow 1 V2.svg" alt="">
         <div class="ownNameHeader">
@@ -74,7 +77,7 @@
                         alt=""></a>
             </div>
             <div class="scrollDownContainer">
-                <p data-i18n="hero.scrollDown" >Scroll down</p>
+                <p data-i18n="hero.scrollDown">Scroll down</p>
                 <img src="./assets/img/firstSection/arrow.png" alt="">
             </div>
         </div>
@@ -104,9 +107,9 @@
                         <div class="aboutFeatureIcon">
                             <img src="./assets/img/aboutSection/ideaIcon.png" alt="">
                         </div>
-                        <p data-i18n="about.project">In my current position, I have developed a grain storage system software for my company.
-                            Although it is not fully finished yet, it already represents a very solid and well-designed
-                            project. It helps make storing items easier and allows users to quickly see where everything
+                        <p data-i18n="about.project">In my current position, I have developed a grain storage system
+                            software for my company.
+                            It helps make storing items easier and allows users to quickly see where everything
                             is located. Instead of using annoying paper notes, it provides a simple and user-friendly
                             interface where users can enter data quickly and easily. <br>
                             You can find the demo in the Portfolio-Section.
@@ -133,9 +136,11 @@
     <section class="skillsSection" id="skillsSection">
         <div class="skillsSectionLimiter">
             <div class="skillsLookingForMobileVers">
-                <p><span data-i18n="skills.lookingFor">Looking for </span><span class="skillsHighlight" data-i18n="skills.anotherSkill">another skill?</span></p>
+                <p><span data-i18n="skills.lookingFor">Looking for </span><span class="skillsHighlight"
+                        data-i18n="skills.anotherSkill">another skill?</span></p>
                 <p data-i18n="skills.contactSub">Feel free to contact me, I can bring your idea to life!</p>
-                <a href="#contactSection"><button class="skillsCtaBtn" data-i18n="skills.getInTouch">Get in touch</button></a>
+                <a href="#contactSection"><button class="skillsCtaBtn" data-i18n="skills.getInTouch">Get in
+                        touch</button></a>
             </div>
             <div class="iconsSkillSection">
                 <div class="iconsDiv">
@@ -175,7 +180,7 @@
                 <div class="iconsDiv">
                     <div class="skillIconTextDiv">
                         <img class="skillIcon" src="./assets/img/skillsSection/capaColoured.png" alt="">
-                        <p data-i18n="skills.continuallyLearning">Continually learning</p>
+                        <p data-i18n="skills.continuallyLearning">Continually <br> learning</p>
                     </div>
                 </div>
             </div>
@@ -184,15 +189,18 @@
                     <h2 class="skillsHeading">Skills</h2>
                     <div class="skillsGreenStripe"></div>
                 </div>
-                <p data-i18n="skills.description">In addition to my frontend skills, I also set up my own vServer, dealing with all the challenges that
+                <p data-i18n="skills.description">In addition to my frontend skills, I also set up my own vServer,
+                    dealing with all the challenges that
                     come with it, such as security and other aspects. This gave me insight into what a backend developer
                     does.
                     I really liked it and I can imagine doing more of it in the future.
                 </p>
                 <div class="skillsLookingFor">
-                    <p><span data-i18n="skills.lookingFor">Looking for </span><span class="skillsHighlight" data-i18n="skills.anotherSkill">another skill?</span></p>
+                    <p><span data-i18n="skills.lookingFor">Looking for </span><span class="skillsHighlight"
+                            data-i18n="skills.anotherSkill">another skill?</span></p>
                     <p data-i18n="skills.contactSub">Feel free to contact me, I can bring your idea to life!</p>
-                    <a href="#contactSection"><button class="skillsCtaBtn" data-i18n="skills.getInTouch">Get in touch</button></a>
+                    <a href="#contactSection"><button class="skillsCtaBtn" data-i18n="skills.getInTouch">Get in
+                            touch</button></a>
                 </div>
             </div>
         </div>
@@ -205,7 +213,8 @@
 
             <div class="portfolioHeader">
                 <h2 class="portfolioHeading" data-i18n="portfolio.heading">Portfolio</h2>
-                <p data-i18n="portfolio.sub">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+                <p data-i18n="portfolio.sub">Explore a selection of my work here - Interact with projects to see my
+                    skills in action.</p>
             </div>
             <div class="portfolioGrid">
                 <div>
@@ -249,11 +258,13 @@
                             <span class="contactLeftAccent"></span>
                             <h3 class="contactLeftTitle" data-i18n="contact.title">Got a problem to solve?</h3>
                         </div>
-                        <p data-i18n="contact.description">I have invested a lot of money in this training, and even more time and effort in the
+                        <p data-i18n="contact.description">I have invested a lot of money in this training, and even
+                            more time and effort in the
                             preparation. One year of preparation plus another 1.5 years of training at the Developer
                             Akademie alongside my main job — I push through, stay focused on my goals, and discipline
                             myself to achieve them.</p>
-                        <p><span data-i18n="contact.needDev">Need a Frontend developer? </span><span class="contactMe" data-i18n="contact.contactMe">Contact me!</span></p>
+                        <p><span data-i18n="contact.needDev">Need a Frontend developer? </span><span class="contactMe"
+                                data-i18n="contact.contactMe">Contact me!</span></p>
                     </div>
                     <form class="contactForm" id="contactForm">
                         <input id="formNameInput" type="text" class="contactInput borderPrimary2"
@@ -262,15 +273,20 @@
                         <input id="formEmailInput" type="email" class="contactInput borderPrimary2"
                             placeholder="Your email" data-i18n-placeholder="contact.placeholderEmail">
                         <div id="errorformEmailInput"></div>
-                        <textarea id="formTextInput" class="contactTextarea borderPrimary2"
-                            placeholder="Your message" data-i18n-placeholder="contact.placeholderMessage"></textarea>
+                        <textarea id="formTextInput" class="contactTextarea borderPrimary2" placeholder="Your message"
+                            data-i18n-placeholder="contact.placeholderMessage"></textarea>
                         <div id="errorformTextInput"></div>
                         <div class="contactCheckboxRow">
                             <div id="privacyCheck" class="contactCheckbox"></div>
-                            <p><span data-i18n="contact.privacyPre"> I've read the </span><a href="./privacyPolicy.html"><span class="contactPrivacyLink" data-i18n="contact.privacyLink">privacy policy</span></a><span data-i18n="contact.privacyPost"> and agree to the processing of my data as outlined.</span></p>
+                            <p><span data-i18n="contact.privacyPre"> I've read the </span><a
+                                    href="./privacyPolicy.html"><span class="contactPrivacyLink"
+                                        data-i18n="contact.privacyLink">privacy policy</span></a><span
+                                    data-i18n="contact.privacyPost"> and agree to the processing of my data as
+                                    outlined.</span></p>
                         </div>
                         <div id="errorprivacyCheck"></div>
-                        <button type="submit" id="contactSubmitBtn" class="contactSubmitBtn" data-i18n="contact.sendBtn">Send message :)</button>
+                        <button type="submit" id="contactSubmitBtn" class="contactSubmitBtn"
+                            data-i18n="contact.sendBtn">Send message :)</button>
                     </form>
                 </div>
                 <div class="arrowContainer">
@@ -286,8 +302,10 @@
         <div class="footerLimiter">
             <div class="footerLeft">
                 <img class="footerLogo" src="./assets/img/header/personalNameNav.png" alt="Logo">
-                <a href="./privacyPolicy.html"><span class="footerLegal d_noneMedia" data-i18n="footer.privacy">Privacy policy</span></a>
-                <a href="./impressum.html"><span class="footerLegal d_noneMedia" data-i18n="footer.imprint">Legal notice</span></a>
+                <a href="./privacyPolicy.html"><span class="footerLegal d_noneMedia" data-i18n="footer.privacy">Privacy
+                        policy</span></a>
+                <a href="./impressum.html"><span class="footerLegal d_noneMedia" data-i18n="footer.imprint">Legal
+                        notice</span></a>
             </div>
             <p class="footerCopyright">© Arne Robert Klimmt 2026</p>
             <div class="footerIcons">
@@ -297,9 +315,10 @@
                 <a target="_blank" href="https://de.linkedin.com/"><img src="./assets/img/firstSection/linkedInIcon.png"
                         alt="LinkedIn"></a>
             </div>
-            <a class="d_Flex_Media" href="./privacyPolicy.html"><span
-                    class="footerLegal" data-i18n="footer.privacy">Privacy policy</span></a>
-            <a class="d_Flex_Media" href="./impressum.html"><span class="footerLegal" data-i18n="footer.imprint">Legal notice</span></a>
+            <a class="d_Flex_Media" href="./privacyPolicy.html"><span class="footerLegal"
+                    data-i18n="footer.privacy">Privacy policy</span></a>
+            <a class="d_Flex_Media" href="./impressum.html"><span class="footerLegal" data-i18n="footer.imprint">Legal
+                    notice</span></a>
         </div>
     </footer>
     <div id="toast" class="toast"></div>
