@@ -4,6 +4,17 @@
     }
 }
 
+@media (max-width: 1600px) {
+    .greenShadowHeroSection {
+        width: 700px;
+    }
+
+    .purpleShadowHeroSection {
+        width: 500px;
+        left: -230px;
+    }
+}
+
 @media (max-width: 1300px) {
 
     .ownNameHeader div p:nth-child(1) {
@@ -270,6 +281,7 @@
 
     .skillsLookingForMobileVers {
         display: flex;
+        text-align: center;
     }
 
     .skillIcon {

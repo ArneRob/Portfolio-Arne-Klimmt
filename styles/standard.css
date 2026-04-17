@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "poppins-regular", Arial, Helvetica, sans-serif;
+}
+
 :root {
     --color-background2: #1a2539;
     --color-background: #141c2f;
@@ -19,6 +26,16 @@
     font-family: "poppins-bold";
     src:
         url("../assets/fonts/poppins/Poppins-Bold.woff") format("woff")
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(100px) rotate(180deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
 }
 
 
@@ -45,6 +62,11 @@ section {
 header {
     padding-left: 150px;
     padding-right: 150px;
+}
+
+.backToMainSideArrow {
+    display: flex;
+    align-items: flex-start;
 }
 
 .d_Flex_Media {
@@ -92,4 +114,252 @@ a {
 .sizeLimiter {
     max-width: 1440px;
     width: 100%;
+}
+
+.toast {
+    position: fixed;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    width: 200px;
+}
+
+.toast.show {
+    opacity: 1;
+}
+
+.toast.success {
+    color: green;
+    background-color: white;
+}
+
+.toast.error {
+    color: red;
+    background-color: white;
+}
+
+
+/* ----------------------------header/navbar------------------------- */
+header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 30px 8px;
+    background-color: var(--color-background);
+}
+
+.selfLogo {
+    color: white;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.animateLogo {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.selfLogoEnd {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-primary1);
+    display: inline-block;
+}
+
+.selfLogo:hover .selfLogoEnd {
+    animation: 1s ease 0s 1 slideInFromLeft;
+}
+
+.headerLimiter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.burgerNavbar {
+    display: none;
+}
+
+.burgerNavbar img {
+    width: 30px;
+    height: 30px;
+}
+
+.nameLogo {
+    width: 100px;
+    margin-left: 50px;
+}
+
+nav {
+    display: flex;
+    gap: 92px;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.languageDivider {
+    display: none;
+}
+
+.navMenu {
+    display: flex;
+    gap: 29px;
+    color: #FFFFFF;
+    align-items: center;
+    font-size: 23px;
+}
+
+.contactNavlink {
+    display: none;
+}
+
+.navMenu li {
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.navMenu li:hover {
+    color: var(--color-primary1);
+}
+
+.navMenu li::after {
+    width: 0px;
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--color-primary2);
+}
+
+.navMenu li:hover::after {
+    width: 100%;
+}
+
+.languageToggle {
+    display: flex;
+    color: white;
+    gap: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.languageToggle img {
+    width: 37px;
+    height: 32px;
+}
+
+.languageToggle img:hover {
+    background-color: var(--color-primary2);
+    border-radius: 10px;
+}
+
+.languageToggle div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 8px;
+    border-radius: 10px;
+    width: 45px;
+    height: 40px;
+}
+
+.langToggleOff {
+    border: 1px solid var(--color-primary1);
+}
+
+.langToggleOn {
+    background-color: var(--color-primary1);
+}
+
+.langToggleClicked {
+    background-color: white !important;
+    color: var(--color-primary2) !important;
+}
+
+
+
+/* ----------------------------footer------------------------- */
+
+.footer {
+    background-color: var(--color-background2);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 70px 180px;
+    border-top: 3px solid var(--color-primary1);
+}
+
+.footerLimiter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.footerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: relative;
+    padding: 1px;
+}
+
+.footerLeft a::after {
+    width: 0;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: var(--color-primary1);
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.footer a:hover::after {
+    width: 55px;
+}
+
+.footerLogo {
+    display: flex;
+    justify-content: flex-start;
+    width: 100px;
+    height: auto;
+}
+
+.footerLegal {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footerCopyright {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footerIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+
+.footerIcons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }

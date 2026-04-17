@@ -1,0 +1,84 @@
+.privacyPolicySection {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#privacyPolicyText h1 {
+    color: var(--color-primary1);
+}
+
+.privacyPolicySection a {
+    margin-bottom: 10px;
+}
+
+.privacyPolicySection h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 10px;
+}
+
+.privacyPolicySection h2 {
+    font-size: 22px;
+    color: #bcbc7a;
+}
+
+.privacyPolicySection p {
+    color: #a49e9e;
+    margin-bottom: 5px;
+}
+
+.privacyPolicySection li {
+    margin-bottom: 5px;
+}
+
+/* -------------legal notice-------------- */
+
+.impressumSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 323px);
+}
+
+.impressumtext {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFFFF;
+    height: 100%;
+    max-width: 400px;
+    gap: 20px;
+}
+
+.impressumtext h1 {
+    margin-bottom: 20px;
+    color: var(--color-primary1);
+}
+
+.impressumtext h3 {
+    margin-bottom: 10px;
+}
+
+.impressumtext h4 {
+    color: #ffffffc7;
+    margin-bottom: 5px;
+}
+
+.impressumtext p {
+    color: #ffffff82;
+    max-width: 200px;
+}
+
+.arrowBackToPortfolio {
+    width: 39px;
+}
+
+.arrowBackToPortfolio:hover {
+    filter: grayscale(1);
+}
