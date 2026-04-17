@@ -276,6 +276,13 @@
         height: 90px;
     }
 
+    .capaIcon {
+        display: none;
+    }
+    .capaIconMobile {
+        display: flex;
+    }
+
     /* ---portfolioSection--- */
     .portfolioSection {
         padding-top: 110px;
@@ -804,7 +811,7 @@
     /* ---aboutSection--- */
 
     .aboutContent {
-       max-width: 650px
+        max-width: 650px
     }
 
     .aboutFeatureIcon img {

@@ -834,6 +834,10 @@ nav {
     gap: 80px;
 }
 
+.capaIconMobile {
+    display: none;
+}
+
 .skillIconTextDiv {
     display: flex;
     flex-direction: column;
