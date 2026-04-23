@@ -347,8 +347,8 @@ function returnLegalNoticeTextDE() {
             </div>
             <div>
                 <h4>Angaben gemäß § 5 TMG</h4>
-                <p>Arne Robert klimmt <br>
-                    Rockendorfer weg 73 <br>
+                <p>Arne Robert Klimmt <br>
+                    Rockendorfer Weg 73 <br>
                     06128 Halle</p>
             </div>
 
@@ -359,8 +359,8 @@ function returnLegalNoticeTextDE() {
             </div>
             <div>
                 <h4>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h4>
-                <p>Arne Robert klimmt
-                    Rockendorfer weg 73 <br>
+                <p>Arne Robert Klimmt
+                    Rockendorfer Weg 73 <br>
                     06128 Halle</p>
             </div>
             `
@@ -381,7 +381,7 @@ function returnLegalNoticeTextEN() {
             <div>
                 <h4>Contact</h4>
                 <p>Phone: +49 151 15158508
-                    E-Mail: arne-klimmt@gmx.de</p>
+                    Email: arne-klimmt@gmx.de</p>
             </div>
             <div>
                 <h4>Responsible for content according to § 18 Para. 2 MStV</h4>
