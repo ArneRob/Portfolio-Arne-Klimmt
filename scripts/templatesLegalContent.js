@@ -1,6 +1,6 @@
 function returnPrivacyPolicyTextDE() {
     return `
-             <h1>Datenschutz&shy;erkl&auml;rung</h1>
+             <div class="headingWithStripe"><h1>Datenschutz&shy;erkl&auml;rung</h1></div>
             <h2>1. Datenschutz auf einen Blick</h2>
             <h3>Allgemeine Hinweise</h3>
             <p>Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber, was mit Ihren personenbezogenen
@@ -244,7 +244,7 @@ function returnPrivacyPolicyTextDE() {
 
 function returnPrivacyPolicyTextEN() {
     return `
-            <h1>Privacy Policy</h1>
+            <div class="headingWithStripe"><h1>Privacy Policy</h1></div>
             <h2>1. Privacy at a Glance</h2>
             <h3>General Information</h3>
             <p>The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to identify you personally. For detailed information on data protection, please refer to our privacy policy listed below.</p>
@@ -344,6 +344,8 @@ function returnLegalNoticeTextDE() {
     return `
                    <div class="legalNoticeHeadingContainer">
                 <h1>Impressum</h1>
+            </div>
+            <div>
                 <h4>Angaben gemäß § 5 TMG</h4>
                 <p>Arne Robert klimmt <br>
                     Rockendorfer weg 73 <br>
@@ -368,6 +370,8 @@ function returnLegalNoticeTextEN() {
     return `
                    <div class="legalNoticeHeadingContainer">
                 <h1>Legal Notice</h1>
+            </div>
+            <div>
                 <h4>Information according to § 5 TMG</h4>
                 <p>Arne Robert Klimmt <br>
                     Rockendorfer Weg 73 <br>

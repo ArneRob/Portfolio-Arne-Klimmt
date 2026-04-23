@@ -345,15 +345,6 @@
         width: 400px;
     }
 
-    /* ----------------------legalContent--------------------------- */
-
-    #privacyPolicyText h1::before {
-        display: none;
-    }
-
-    #privacyPolicyText h1::after {
-        right: -50%;
-    }
 
 }
 
@@ -485,15 +476,6 @@
         padding: 45px 25px;
     }
 
-    /* -------------------legalContent------------------------- */
-
-    #privacyPolicyText h1 {
-        justify-content: flex-start;
-    }
-
-    #privacyPolicyText h1::after {
-        right: -30%;
-    }
 }
 
 @media (max-width: 560px) {
@@ -575,11 +557,6 @@
         display: flex;
     }
 
-    /* -------------------legalContent------------------------- */
-
-    #privacyPolicyText h1::after {
-        right: -40%;
-    }
 }
 
 @media (max-width: 470px) {
@@ -659,25 +636,11 @@
     .privacyPolicySection h1 {
         font-size: 25px;
     }
-
-
-    /* -------------------legalContent------------------------- */
-
-    #privacyPolicyText h1::after {
-        right: -33%;
-    }
 }
 
 @media (max-width: 400px) {
     .ownNameHeader div p:nth-child(1) {
         font-size: 36px;
-    }
-
-
-    /* -------------------legalContent------------------------- */
-
-    #privacyPolicyText h1::after {
-        right: -38%;
     }
 }
 
@@ -711,12 +674,6 @@
 
     .skillsGreenStripe {
         right: -213%;
-    }
-
-    /* -------------------legalContent------------------------- */
-
-    #privacyPolicyText h1::after {
-        right: -50%;
     }
 
 }
@@ -767,15 +724,6 @@
 
     .scrollDownContainer {
         display: flex;
-    }
-
-    /* -------------------legalContent------------------------- */
-    #privacyPolicyText h1::before {
-        right: 62%;
-    }
-
-    #privacyPolicyText h1::after {
-        right: -43%;
     }
 }
 
@@ -1013,12 +961,5 @@
     .contactLeftAccent {
         left: -158%;
         width: 150%;
-    }
-
-    /* -------------------legalContent------------------------- */
-
-    #privacyPolicyText h1::after {
-        width: 150%;
-        right: -110%;
     }
 }
