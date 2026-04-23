@@ -345,6 +345,18 @@
         width: 400px;
     }
 
+    /* ----------------------legalContent--------------------------- */
+
+    .headingWithStripe,
+    .legalNoticeHeadingContainer {
+        grid-template-columns: auto 1fr;
+        padding-left: calc(50vw - 50%);
+    }
+
+    .headingWithStripe::before,
+    .legalNoticeHeadingContainer::before {
+        display: none;
+    }
 
 }
 
@@ -470,7 +482,22 @@
         padding-top: 40px;
     }
 
-    /* --------footer --------- */
+
+    /* ---------footer ----------- */
+
+    .footerLimiter {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .d_noneMedia {
+        display: none;
+    }
+
+    .d_Flex_Media {
+        display: flex;
+    }
+
 
     .footer {
         padding: 45px 25px;
@@ -540,21 +567,6 @@
 
     .contactHeadingRow::after {
         right: -78%;
-    }
-
-    /* ---------footer ----------- */
-
-    .footerLimiter {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .d_noneMedia {
-        display: none;
-    }
-
-    .d_Flex_Media {
-        display: flex;
     }
 
 }
