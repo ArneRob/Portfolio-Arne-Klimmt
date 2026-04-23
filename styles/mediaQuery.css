@@ -12,6 +12,18 @@
     .purpleShadowHeroSection {
         left: -25%;
     }
+
+    /* ---aboutSection--- */
+    .aboutGlow {
+        width: 900px;
+        top: 20px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .aboutCharacter {
+        top: 9%;
+    }
 }
 
 @media (max-width: 1300px) {
@@ -24,6 +36,13 @@
         font-size: 14px;
     }
 
+    /* ---aboutSection--- */
+
+    .aboutCharacter {
+        top: 22%;
+        width: 550px;
+        left: 5%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -49,11 +68,13 @@
 
     /* ---aboutSection--- */
     .aboutContent {
-        max-width: 500px;
+        max-width: 480px;
     }
 
     .aboutCharacter {
-        width: 500px;
+        width: 480px;
+        left: 6%;
+        top: 18%;
     }
 
 }
@@ -183,18 +204,13 @@
     }
 
     /* ---aboutSection--- */
+    #aboutSection {
+        padding-left: 35px !important;
+    }
+
     .aboutContent {
-        width: 450px;
+        width: 445px;
     }
-
-    .aboutCharacter {
-        width: 450px;
-    }
-
-    .aboutGlow {
-        width: 550px;
-    }
-
 }
 
 @media (max-width: 950px) {
@@ -208,6 +224,10 @@
 
     /* ---aboutSection--- */
 
+    .aboutSection {
+        padding-top: 0;
+    }
+
     .aboutSectionLimiter {
         display: flex;
         flex-direction: column-reverse;
@@ -218,7 +238,7 @@
     .aboutCharacterWrapper {
         position: relative;
         left: 0;
-        top: 0;
+        top: 30px;
     }
 
     .aboutContent {
@@ -245,7 +265,7 @@
 
     .aboutGlow {
         width: 750px;
-        top: 115px;
+        top: 70px;
     }
 
     .aboutWave {
@@ -472,8 +492,17 @@
 
     /* ---aboutSection--- */
 
+    .aboutWave {
+        bottom: -8%;
+    }
+
     .aboutCharacter {
-        width: 400px;
+        width: 350px;
+    }
+
+    .aboutGlow {
+        width: 550px;
+        top: 60px;
     }
 
     /* ---skillsSection--- */
@@ -550,7 +579,7 @@
     }
 
     .aboutWave {
-        bottom: -10%;
+        bottom: -5%;
     }
 
     /* --------skillsSection-------- */
@@ -615,8 +644,12 @@
         width: 330px;
     }
 
+    .aboutCharacter {
+        width: 300px;
+    }
+
     .aboutWave {
-        bottom: -7%;
+        bottom: 3%;
     }
 
     /* --------skillsSection-------- */
@@ -665,11 +698,12 @@
     /* --------aboutSection-------- */
 
     .aboutCharacter {
-        width: 370px;
+        width: 250px;
+        left: -10%;
     }
 
     .aboutWave {
-        bottom: -2%;
+        bottom: 8%;
     }
 
     .aboutFeatures {
@@ -764,8 +798,9 @@
         font-size: 80px;
     }
 
-    /* ---aboutSection--- */
-
+    .aboutGlow {
+        top: 20px;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -780,6 +815,12 @@
     .ownNameHeader .iam {
         font-size: 90px;
     }
+
+    .aboutCharacter {
+        top: 24%;
+        max-width: 650px;
+    }
+
 }
 
 /* ----------------------------min-width: 1600px------------------------- */
@@ -792,7 +833,7 @@
     }
 
     p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     section {
@@ -892,6 +933,7 @@
 
     .aboutCharacter {
         width: 770px;
+        top: 10%;
     }
 
     /* ---skillsSection--- */
