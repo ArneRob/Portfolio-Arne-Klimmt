@@ -607,7 +607,7 @@
     flex: 1.2;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 5px;
     max-width: 800px;
 }
 
@@ -701,6 +701,10 @@
 
 .contactSubmitBtnPermittedToSend {
     background-color: var(--color-primary1);
+}
+
+.errorformNameInput {
+    height: 25px;
 }
 
 .arrowContainer {
