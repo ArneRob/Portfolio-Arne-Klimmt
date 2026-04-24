@@ -221,17 +221,20 @@ nav {
 }
 
 .navMenu li {
-    text-decoration: none;
     list-style: none;
+}
+
+.navMenu a {
+    display: block;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 
-.navMenu li:hover {
+.navMenu a:hover {
     color: var(--color-primary1);
 }
 
-.navMenu li::after {
+.navMenu a::after {
     width: 0px;
     transition: 0.5s;
     content: "";
@@ -242,7 +245,7 @@ nav {
     background-color: var(--color-primary2);
 }
 
-.navMenu li:hover::after {
+.navMenu a:hover::after {
     width: 100%;
 }
 
