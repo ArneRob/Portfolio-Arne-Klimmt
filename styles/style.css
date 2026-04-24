@@ -96,6 +96,10 @@
     cursor: pointer;
 }
 
+.refernceIcon:hover {
+    transform: scale(1.2);
+}
+
 .lineOne {
     background-color: var(--color-primary1);
     height: 4px;
