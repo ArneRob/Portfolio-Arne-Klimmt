@@ -687,6 +687,12 @@
     .ownNameHeader div p:nth-child(1) {
         font-size: 36px;
     }
+
+    /* --------aboutSection-------- */
+
+    #aboutSection {
+        padding-left: 25px !important;
+    }
 }
 
 @media (max-width: 360px) {
@@ -696,6 +702,10 @@
     }
 
     /* --------aboutSection-------- */
+
+    #aboutSection {
+        padding-left: 16px !important;
+    }
 
     .aboutCharacter {
         width: 250px;
@@ -709,8 +719,6 @@
     .aboutFeatures {
         width: 300px;
     }
-
-    /* --------aboutSection-------- */
 
     .skillsContent>p {
         width: 300px;
