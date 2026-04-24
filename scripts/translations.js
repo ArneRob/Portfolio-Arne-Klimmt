@@ -33,6 +33,8 @@ const translations = {
         "contact.sendBtn": "Send message :)",
         "footer.privacy": "Privacy policy",
         "footer.imprint": "Legal notice",
+        "toast.sent": "Message sent",
+        "toast.error": "Error sending message",
     },
     DE: {
         "nav.about": "Über mich",
@@ -68,6 +70,8 @@ const translations = {
         "contact.sendBtn": "Nachricht senden :)",
         "footer.privacy": "Datenschutzerklärung",
         "footer.imprint": "Impressum",
+        "toast.sent": "Nachricht gesendet",
+        "toast.error": "Fehler beim Senden",
     }
 }
 
@@ -109,7 +113,6 @@ function setLanguage() {
     } else if (localStorage.getItem('language') == "EN" && englishToggle.classList[0] == "langToggleOff") {
         toggleLanguageButtons()
     }
-    // passCurrentLang()
 }
 
 /** Re-renders the privacy policy content block in the currently active language */

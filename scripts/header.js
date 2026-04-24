@@ -7,6 +7,8 @@ function startListener() {
     document.getElementById('englishToggle').addEventListener('click', checkCurrentLang)
     document.getElementById('germanToggle').addEventListener('click', checkCurrentLang)
     document.getElementById('burgerNavbar').addEventListener('click', openBurgerNavbar)
+    addEventlistenerToChildrenOfElement('navMenu', 'li')
+    window.addEventListener('resize', checkWindowInnerWidth)
 }
 
 /**
@@ -82,7 +84,6 @@ function mouseupGermanButton() {
 function openBurgerNavbar(event) {
     let burgerNavbar = document.getElementById('burgerNavbar')
     let html = document.getElementById('html')
-    addEventlistenerToChildrenOfElement('navMenu', 'li')
     if (event.currentTarget.classList[1] == 'open') {
         closeMobileNavbar()
     } else {
@@ -103,7 +104,7 @@ function closeMobileNavbar() {
     html.style = "overflow: scroll"
 }
 
-/** Positions the open navbar based on the current viewport width and re-registers itself on resize */
+/** Repositions the open navbar based on the current viewport width */
 function checkWindowInnerWidth() {
     let navbar = document.getElementById('nav')
     let burgerNavbar = document.getElementById('burgerNavbar')
@@ -114,7 +115,6 @@ function checkWindowInnerWidth() {
             navbar.style = "left: -40px"
         }
     }
-    window.addEventListener('resize', checkWindowInnerWidth)
 }
 
 /**

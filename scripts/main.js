@@ -41,14 +41,16 @@ async function sendFormDataToServer(data) {
             body: JSON.stringify(data)
         })
         const result = await response.json()
+        const lang = localStorage.getItem('language') || 'EN'
         if (result.success) {
             emptyFormField()
-            showToast('Nachricht gesendet', 'success')
+            showToast(translations[lang]['toast.sent'], 'success')
         } else {
-            showToast('Fehler beim Senden', 'error')
+            showToast(translations[lang]['toast.error'], 'error')
         }
     } catch (error) {
-        showToast('Fehler beim Senden', 'error')
+        const lang = localStorage.getItem('language') || 'EN'
+        showToast(translations[lang]['toast.error'], 'error')
     }
 }
 
@@ -63,13 +65,15 @@ function toggleContactSubmitBtn() {
     document.getElementById('contactSubmitBtn').classList.toggle('contactSubmitBtnPermittedToSend')
 }
 
-/** Clears all form input fields */
+/** Clears all form input fields and resets the checkbox and submit button to their default state */
 function emptyFormField() {
-    let idArray = ["formNameInput", "formEmailInput", "formTextInput", "privacyCheck"]
+    let idArray = ["formNameInput", "formEmailInput", "formTextInput"]
     idArray.forEach(element => {
-        let domElem = document.getElementById(`${element}`)
-        domElem.value = ""
+        document.getElementById(element).value = ""
     })
+    const checkbox = document.getElementById('privacyCheck')
+    checkbox.classList.remove('contactCheckboxImgChecked', 'checked')
+    document.getElementById('contactSubmitBtn').classList.remove('contactSubmitBtnPermittedToSend')
 }
 
 /**
@@ -176,7 +180,7 @@ function removeInputErrorText(elementId) {
  * @param {HTMLElement} element
  */
 function addInputErrorText(elementId, element) {
-    errorDivId = `error${elementId}`
+    let errorDivId = `error${elementId}`
     let errorElement = document.getElementById(`${errorDivId}`)
     errorElement.style = "color:red"
     if (localStorage.getItem('language') == "DE") {
@@ -235,19 +239,6 @@ const validateEmail = (email) => {
         /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     );
 };
-
-/**
- * Returns true if the email is valid, false otherwise
- * @param {string} email
- * @returns {boolean}
- */
-function validate(email) {
-    if (validateEmail(email)) {
-        return true;
-    } else {
-        return false
-    }
-}
 
 /**
  * Shows a toast notification and hides it after 3 seconds
