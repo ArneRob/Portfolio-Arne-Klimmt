@@ -74,6 +74,10 @@
     transition: 0.1s;
 }
 
+.letsTalkButtonDiv:hover {
+    background-color: var(--color-primary2);
+}
+
 .letsTalkButtonDiv:active {
     background-color: #ffffff;
     color: var(--color-primary2);
@@ -395,6 +399,10 @@
     transition: 0.1s;
 }
 
+.skillsCtaBtn:hover {
+    background-color: var(--color-primary2);
+}
+
 .skillsCtaBtn:active {
     background-color: #ffffff;
     color: var(--color-primary2);
@@ -700,7 +708,7 @@
 }
 
 .contactSubmitBtnPermittedToSend.contactSubmitBtn:hover {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: var(--color-primary2);
 }
 
 .contactSubmitBtnPermittedToSend {
