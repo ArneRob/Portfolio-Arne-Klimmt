@@ -1,3 +1,7 @@
+/**
+ * Returns the full German privacy policy as an HTML string
+ * @returns {string}
+ */
 function returnPrivacyPolicyTextDE() {
     return `
              <div class="headingWithStripe"><h1>Datenschutz&shy;erkl&auml;rung</h1></div>
@@ -242,6 +246,10 @@ function returnPrivacyPolicyTextDE() {
             `
 }
 
+/**
+ * Returns the full English privacy policy as an HTML string
+ * @returns {string}
+ */
 function returnPrivacyPolicyTextEN() {
     return `
             <div class="headingWithStripe"><h1>Privacy Policy</h1></div>
@@ -340,6 +348,10 @@ function returnPrivacyPolicyTextEN() {
             `
 }
 
+/**
+ * Returns the German legal notice (Impressum) as an HTML string
+ * @returns {string}
+ */
 function returnLegalNoticeTextDE() {
     return `
                    <div class="legalNoticeHeadingContainer">
@@ -366,6 +378,10 @@ function returnLegalNoticeTextDE() {
             `
 }
 
+/**
+ * Returns the English legal notice as an HTML string
+ * @returns {string}
+ */
 function returnLegalNoticeTextEN() {
     return `
                    <div class="legalNoticeHeadingContainer">

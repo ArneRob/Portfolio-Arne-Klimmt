@@ -206,6 +206,12 @@ function returnErrorText(elementId, element) {
     }
 }
 
+/**
+ * Returns the appropriate English error message for a form field
+ * @param {string} elementId
+ * @param {HTMLElement} element
+ * @returns {string}
+ */
 function returnErrorTextEN(elementId, element) {
     if (elementId == "formNameInput") {
         return "Please enter your name"

@@ -71,12 +71,17 @@ const translations = {
     }
 }
 
+/** Reads the stored language from localStorage and applies it to the page, if set */
 function passCurrentLang() {
     let lang = localStorage.getItem("language");
     if (!lang) { return }
     applyLanguage(lang)
 }
 
+/**
+ * Updates all i18n text nodes and input placeholders on the page for the given language
+ * @param {'DE' | 'EN'} lang
+ */
 function applyLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.dataset.i18n
@@ -90,6 +95,10 @@ function applyLanguage(lang) {
 
 
 
+/**
+ * Initialises the language on page load: sets a default if none is stored,
+ * and syncs the toggle button state with the stored value
+ */
 function setLanguage() {
     let germanToggle = document.getElementById('germanToggle')
     let englishToggle = document.getElementById('englishToggle')
@@ -103,6 +112,7 @@ function setLanguage() {
     // passCurrentLang()
 }
 
+/** Re-renders the privacy policy content block in the currently active language */
 function translatePrivacyPolicy() {
     let privacyPolicyText = document.getElementById('privacyPolicyText')
 
@@ -113,6 +123,7 @@ function translatePrivacyPolicy() {
     }
 }
 
+/** Re-renders the legal notice content block in the currently active language */
 function translateLegalNotice() {
     let legalNoticeText = document.getElementById('legalNoticeText')
 
