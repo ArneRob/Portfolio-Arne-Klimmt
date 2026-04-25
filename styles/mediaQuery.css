@@ -134,11 +134,11 @@
         margin: 0;
         width: 100vw;
         height: 90vh;
-        top: 58px;
+        top: 75px;
         left: 1100px;
         justify-content: center;
         align-items: center;
-        background-color: var(--color-secondaryVer3);
+        background-color: #414956ed;
         transition: 0.6s;
     }
 

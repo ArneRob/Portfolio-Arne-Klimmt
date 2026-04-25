@@ -59,11 +59,6 @@ section {
     padding-right: 150px;
 }
 
-header {
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
 .backToMainSideArrow {
     display: flex;
     align-items: flex-start;
@@ -147,10 +142,12 @@ a {
 /* ----------------------------header/navbar------------------------- */
 header {
     display: flex;
-    position: relative;
     justify-content: center;
     padding: 30px 8px;
-    background-color: var(--color-background);
+    background: linear-gradient(to bottom, var(--color-background) 95%, transparent);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .selfLogo {
