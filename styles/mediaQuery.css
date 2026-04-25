@@ -296,10 +296,6 @@
         gap: 50px;
     }
 
-    .skillsGreenStripe {
-        right: -208%;
-    }
-
     .skillsContent {
         width: 100%;
     }
@@ -434,11 +430,6 @@
 
     .purpleShadowHeroSection {
         left: -30%;
-    }
-
-    /* -----skillsSection----- */
-    .skillsGreenStripe {
-        width: 275%;
     }
 
     .portfolioHeading::before {
@@ -643,9 +634,6 @@
         gap: 60px;
     }
 
-    .skillsGreenStripe {
-        width: 272%;
-    }
 
 
     /* ---portfolioSection--- */
@@ -835,12 +823,6 @@
 
     .skillsContent>p {
         width: 300px;
-    }
-
-    /* --------skillsSection-------- */
-
-    .skillsGreenStripe {
-        right: -213%;
     }
 
     /* ---portfolioSection--- */
