@@ -120,6 +120,7 @@
     .burgerNavbar {
         display: flex;
         cursor: pointer;
+        align-items: center;
     }
 
     .headerLimiter {
@@ -328,7 +329,7 @@
         align-items: center;
     }
 
-    .portfolioGrid div {
+    .portfolioGrid > div {
         align-items: center;
         gap: 30px;
     }
