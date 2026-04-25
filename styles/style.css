@@ -312,7 +312,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .skillIconTextDiv p {
@@ -522,7 +522,7 @@
     position: absolute;
     display: none !important;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
     width: 100%;
     height: 100%;
@@ -758,7 +758,7 @@
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
 }
 

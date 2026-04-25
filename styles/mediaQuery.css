@@ -33,7 +33,7 @@
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     /* ---aboutSection--- */
@@ -60,10 +60,6 @@
 
     .ownNameHeader .iam {
         font-size: 55px;
-    }
-
-    p {
-        font-size: 13px;
     }
 
     /* ---aboutSection--- */
@@ -212,6 +208,21 @@
     .aboutContent {
         width: 445px;
     }
+
+    /* ---portfolioSection--- */
+
+    .laptopPreviewOverlayText h3 {
+        font-size: 22px;
+    }
+
+    .laptopPreviewOverlayText p {
+        font-size: 16px;
+    }
+
+    .githubButton,
+    .liveDemoButton {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 950px) {
@@ -329,7 +340,7 @@
         align-items: center;
     }
 
-    .portfolioGrid > div {
+    .portfolioGrid>div {
         align-items: center;
         gap: 30px;
     }
@@ -339,6 +350,19 @@
         top: 70px;
         z-index: 0;
         width: 300px;
+    }
+
+    .laptopPreviewOverlayText h3 {
+        font-size: 36px;
+    }
+
+    .laptopPreviewOverlayText p {
+        font-size: 26px;
+    }
+
+    .githubButton,
+    .liveDemoButton {
+        font-size: 26px;
     }
 
     /* ---contactSection--- */
@@ -416,6 +440,23 @@
     .skillsGreenStripe {
         width: 275%;
     }
+
+    .portfolioHeading::before {
+        left: -41%;
+    }
+
+    .laptopPreviewOverlayText h3 {
+        font-size: 30px;
+    }
+
+    .laptopPreviewOverlayText p {
+        font-size: 22px;
+    }
+
+    .githubButton,
+    .liveDemoButton {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -475,6 +516,19 @@
     .portfolioHeading::before {
         left: -41%;
     }
+
+    .laptopPreviewOverlayText h3 {
+        font-size: 28px;
+    }
+
+    .laptopPreviewOverlayText p {
+        font-size: 19px;
+    }
+
+    .githubButton,
+    .liveDemoButton {
+        font-size: 19px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -483,7 +537,7 @@
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     section {
@@ -593,12 +647,45 @@
         width: 272%;
     }
 
+
+    /* ---portfolioSection--- */
+
+    .laptopPreviewOverlayText h3 {
+        font-size: 24px;
+    }
+
+    .laptopPreviewOverlayText p {
+        font-size: 17px;
+    }
+
+    .githubButton,
+    .liveDemoButton {
+        font-size: 17px;
+    }
+
     /* --------contactSection-------- */
 
     .contactHeadingRow::after {
         right: -78%;
     }
 
+}
+
+@media (max-width: 500px) {
+    /* ---portfolioSection--- */
+
+    .laptopPreviewOverlayText h3 {
+        font-size: 22px;
+    }
+
+    .laptopPreviewOverlayText p {
+        font-size: 16px;
+    }
+
+    .githubButton,
+    .liveDemoButton {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 470px) {
@@ -619,7 +706,7 @@
     /* ---heroSection--- */
 
     .ownNameHeader div p:nth-child(2) {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .ownNameHeader .iam {
@@ -668,6 +755,16 @@
         height: 60px;
     }
 
+    /* --------portfoliosSection-------- */
+
+    .portfolioGrid>div {
+        width: 100%;
+    }
+
+    .portfolioCard {
+        width: 100%;
+    }
+
     /* --------contactSection-------- */
 
     .contactHeadingRow::after {
@@ -693,6 +790,21 @@
 
     #aboutSection {
         padding-left: 25px !important;
+    }
+
+    /* ---portfolioSection--- */
+
+    .laptopPreviewOverlayText h3 {
+        font-size: 20px;
+    }
+
+    .laptopPreviewOverlayText p {
+        font-size: 14px;
+    }
+
+    .githubButton,
+    .liveDemoButton {
+        font-size: 14px;
     }
 }
 
@@ -730,6 +842,13 @@
     .skillsGreenStripe {
         right: -213%;
     }
+
+    /* ---portfolioSection--- */
+
+    .laptopPreviewOverlayText {
+        padding: 8px 4px;
+    }
+
 
 }
 
@@ -780,6 +899,21 @@
     .scrollDownContainer {
         display: flex;
     }
+
+    /* ---portfolioSection--- */
+
+    .laptopPreviewOverlayText h3 {
+        font-size: 22px;
+    }
+
+    .laptopPreviewOverlayText p {
+        font-size: 16px;
+    }
+
+    .githubButton,
+    .liveDemoButton {
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 1300px) {
@@ -809,6 +943,21 @@
 
     .aboutGlow {
         top: 20px;
+    }
+
+    /* ---portfolioSection--- */
+
+    .laptopPreviewOverlayText h3 {
+        font-size: 28px;
+    }
+
+    .laptopPreviewOverlayText p {
+        font-size: 20px;
+    }
+
+    .githubButton,
+    .liveDemoButton {
+        font-size: 20px;
     }
 }
 
@@ -891,6 +1040,21 @@
 
     .skillsContent>p {
         width: 430px;
+    }
+
+    /* ---portfolioSection--- */
+
+    .laptopPreviewOverlayText h3 {
+        font-size: 32px;
+    }
+
+    .laptopPreviewOverlayText p {
+        font-size: 23px;
+    }
+
+    .githubButton,
+    .liveDemoButton {
+        font-size: 23px;
     }
 }
 
