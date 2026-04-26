@@ -223,6 +223,26 @@
     .liveDemoButton {
         font-size: 16px;
     }
+
+    .portfolioCard:hover .laptopPreview {
+        transform: none;
+    }
+
+    .portfolioCard:hover .laptopPreviewHoverOverlay {
+        display: none !important;
+    }
+
+    .portfolioCard.overlayActive .laptopPreviewHoverOverlay {
+        display: flex !important;
+    }
+
+    .portfolioCard.overlayActive .laptopPreview {
+        transform: scale(2);
+    }
+
+    .portfolioCard {
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 950px) {
@@ -539,7 +559,7 @@
     /* ---aboutSection--- */
 
     .aboutWave {
-        bottom: -7%;
+        bottom: -4%;
     }
 
     .aboutCharacter {
@@ -625,7 +645,7 @@
     }
 
     .aboutWave {
-        bottom: -3%;
+        bottom: -1%;
     }
 
     /* --------skillsSection-------- */
@@ -725,7 +745,7 @@
     }
 
     .aboutWave {
-        bottom: 3%;
+        bottom: 6%;
     }
 
     /* --------skillsSection-------- */
@@ -780,6 +800,12 @@
         padding-left: 25px !important;
     }
 
+    /* --------skillsSection-------- */
+
+    .iconsDiv {
+        gap: 40px;
+    }
+
     /* ---portfolioSection--- */
 
     .laptopPreviewOverlayText h3 {
@@ -814,7 +840,7 @@
     }
 
     .aboutWave {
-        bottom: 8%;
+        bottom: 10%;
     }
 
     .aboutFeatures {

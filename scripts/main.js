@@ -252,4 +252,31 @@ function showToast(message, type) {
     setTimeout(() => toast.className = 'toast', 3000)
 }
 
+function initMobilePortfolioCards() {
+    const mq = window.matchMedia('(max-width: 1100px)')
+    const cards = document.querySelectorAll('.portfolioCard')
+
+    function handleCardClick(e) {
+        const card = e.currentTarget
+        const isOpen = card.classList.contains('overlayActive')
+        cards.forEach(c => c.classList.remove('overlayActive'))
+        if (!isOpen) card.classList.add('overlayActive')
+    }
+
+    function activate() {
+        cards.forEach(c => c.addEventListener('click', handleCardClick))
+    }
+
+    function deactivate() {
+        cards.forEach(c => {
+            c.removeEventListener('click', handleCardClick)
+            c.classList.remove('overlayActive')
+        })
+    }
+
+    mq.addEventListener('change', e => e.matches ? activate() : deactivate())
+    if (mq.matches) activate()
+}
+
 startContactFormListener()
+initMobilePortfolioCards()
