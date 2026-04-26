@@ -491,10 +491,10 @@
     visibility: visible;
 }
 
-.skillIconTextDiv:active .capaTooltip {
+/* .skillIconTextDiv:active .capaTooltip {
     bottom: 100%;
     visibility: visible;
-}
+} */
 
 /* ----------------------------portfolioSection------------------------- */
 
