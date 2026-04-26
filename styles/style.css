@@ -320,10 +320,15 @@
     text-align: center;
 }
 
+.skillIconTextDiv:hover .transitionUp10P {
+    top: -10%;
+}
+
 .skillIcon {
     width: 60px;
     height: 60px;
     margin-left: 5px;
+    position: relative;
 }
 
 .skillsContent {
@@ -442,6 +447,7 @@
     transition: all 0.5s ease;
     display: flex;
     visibility: hidden;
+    z-index: 1;
 }
 
 .capaTooltip::after {
