@@ -39,7 +39,6 @@
     /* ---aboutSection--- */
 
     .aboutCharacter {
-        top: 22%;
         width: 550px;
         left: 5%;
     }
@@ -66,13 +65,6 @@
     .aboutContent {
         max-width: 480px;
     }
-
-    .aboutCharacter {
-        width: 480px;
-        left: 6%;
-        top: 18%;
-    }
-
 }
 
 @media (max-width: 1100px) {
@@ -202,11 +194,37 @@
 
     /* ---aboutSection--- */
     #aboutSection {
-        padding-left: 35px !important;
+        padding-left: 30px !important;
+    }
+
+    .aboutHeading {
+        margin-bottom: 10px;
     }
 
     .aboutContent {
         width: 445px;
+    }
+
+    .aboutTextBlock {
+        margin-bottom: 25px;
+    }
+
+    .aboutFeatures {
+        gap: 20px;
+    }
+
+    .aboutCharacter {
+        width: 510px;
+        left: 6%;
+    }
+
+    /* ---skillsSection--- */
+    .skillsSectionLimiter {
+        gap: 13%;
+    }
+
+    .iconsDiv {
+        gap: 60px;
     }
 
     /* ---portfolioSection--- */
@@ -369,16 +387,16 @@
     }
 
     .laptopPreviewOverlayText h3 {
-        font-size: 36px;
+        font-size: 33px;
     }
 
     .laptopPreviewOverlayText p {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     .githubButton,
     .liveDemoButton {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     /* ---contactSection--- */
@@ -456,17 +474,23 @@
         left: -41%;
     }
 
+    /* ---portfolioSection--- */
+
+    .portfolioHeading::before {
+        left: -41%;
+    }
+
     .laptopPreviewOverlayText h3 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .laptopPreviewOverlayText p {
-        font-size: 22px;
+        font-size: 19px;
     }
 
     .githubButton,
     .liveDemoButton {
-        font-size: 22px;
+        font-size: 19px;
     }
 }
 
@@ -522,24 +546,6 @@
         bottom: -10%;
     }
 
-    /* ---portfolioSection--- */
-
-    .portfolioHeading::before {
-        left: -41%;
-    }
-
-    .laptopPreviewOverlayText h3 {
-        font-size: 28px;
-    }
-
-    .laptopPreviewOverlayText p {
-        font-size: 19px;
-    }
-
-    .githubButton,
-    .liveDemoButton {
-        font-size: 19px;
-    }
 }
 
 @media (max-width: 650px) {
@@ -577,6 +583,11 @@
         padding-top: 40px;
     }
 
+    /* ---portfolioSection--- */
+
+    .portfolioGrid>div {
+        width: 95%;
+    }
 
     /* ---------footer ----------- */
 
@@ -717,11 +728,6 @@
         font-size: 16px;
     }
 
-    .ownNameHeader .iam {
-        font-size: 20px;
-        padding: 0px;
-    }
-
     .purpleShadowHeroSection {
         width: 350px;
     }
@@ -828,6 +834,11 @@
         font-size: 33px;
     }
 
+    .ownNameHeader .iam {
+        font-size: 20px;
+        padding: 0px;
+    }
+
     /* --------aboutSection-------- */
 
     #aboutSection {
@@ -854,7 +865,7 @@
     /* ---portfolioSection--- */
 
     .laptopPreviewOverlayText {
-        padding: 8px 4px;
+        padding: 4px 4px;
     }
 
 

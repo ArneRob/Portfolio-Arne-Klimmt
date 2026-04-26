@@ -2,6 +2,10 @@
     border: 1px solid var(--color-primary2);
 }
 
+.borderPrimary2:hover {
+    border: 1px solid var(--color-secondaryVer2);
+}
+
 /* ----------------------------heroSection------------------------- */
 
 .heroSection {
@@ -444,7 +448,7 @@
     gap: 12px;
     align-items: center;
     white-space: nowrap;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease-in;
     display: flex;
     visibility: hidden;
     z-index: 1;
@@ -749,7 +753,7 @@
 .contactContent>div {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 16px;
 }
 
 .contactLeft {

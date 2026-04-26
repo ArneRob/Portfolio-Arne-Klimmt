@@ -6,6 +6,8 @@ function startContactFormListener() {
     document.getElementById('formNameInput').addEventListener('blur', handleValidationEvent)
     document.getElementById('formEmailInput').addEventListener('blur', handleValidationEvent)
     document.getElementById('formTextInput').addEventListener('blur', handleValidationEvent)
+    document.getElementById('privacyCheck').addEventListener('click', handleValidationEvent)
+
 }
 
 /** Validates all form fields and sends the form data if valid */
