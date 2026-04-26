@@ -16,7 +16,6 @@
     /* ---aboutSection--- */
     .aboutGlow {
         width: 900px;
-        top: 20px;
     }
 }
 
@@ -41,6 +40,11 @@
     .aboutCharacter {
         width: 550px;
         left: 5%;
+    }
+
+       /* ---aboutSection--- */
+    .aboutGlow {
+       top: 25px;
     }
 }
 
@@ -1039,7 +1043,6 @@
 
     .aboutGlow {
         width: 900px;
-        top: 150px;
     }
 
     /* ---skillsSection--- */
