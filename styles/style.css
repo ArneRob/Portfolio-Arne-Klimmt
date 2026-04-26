@@ -419,6 +419,73 @@
     color: var(--color-primary2);
 }
 
+/* ----------------------------capaTooltip------------------------- */
+
+.capaLearningWrapper {
+    position: relative;
+}
+
+.capaTooltip {
+    position: absolute;
+    bottom: 80%;
+    left: 3%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    color: #000000;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+    display: flex;
+    visibility: hidden;
+}
+
+.capaTooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 22%;
+    transform: translateX(-50%);
+    border: 12px solid transparent;
+    border-top-color: #ffffff;
+    border-bottom: 0;
+}
+
+.capaTooltipIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+
+.capaTooltipIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.capaTooltipIcon img {
+    width: 32px;
+    height: 32px;
+}
+
+.skillIconTextDiv:hover .capaTooltip {
+    bottom: 100%;
+    visibility: visible;
+}
+
+.skillIconTextDiv:active .capaTooltip {
+    bottom: 100%;
+    visibility: visible;
+}
+
 /* ----------------------------portfolioSection------------------------- */
 
 .portfolioSection {
