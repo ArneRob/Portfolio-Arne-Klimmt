@@ -492,10 +492,13 @@
     visibility: visible;
 }
 
-/* .skillIconTextDiv:active .capaTooltip {
-    bottom: 100%;
-    visibility: visible;
-} */
+.skillIconTextDiv:hover .tooltipActive, .capaLearningWrapper.tooltipActive .capaIconMobile {
+    filter: brightness(5.5);
+}
+
+.skillIconTextDiv:hover .capaIcon {
+    filter: brightness(10);
+}
 
 /* ----------------------------portfolioSection------------------------- */
 

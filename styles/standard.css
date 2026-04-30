@@ -191,6 +191,8 @@ header {
 .burgerNavbar img {
     width: 30px;
     height: 30px;
+    position: relative;
+    top: 5px;
 }
 
 .nameLogo {
@@ -279,6 +281,12 @@ nav {
     width: 45px;
     height: 40px;
 }
+
+.languageToggle div:hover {
+    background-color: var(--color-primary2);
+    border-color: var(--color-background2);
+}
+
 
 .langToggleOff {
     border: 1px solid var(--color-primary1);

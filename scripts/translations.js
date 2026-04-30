@@ -56,7 +56,7 @@ const translations = {
         "nav.skills": "Fähigkeiten",
         "nav.portfolio": "Portfolio",
         "nav.contact": "Kontakt",
-        "hero.iam": "Ich",
+        "hero.iam": "Ich bin",
         "hero.jobTitle": "Frontend Entwickler",
         "hero.letsTalk": "Lass uns reden!",
         "hero.scrollDown": "weiter unten!",

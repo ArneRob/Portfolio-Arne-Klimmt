@@ -1,13 +1,18 @@
+function addEventListenerFormElement(elId) {
+    const el = document.getElementById(elId)
+    el.addEventListener('blur', handleValidationEvent)
+    el.addEventListener('input', (e) => processChanges({ currentTarget: e.currentTarget }))
+}
+
 /** Registers all event listeners for the contact form */
 function startContactFormListener() {
     document.querySelector('.contactForm').addEventListener('submit', (e) => e.preventDefault())
     document.getElementById('contactSubmitBtn').addEventListener('click', sendMail)
     document.getElementById('privacyCheck').addEventListener('click', toggleFormButton)
-    document.getElementById('formNameInput').addEventListener('blur', handleValidationEvent)
-    document.getElementById('formEmailInput').addEventListener('blur', handleValidationEvent)
-    document.getElementById('formTextInput').addEventListener('blur', handleValidationEvent)
     document.getElementById('privacyCheck').addEventListener('click', handleValidationEvent)
-
+    addEventListenerFormElement('formNameInput')
+    addEventListenerFormElement('formEmailInput')
+    addEventListenerFormElement('formTextInput')
 }
 
 /** Validates all form fields and sends the form data if valid */
@@ -332,6 +337,16 @@ function initMobilePortfolioCards() {
     })
     if (mobileMediaQuery.matches) activate()
 }
+
+function debounceFormValid(func, timeout = 1000) {
+    let timer;
+    return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => { func.apply(this, args); }, timeout);
+    };
+}
+
+let processChanges = debounceFormValid(handleValidationEvent);
 
 startContactFormListener()
 initMobilePortfolioCards()
