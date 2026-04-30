@@ -797,10 +797,10 @@
         right: -85%;
     }
 
-    /* --------impressumSection-------- */
-    .impressumSection {
-        height: calc(100vh - 230px);
-    }
+    /* --------legalNoticeSection-------- */
+    /* .legalNoticeSection {
+        min-height: calc(100vh - 230px);
+    } */
 
     .privacyPolicySection h1 {
         font-size: 25px;

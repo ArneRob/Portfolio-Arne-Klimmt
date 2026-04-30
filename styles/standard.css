@@ -44,6 +44,9 @@ body {
     overflow-x: clip;
     background-color: var(--color-background);
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h2 {
