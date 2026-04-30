@@ -62,12 +62,12 @@ function togglePrivacyCheckbox() {
     document.getElementById('privacyCheck').classList.toggle('checked')
 }
 
-/** adds the submit button active state */
+/** Adds the active state class to the submit button */
 function addClassContactSubmitBtn() {
     document.getElementById('contactSubmitBtn').classList.add('contactSubmitBtnPermittedToSend')
 }
 
-/** removes the submit button active state */
+/** Removes the active state class from the submit button */
 function removeClassContactSubmitBtn() {
     document.getElementById('contactSubmitBtn').classList.remove('contactSubmitBtnPermittedToSend')
 }
@@ -97,6 +97,7 @@ function validateAllFormFields() {
     return isValid
 }
 
+/** Checks all form fields silently and updates the submit button state accordingly */
 function checkFormfields() {
     if (!validateSilentAllFormFields()) {
         removeClassContactSubmitBtn()
@@ -106,21 +107,13 @@ function checkFormfields() {
     }
 }
 
+/**
+ * Returns true if all form fields have the checked class
+ * @returns {boolean}
+ */
 function validateSilentAllFormFields() {
-    let form = document.getElementById('contactForm')
-    let array = []
-    for (let index = 0; index < 4; index++) {
-        if (index > 2) {
-            array.push(document.getElementById('privacyCheck'))
-        } else {
-            array.push(form[index])
-        }
-    }
-    return array.every(containsChecked)
-}
-
-function containsChecked(element, index, array) {
-    return element.classList.contains('checked')
+    const ids = ['formNameInput', 'formEmailInput', 'formTextInput', 'privacyCheck']
+    return ids.every(id => document.getElementById(id).classList.contains('checked'))
 }
 
 /**
@@ -156,11 +149,10 @@ function validateInput(element, elementId) {
     }
 }
 
-/** Toggles privacy checkbox and submit button together */
+/** Toggles the privacy checkbox and updates the submit button state */
 function toggleFormButton() {
     togglePrivacyCheckbox()
     checkFormfields()
-    // toggleContactSubmitBtn()
 }
 
 /**
@@ -170,7 +162,7 @@ function toggleFormButton() {
  * @returns {boolean}
  */
 function processCheckBoxError(element, elementId) {
-    if (element.classList[2] == "checked") {
+    if (element.classList.contains("checked")) {
         removeInputErrorText(elementId)
         return true
     } else {
@@ -179,10 +171,18 @@ function processCheckBoxError(element, elementId) {
     }
 }
 
+/**
+ * Adds the checked class to a form field
+ * @param {string} elementId
+ */
 function addCheckedToEl(elementId) {
     document.getElementById(elementId).classList.add('checked')
 }
 
+/**
+ * Removes the checked class from a form field
+ * @param {string} elementId
+ */
 function removeCheckedFromEl(elementId) {
     document.getElementById(elementId).classList.remove('checked')
 }
@@ -300,30 +300,37 @@ function showToast(message, type) {
     setTimeout(() => toast.className = 'toast', 3000)
 }
 
+/** Initializes click-based overlay behavior for portfolio cards on mobile screens */
 function initMobilePortfolioCards() {
-    const mq = window.matchMedia('(max-width: 1100px)')
+    const mobileMediaQuery = window.matchMedia('(max-width: 1100px)')
     const cards = document.querySelectorAll('.portfolioCard')
 
-    function handleCardClick(e) {
-        const card = e.currentTarget
+    function handleCardClick(event) {
+        const card = event.currentTarget
         const isOpen = card.classList.contains('overlayActive')
-        cards.forEach(c => c.classList.remove('overlayActive'))
+        cards.forEach(card => card.classList.remove('overlayActive'))
         if (!isOpen) card.classList.add('overlayActive')
     }
 
     function activate() {
-        cards.forEach(c => c.addEventListener('click', handleCardClick))
+        cards.forEach(card => card.addEventListener('click', handleCardClick))
     }
 
     function deactivate() {
-        cards.forEach(c => {
-            c.removeEventListener('click', handleCardClick)
-            c.classList.remove('overlayActive')
+        cards.forEach(card => {
+            card.removeEventListener('click', handleCardClick)
+            card.classList.remove('overlayActive')
         })
     }
 
-    mq.addEventListener('change', e => e.matches ? activate() : deactivate())
-    if (mq.matches) activate()
+    mobileMediaQuery.addEventListener('change', mediaQueryEvent => {
+        if (mediaQueryEvent.matches) {
+            activate()
+        } else {
+            deactivate()
+        }
+    })
+    if (mobileMediaQuery.matches) activate()
 }
 
 startContactFormListener()
