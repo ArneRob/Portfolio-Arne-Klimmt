@@ -43,6 +43,10 @@
     top: 12px;
 }
 
+:lang(de) .ownNameHeader .iam {
+    font-size: 65px;
+}
+
 .nameAndJob {
     padding: 16px 8px;
 }

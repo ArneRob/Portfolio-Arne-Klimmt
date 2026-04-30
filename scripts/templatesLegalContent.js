@@ -354,26 +354,41 @@ function returnPrivacyPolicyTextEN() {
  */
 function returnLegalNoticeTextDE() {
     return `
-                   <div class="legalNoticeHeadingContainer">
+            <div class="legalNoticeHeadingContainer">
                 <h1>Impressum</h1>
             </div>
             <div>
-                <h4>Angaben gemäß § 5 TMG</h4>
-                <p>Arne Robert Klimmt <br>
-                    Rockendorfer Weg 73 <br>
-                    06128 Halle</p>
-            </div>
+                <h4>Impressum</h4>
+                <ul>
+                    <li>• Arne Robert Klimmt</li>
+                    <li>• Rockendorfer Weg 73</li>
+                    <li>• 06128 Halle (Saale)</li>
+                </ul>
 
-            <div>
-                <h4>Kontakt</h4>
-                <p>Telefon: +49 151 15158508
-                    E-Mail: arne-klimmt@gmx.de</p>
-            </div>
-            <div>
-                <h4>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h4>
-                <p>Arne Robert Klimmt
-                    Rockendorfer Weg 73 <br>
-                    06128 Halle</p>
+                <h4>Exploring the Board</h4>
+                <p>E-Mail: arne-klimmt@gmx.de</p>
+
+                <h4>Nutzungsbedingungen</h4>
+                <p>Durch den Zugriff auf und die Nutzung von <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> (Produkt) erkennen Sie die folgenden Gesch&auml;ftsbedingungen sowie alle Richtlinien, Leitlinien oder &Auml;nderungen dazu an, die Ihnen von Zeit zu Zeit vorgelegt werden k&ouml;nnen. Wir, die aufgef&uuml;hrten Studierenden, k&ouml;nnen die Gesch&auml;ftsbedingungen von Zeit zu Zeit ohne vorherige Ank&uuml;ndigung aktualisieren oder &auml;ndern.</p>
+
+                <h4>Umfang und Eigent&uuml;merschaft des Produkts</h4>
+                <p><a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> wurde im Rahmen eines studentischen Gruppenprojekts in einem Webentwicklungs-Bootcamp bei der <a href="https://developerakademie.com" target="_blank" style="color: var(--color-primary2)">Developer Akademie GmbH</a> entwickelt. Es hat einen Bildungszweck und ist nicht f&uuml;r eine umfangreiche private oder gesch&auml;ftliche Nutzung vorgesehen. Daher k&ouml;nnen wir keine durchg&auml;ngige Verf&uuml;gbarkeit, Zuverl&auml;ssigkeit, Richtigkeit oder andere Qualit&auml;tsaspekte dieses Produkts garantieren.</p>
+                <p>Das Design von <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> ist Eigentum der <a href="https://developerakademie.com" target="_blank" style="color: var(--color-primary2)">Developer Akademie GmbH</a>. Die unbefugte Nutzung, Vervielf&auml;ltigung, &Auml;nderung, Verbreitung oder Nachbildung des Designs ist strengstens untersagt.</p>
+
+                <h4>Eigentumsrechte</h4>
+                <p>Abgesehen vom Design, das der <a href="https://developerakademie.com" target="_blank" style="color: var(--color-primary2)">Developer Akademie GmbH</a> geh&ouml;rt, behalten wir, die aufgef&uuml;hrten Studierenden, alle Eigentumsrechte an <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a>, einschlie&szlig;lich aller damit verbundenen urheberrechtlich gesch&uuml;tzten Materialien, Marken und sonstigen propriet&auml;ren Informationen.</p>
+
+                <h4>Nutzung des Produkts</h4>
+                <p><a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> ist ausschlie&szlig;lich f&uuml;r rechtm&auml;&szlig;ige Zwecke und in &Uuml;bereinstimmung mit allen geltenden Gesetzen und Vorschriften bestimmt. Jede Nutzung von <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> f&uuml;r illegale Aktivit&auml;ten oder zur Bel&auml;stigung, Sch&auml;digung, Bedrohung oder Einsch&uuml;chterung einer anderen Person ist strengstens untersagt. Sie sind allein verantwortlich f&uuml;r Ihre Interaktionen mit anderen Nutzern von <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a>.</p>
+
+                <h4>Gew&auml;hrleistungsausschluss und Haftungsbeschr&auml;nkung</h4>
+                <p><a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> wird &bdquo;wie besehen&ldquo; ohne jegliche ausdr&uuml;ckliche oder stillschweigende Gew&auml;hrleistung bereitgestellt, einschlie&szlig;lich, aber nicht beschr&auml;nkt auf die stillschweigende Gew&auml;hrleistung der Marktg&auml;ngigkeit, Eignung f&uuml;r einen bestimmten Zweck und Nichtverletzung von Rechten Dritter. In keinem Fall haften wir, die aufgef&uuml;hrten Studierenden, oder die <a href="https://developerakademie.com" target="_blank" style="color: var(--color-primary2)">Developer Akademie</a> f&uuml;r direkte, indirekte, zuf&auml;llige, besondere, Folge- oder exemplarische Sch&auml;den, einschlie&szlig;lich, aber nicht beschr&auml;nkt auf Sch&auml;den durch entgangene Gewinne, Gesch&auml;ftswert, Nutzung, Daten oder andere immaterielle Verluste, selbst wenn wir auf die M&ouml;glichkeit solcher Sch&auml;den hingewiesen wurden, die aus der Nutzung oder Leistung von <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> entstehen oder damit zusammenh&auml;ngen.</p>
+
+                <h4>Freistellung</h4>
+                <p>Sie erkl&auml;ren sich damit einverstanden, uns, die aufgef&uuml;hrten Studierenden, die <a href="https://developerakademie.com" target="_blank" style="color: var(--color-primary2)">Developer Akademie</a> sowie unsere verbundenen Unternehmen, Partner, leitenden Angestellten, Direktoren, Vertreter und Mitarbeiter von und gegen alle Anspr&uuml;che, Forderungen, Verluste, Sch&auml;den, Kosten oder Verbindlichkeiten (einschlie&szlig;lich angemessener Anwaltsgeb&uuml;hren) freizustellen, zu verteidigen und schadlos zu halten, die sich aus Ihrer Nutzung von <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> und/oder Ihrem Versto&szlig; gegen diesen Rechtshinweis ergeben.</p>
+
+                <p>Bei Fragen oder Mitteilungen kontaktieren Sie uns bitte unter [Kontakt-E-Mail].</p>
+                <p>Datum: 26. Juli 2025</p>
             </div>
             `
 }
@@ -384,26 +399,41 @@ function returnLegalNoticeTextDE() {
  */
 function returnLegalNoticeTextEN() {
     return `
-                   <div class="legalNoticeHeadingContainer">
+            <div class="legalNoticeHeadingContainer">
                 <h1>Legal Notice</h1>
             </div>
             <div>
-                <h4>Information according to § 5 TMG</h4>
-                <p>Arne Robert Klimmt <br>
-                    Rockendorfer Weg 73 <br>
-                    06128 Halle</p>
-            </div>
+                <h4>Imprint</h4>
+                <ul>
+                    <li>• Arne Robert Klimmt</li>
+                    <li>• Rockendorfer Weg 73</li>
+                    <li>• 06128 Halle (Saale)</li>
+                </ul>
 
-            <div>
-                <h4>Contact</h4>
-                <p>Phone: +49 151 15158508
-                    Email: arne-klimmt@gmx.de</p>
-            </div>
-            <div>
-                <h4>Responsible for content according to § 18 Para. 2 MStV</h4>
-                <p>Arne Robert Klimmt
-                    Rockendorfer Weg 73 <br>
-                    06128 Halle</p>
+                <h4>Exploring the Board</h4>
+                <p>Email: arne-klimmt@gmx.de</p>
+
+                <h4>Acceptance of terms</h4>
+                <p>By accessing and using <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> (Product), you acknowledge and agree to the following terms and conditions, and any policies, guidelines, or amendments thereto that may be presented to you from time to time. We, the listed students, may update or change the terms and conditions from time to time without notice.</p>
+
+                <h4>Scope and ownership of the product</h4>
+                <p><a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> has been developed as part of a student group project in a web development bootcamp at the <a href="https://developerakademie.com" target="_blank" style="color: var(--color-primary2)">Developer Akademie GmbH</a>. It has an educational purpose and is not intended for extensive personal &amp; business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any other aspect of quality regarding this Product.</p>
+                <p>The design of <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> is owned by the <a href="https://developerakademie.com" target="_blank" style="color: var(--color-primary2)">Developer Akademie GmbH</a>. Unauthorized use, reproduction, modification, distribution, or replication of the design is strictly prohibited.</p>
+
+                <h4>Proprietary rights</h4>
+                <p>Aside from the design owned by <a href="https://developerakademie.com" target="_blank" style="color: var(--color-primary2)">Developer Akademie GmbH</a>, we, the listed students, retain all proprietary rights in <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a>, including any associated copyrighted material, trademarks, and other proprietary information.</p>
+
+                <h4>Use of the product</h4>
+                <p><a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> is intended to be used for lawful purposes only, in accordance with all applicable laws and regulations. Any use of <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> for illegal activities, or to harass, harm, threaten, or intimidate another person, is strictly prohibited. You are solely responsible for your interactions with other users of <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a>.</p>
+
+                <h4>Disclaimer of warranties and limitation of liability</h4>
+                <p><a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> is provided "as is" without warranty of any kind, whether express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event will we, the listed students, or the <a href="https://developerakademie.com" target="_blank" style="color: var(--color-primary2)">Developer Akademie</a>, be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we have been advised of the possibility of such damages, arising out of or in connection with the use or performance of <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a>.</p>
+
+                <h4>Indemnity</h4>
+                <p>You agree to indemnify, defend and hold harmless us, the listed students, the <a href="https://developerakademie.com" target="_blank" style="color: var(--color-primary2)">Developer Akademie</a>, and our affiliates, partners, officers, directors, agents, and employees, from and against any claim, demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or relating to your use of <a href="https://arne-robert-klimmt.de" target="_blank" style="color: var(--color-primary2)">Portfolio</a> and/or your breach of this Legal Notice.</p>
+
+                <p>For any questions or notices, please contact us at [Contact Email].</p>
+                <p>Date: July 26, 2025</p>
             </div>
             `
 }

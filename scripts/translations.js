@@ -117,6 +117,7 @@ function passCurrentLang() {
  * @param {'DE' | 'EN'} lang
  */
 function applyLanguage(lang) {
+    document.documentElement.lang = lang.toLowerCase();
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.dataset.i18n
         if (translations[lang][key]) el.textContent = translations[lang][key]

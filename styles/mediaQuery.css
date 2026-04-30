@@ -65,6 +65,10 @@
         font-size: 55px;
     }
 
+    :lang(de) .ownNameHeader .iam {
+        font-size: 40px;
+    }
+
     /* ---aboutSection--- */
     .aboutContent {
         max-width: 480px;
@@ -180,6 +184,10 @@
     .ownNameHeader .iam {
         font-size: 55px;
         left: 20px;
+    }
+
+    :lang(de) .ownNameHeader .iam {
+        font-size: 40px;
     }
 
     .greenShadowHeroSection {
@@ -470,6 +478,10 @@
         left: -5px;
     }
 
+    :lang(de) .ownNameHeader .iam {
+        font-size: 29px;
+    }
+
     .purpleShadowHeroSection {
         left: -30%;
     }
@@ -525,6 +537,10 @@
     .ownNameHeader .iam {
         font-size: 35px;
         top: 4px;
+    }
+
+    :lang(de) .ownNameHeader .iam {
+        font-size: 25px;
     }
 
     .purpleShadowHeroSection {
@@ -637,6 +653,10 @@
     .ownNameHeader .iam {
         font-size: 25px;
         padding: 0px;
+    }
+
+    :lang(de) .ownNameHeader .iam {
+        font-size: 18px;
     }
 
     .purpleShadowHeroSection {
@@ -851,6 +871,10 @@
         padding: 0px;
     }
 
+    :lang(de) .ownNameHeader .iam {
+        font-size: 15px;
+    }
+
     /* --------aboutSection-------- */
 
     #aboutSection {
@@ -941,6 +965,10 @@
         font-size: 78px;
     }
 
+    :lang(de) .ownNameHeader .iam {
+        font-size: 57px;
+    }
+
     .scrollDownContainer {
         display: flex;
     }
@@ -986,6 +1014,10 @@
         font-size: 80px;
     }
 
+    :lang(de) .ownNameHeader .iam {
+        font-size: 58px;
+    }
+
     .aboutGlow {
         top: 20px;
     }
@@ -1017,6 +1049,10 @@
 
     .ownNameHeader .iam {
         font-size: 90px;
+    }
+
+    :lang(de) .ownNameHeader .iam {
+        font-size: 65px;
     }
 
     .aboutCharacter {
