@@ -2,7 +2,7 @@
 function startContactFormListener() {
     document.querySelector('.contactForm').addEventListener('submit', (e) => e.preventDefault())
     document.getElementById('contactSubmitBtn').addEventListener('click', sendMail)
-    document.getElementById('privacyCheck').addEventListener('click', toggleFormButtons)
+    document.getElementById('privacyCheck').addEventListener('click', toggleFormButton)
     document.getElementById('formNameInput').addEventListener('blur', handleValidationEvent)
     document.getElementById('formEmailInput').addEventListener('blur', handleValidationEvent)
     document.getElementById('formTextInput').addEventListener('blur', handleValidationEvent)
@@ -62,9 +62,14 @@ function togglePrivacyCheckbox() {
     document.getElementById('privacyCheck').classList.toggle('checked')
 }
 
-/** Toggles the submit button active state */
-function toggleContactSubmitBtn() {
-    document.getElementById('contactSubmitBtn').classList.toggle('contactSubmitBtnPermittedToSend')
+/** adds the submit button active state */
+function addClassContactSubmitBtn() {
+    document.getElementById('contactSubmitBtn').classList.add('contactSubmitBtnPermittedToSend')
+}
+
+/** removes the submit button active state */
+function removeClassContactSubmitBtn() {
+    document.getElementById('contactSubmitBtn').classList.remove('contactSubmitBtnPermittedToSend')
 }
 
 /** Clears all form input fields and resets the checkbox and submit button to their default state */
@@ -92,6 +97,32 @@ function validateAllFormFields() {
     return isValid
 }
 
+function checkFormfields() {
+    if (!validateSilentAllFormFields()) {
+        removeClassContactSubmitBtn()
+        return
+    } else {
+        addClassContactSubmitBtn()
+    }
+}
+
+function validateSilentAllFormFields() {
+    let form = document.getElementById('contactForm')
+    let array = []
+    for (let index = 0; index < 4; index++) {
+        if (index > 2) {
+            array.push(document.getElementById('privacyCheck'))
+        } else {
+            array.push(form[index])
+        }
+    }
+    return array.every(containsChecked)
+}
+
+function containsChecked(element, index, array) {
+    return element.classList.contains('checked')
+}
+
 /**
  * Validates a single form field on blur event
  * @param {FocusEvent} event
@@ -100,6 +131,7 @@ function handleValidationEvent(event) {
     let element = document.getElementById(`${event.currentTarget.id}`)
     let elementId = event.currentTarget.id
     validateInput(element, elementId)
+    checkFormfields()
 }
 
 /**
@@ -114,18 +146,21 @@ function validateInput(element, elementId) {
     } else if (elementId == "privacyCheck") {
         return processCheckBoxError(element, elementId)
     } else if (element.value) {
+        addCheckedToEl(elementId)
         removeInputErrorText(elementId)
         return true
     } else {
+        removeCheckedFromEl(elementId)
         addInputErrorText(elementId, element)
         return false
     }
 }
 
 /** Toggles privacy checkbox and submit button together */
-function toggleFormButtons() {
+function toggleFormButton() {
     togglePrivacyCheckbox()
-    toggleContactSubmitBtn()
+    checkFormfields()
+    // toggleContactSubmitBtn()
 }
 
 /**
@@ -144,6 +179,14 @@ function processCheckBoxError(element, elementId) {
     }
 }
 
+function addCheckedToEl(elementId) {
+    document.getElementById(elementId).classList.add('checked')
+}
+
+function removeCheckedFromEl(elementId) {
+    document.getElementById(elementId).classList.remove('checked')
+}
+
 /**
  * Validates the email field and shows or removes its error message
  * @param {HTMLElement} element
@@ -153,13 +196,16 @@ function processCheckBoxError(element, elementId) {
 function processEmailError(element, elementId) {
     if (element.value) {
         if (validateEmail(element.value)) {
+            addCheckedToEl(elementId)
             removeInputErrorText(elementId)
             return true
         } else {
+            removeCheckedFromEl(elementId)
             addInputErrorText(elementId, element)
             return false
         }
     } else {
+        removeCheckedFromEl(elementId)
         addInputErrorText(elementId, element)
         return false
     }
