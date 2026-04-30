@@ -630,7 +630,7 @@
 }
 
 .laptopPreviewOverlayText {
-    height: 52%;
+    height: 50%;
     width: 100%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -658,7 +658,7 @@
 }
 
 .laptopPreviewOverlayButtons {
-    height: 48%;
+    height: 50%;
     width: 100%;
     display: flex;
     justify-content: center;
