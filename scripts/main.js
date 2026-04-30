@@ -335,3 +335,7 @@ function initMobilePortfolioCards() {
 
 startContactFormListener()
 initMobilePortfolioCards()
+
+const capaWrapper = document.querySelector('.capaLearningWrapper')
+capaWrapper.addEventListener('click', e => { e.stopPropagation(); capaWrapper.classList.toggle('tooltipActive') })
+document.addEventListener('click', () => capaWrapper.classList.remove('tooltipActive'))

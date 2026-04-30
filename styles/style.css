@@ -486,7 +486,8 @@
     height: 32px;
 }
 
-.skillIconTextDiv:hover .capaTooltip {
+.skillIconTextDiv:hover .capaTooltip,
+.capaLearningWrapper.tooltipActive .capaTooltip {
     bottom: 100%;
     visibility: visible;
 }
