@@ -15,6 +15,11 @@
     color: var(--color-primary1);
     white-space: nowrap;
     flex-shrink: 0;
+    font-size: 50px;
+}
+
+.imprintLegalNoticeSmallHeading {
+    font-size: 25px;
 }
 
 .headingWithStripe {
@@ -95,6 +100,7 @@ h4 {
     color: var(--color-primary1);
     white-space: nowrap;
     flex-shrink: 0;
+    font-size: 50px;
 }
 
 .legalNoticeHeadingContainer {

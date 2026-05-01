@@ -358,7 +358,7 @@ function returnLegalNoticeTextDE() {
                 <h1>Impressum</h1>
             </div>
             <div>
-                <h4>Impressum</h4>
+                <h4 class="imprintLegalNoticeSmallHeading">Impressum</h4>
                 <ul>
                     <li>• Arne Robert Klimmt</li>
                     <li>• Rockendorfer Weg 73</li>
@@ -403,7 +403,7 @@ function returnLegalNoticeTextEN() {
                 <h1>Legal Notice</h1>
             </div>
             <div>
-                <h4>Imprint</h4>
+                <h4 class="imprintLegalNoticeSmallHeading">Imprint</h4>
                 <ul>
                     <li>• Arne Robert Klimmt</li>
                     <li>• Rockendorfer Weg 73</li>

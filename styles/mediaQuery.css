@@ -273,6 +273,16 @@
     .portfolioCard {
         cursor: pointer;
     }
+
+    /* -------------legalContent---------------- */
+    .legalNoticeText h1 {
+        font-size: 40px;
+    }
+
+    #privacyPolicyText h1 {
+        font-size: 30px;
+    }
+
 }
 
 @media (max-width: 950px) {
@@ -718,6 +728,20 @@
 
     .contactHeadingRow::after {
         right: -78%;
+    }
+
+    /* -------------legalContent---------------- */
+
+    .legalNoticeText h1 {
+        font-size: 30px;
+    }
+
+    #privacyPolicyText h1 {
+        font-size: 23px;
+    }
+
+    .privacyPolicySection h2 {
+        font-size: 20px;
     }
 
 }
