@@ -1,0 +1,14 @@
+{
+    "name": "arnerob/portfolio-arne-klimmt",
+    "description": "Contact form of the portfolio (mail.php)",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.4",
+        "phpmailer/phpmailer": "7.1.1"
+    },
+    "config": {
+        "allow-plugins": {},
+        "sort-packages": true
+    }
+}

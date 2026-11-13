@@ -1,0 +1,7 @@
+# Only what the image needs (see Dockerfile). Hidden files and folders:
+# .git, .github, .gitignore, .DS_Store, .vscode.
+**/.*
+Dockerfile
+README.md
+vendor
+outsourced.txt
