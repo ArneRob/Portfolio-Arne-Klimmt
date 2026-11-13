@@ -13,6 +13,12 @@ COPY composer.json composer.lock ./
 RUN composer install --no-dev --no-scripts --no-plugins --no-interaction --no-progress --classmap-authoritative
 
 FROM docker.io/library/php:8.4-fpm-trixie
+# Debian's security fixes that came out after the base image was built: the
+# official PHP image is rebuilt only every few days, and the scan stops a
+# build with a fixable critical or high vulnerability.
+RUN apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get upgrade -y --no-install-recommends \
+    && rm -rf /var/lib/apt/lists/*
 # PHP's settings for production: no error messages to visitors. Our own
 # settings are in php/: no version in the headers, no access log of PHP's own.
 RUN mv "${PHP_INI_DIR}/php.ini-production" "${PHP_INI_DIR}/php.ini"
