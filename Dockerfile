@@ -26,7 +26,7 @@ COPY php/zz-portfolio.ini /usr/local/etc/php/conf.d/
 COPY php/zz-portfolio.conf /usr/local/etc/php-fpm.d/
 COPY --from=vendor /app/vendor /app/vendor
 COPY mail.php /app/
-COPY index.html legalnotice.html privacyPolicy.html /site/
+COPY index.html legalnotice.html privacyPolicy.html robots.txt /site/
 COPY assets /site/assets
 COPY scripts /site/scripts
 COPY styles /site/styles
